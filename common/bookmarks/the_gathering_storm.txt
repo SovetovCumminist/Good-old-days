@@ -1,0 +1,86 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1918.1.1.1
+		picture = "GFX_select_date_1936"
+		default_country = "SOV"
+		default = yes
+
+		GER = {
+			history = 
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		SOV = {
+			history =
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		RUS = {
+			history =
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		POL = {
+			history =
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		TUR = {
+			history =
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		ITA = {
+			history =
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_THE_AFTERMATH_OF_VERSAILLES_DESC"
+		}
+
+		FRA = {
+			history =
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		ENG = {
+			history =
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+	}
+}

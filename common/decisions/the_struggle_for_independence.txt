@@ -1,0 +1,94 @@
+the_struggle_for_independence = {
+
+	the_struggle_for_independence_I = {
+	
+	icon = GFX_decision_generic_political_rally
+
+	available = {
+		}
+
+	visible = {
+		}
+		
+	cost = 100
+	days_remove = 30
+	
+	complete_effect = {	
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = quit_movement
+			}
+		}
+	}
+	
+	the_struggle_for_independence_II = {
+	
+	icon = GFX_decision_generic_assassination
+
+	available = {
+		}
+
+	visible = {
+		}
+		
+	cost = 150
+	days_remove = 60
+	
+	complete_effect = {
+			add_autonomy_ratio = {
+				value = 0.2
+				localization = quit_movement
+			}
+		}
+	}
+	
+	the_struggle_for_independence_III = {
+	
+	icon = GFX_decision_generic_scorched_earth
+
+	available = {
+		}
+
+	visible = {
+		}
+		
+	cost = 200
+	fire_only_once = yes
+	
+	complete_effect = {
+		add_ideas = quit_movement
+		add_autonomy_ratio = {
+			value = 0.1
+			localization = quit_movement
+		}
+		}
+	}
+	
+	the_struggle_for_independence_IV = {
+	
+	icon = GFX_decision_generic_independence
+
+	available = {
+		has_idea = quit_movement
+		}
+
+	visible = {
+		}
+		
+	cost = 100
+	fire_only_once = yes
+	
+	complete_effect = {
+		remove_ideas = quit_movement
+		random_neighbor_country = {
+			limit = {
+			ROOT = { is_subject_of = PREV }
+			}
+            declare_war_on = {
+                target = ROOT 
+                type = annex_everything 
+    			    }
+			}
+		}
+	}
+}
