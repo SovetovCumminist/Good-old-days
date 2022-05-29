@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = SOV
+		controller = TUR
 		victory_points = {
 			12320 3
 		}

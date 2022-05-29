@@ -4,7 +4,8 @@ state={
 	name="STATE_809"
 
 	history={
-		owner = LAT
+		owner = SOV
+		controller = GER
 		victory_points = {
 			310 3 #Daugavpils
 		}

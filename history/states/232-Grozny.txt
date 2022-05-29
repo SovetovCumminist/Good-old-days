@@ -12,6 +12,7 @@ state={
 
 	history = {
 		owner = SOV
+		controller = TUR
 		buildings = {
 			infrastructure = 2
 		}

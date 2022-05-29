@@ -155,6 +155,7 @@ if = {
 	}
 }
 
+set_cosmetic_tag = POL_GER
 
 set_convoys = 150
 
@@ -170,6 +171,18 @@ set_popularities = {
 	fascism = 31
 	communism = 19
 	neutrality = 38
+}
+
+#Про-германский монарх
+
+create_country_leader = {
+	name = "Karl Stephan von Österreich"
+	desc = ""
+	picture = "gfx/leaders/POL/Portrait_Karl.dds"
+	expire = "1936.1.1"
+	ideology = oligarchism
+	traits = {
+	}
 }
 
 #(Германия) Регентский совет
@@ -197,18 +210,6 @@ create_country_leader = {
 		fascism = 50
 		communism = 20
 		neutrality = 10
-	}
-}
-
-#Про-германский монарх
-
-create_country_leader = {
-	name = "Karl Stephan von Österreich"
-	desc = ""
-	picture = "gfx/leaders/POL/Portrait_Karl.dds"
-	expire = "1936.1.1"
-	ideology = oligarchism
-	traits = {
 	}
 }
 

@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = BEL
+		controller = GER
 		victory_points = {
 			3516 5
 		}

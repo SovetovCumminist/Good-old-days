@@ -11,7 +11,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SOV
+		owner = SOV controller = GER
 		victory_points = {
 			525 25
 		}

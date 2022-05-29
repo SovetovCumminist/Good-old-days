@@ -296,21 +296,43 @@ create_faction = Central_powers
 add_to_faction = GER
 add_to_faction = AUS
 add_to_faction = TUR
+add_to_faction = BUL
 
 declare_war_on = {
 	target = FRA
 	type = annex_everything
 }
 
-#declare_war_on = { #Сепаратный мир
-#	target = SOV
-#	type = annex_everything
-#}
+declare_war_on = {
+	target = SOV
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = RUS
+	type = annex_everything
+}
 
 declare_war_on = {
 	target = ENG
 	type = annex_everything
 }
+
+declare_war_on = {
+	target = BEL
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = LUX
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = ROM
+	type = annex_everything
+}
+
 
 add_ideas = {
 	general_staff
@@ -339,19 +361,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hugo Haase"
+	name = "Ernst Thälmann"
 	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Haase.dds"
-	expire = "1936.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Karl Liebknecht"
-	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Liebknecht.dds"
+	picture = "gfx/leaders/GER/Portrait_Ernst.dds"
 	expire = "1936.1.1"
 	ideology = marxism
 	traits = {
@@ -369,9 +381,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ernst Thälmann"
+	name = "Karl Liebknecht"
 	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Ernst.dds"
+	picture = "gfx/leaders/GER/Portrait_Liebknecht.dds"
 	expire = "1936.1.1"
 	ideology = marxism
 	traits = {
@@ -379,11 +391,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Oskar Hergt"
+	name = "Hugo Haase"
 	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Hergt.dds"
+	picture = "gfx/leaders/GER/Portrait_Haase.dds"
 	expire = "1936.1.1"
-	ideology = ultranationalism
+	ideology = marxism
 	traits = {
 	}
 }
@@ -394,6 +406,16 @@ create_country_leader = {
 	picture = "gfx/leaders/GER/Portrait_Hitler.dds"
 	expire = "1936.1.1"
 	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Oskar Hergt"
+	desc = ""
+	picture = "gfx/leaders/GER/Portrait_Hergt.dds"
+	expire = "1936.1.1"
+	ideology = ultranationalism
 	traits = {
 	}
 }

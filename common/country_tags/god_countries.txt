@@ -1,1 +1,2 @@
 RUS	= "countries/Russia.txt"
+ALS	= "countries/Alsace.txt"
