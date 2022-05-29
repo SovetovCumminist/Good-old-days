@@ -177,7 +177,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 193 144 249 }
+		color = { 191 97 206 }
 
 		rules = {
 			can_declare_war_on_same_ideology = yes

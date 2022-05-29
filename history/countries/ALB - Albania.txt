@@ -174,7 +174,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ALB/Portrait_Toptani.dds"
 	expire = "1935.1.1"
-	ideology = parafascism
+	ideology = conservatism
 	traits = {
 	}
 }

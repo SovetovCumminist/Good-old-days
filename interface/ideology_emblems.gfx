@@ -58,6 +58,46 @@ spriteTypes = {
 	
 	
 	spriteType = {
+		name = "GFX_ideology_SOV_absolutism"
+		texturefile = "gfx/interface/ideologies/SOV_absolutism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SOV_democratic_monarchism"
+		texturefile = "gfx/interface/ideologies/SOV_democratic_monarchism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_RUS_absolutism"
+		texturefile = "gfx/interface/ideologies/RUS_absolutism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_RUS_democratic_monarchism"
+		texturefile = "gfx/interface/ideologies/RUS_democratic_monarchism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_absolutism"
+		texturefile = "gfx/interface/ideologies/GER_absolutism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_democratic_monarchism"
+		texturefile = "gfx/interface/ideologies/GER_democratic_monarchism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_AUH_absolutism"
+		texturefile = "gfx/interface/ideologies/AUH_absolutism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_AUH_democratic_monarchism"
+		texturefile = "gfx/interface/ideologies/AUH_democratic_monarchism.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_despotism"
 		texturefile = "gfx/interface/ideologies/despotism.png"
 	}
