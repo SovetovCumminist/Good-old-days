@@ -16,4 +16,5 @@ tags={
 	"Alternative History"
 }
 name="Good old days"
+picture="picture.png"
 supported_version="1.11.9"
