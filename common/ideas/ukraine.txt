@@ -1,0 +1,480 @@
+ideas = {
+
+	country = {
+		
+		ukr_rus_income = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic has_government = conservocratic
+			}
+
+			removal_cost = -1
+
+			picture = SPR_international_brigades
+				
+			modifier = {
+				stability_factor = -0.01
+			}
+		}
+		
+		ukr_batkivshina = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic has_government = conservocratic
+			}
+
+			removal_cost = -1
+
+			picture = EST_democratic_opposition
+				
+			modifier = {
+				stability_factor = 0.15
+				industry_free_repair_factor = -0.3
+			}
+		}
+	
+		ukr_life_new = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic has_government = conservocratic
+			}
+
+			removal_cost = -1
+
+			picture = EST_democratic_opposition
+				
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+	
+		lustarion = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ast_classify_aliens
+					
+			modifier = {
+				resistance_damage_to_garrison = -0.1
+				stability_factor = -0.05
+			}
+
+		}
+		
+		old_constitution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+				
+			modifier = {
+				stability_factor = 0.05
+				stability_weekly = 0.005
+				conscription = 0.002
+			}
+		}
+		
+		authoritarian_constitution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = HUN_treaty_of_triannon
+				
+			modifier = {
+				stability_factor = 0.1
+				stability_weekly = 0.01
+				drift_defence_factor = 0.05
+			}
+		}
+		
+		national_constitution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism has_government = reactionism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+			
+			modifier = {
+				conscription = 0.02
+				war_support_factor = 0.1
+			}
+		}
+		
+		go_oligharhat = {
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				or = {
+				has_government = democratic has_government = conservocratic
+				has_government = fascism has_government = reactionism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = EST_exploit_the_banks
+				
+			modifier = {
+				stability_weekly = 0.01
+				political_power_gain = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		stop_oligharhat = {
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				or = {
+				has_government = communism
+				has_government = neutrality
+				}
+			}
+
+			removal_cost = -1
+
+			picture = eng_tackle_capitalism
+				
+			modifier = {
+				trade_laws_cost_factor = -0.50
+				economy_cost_factor = -0.50
+				political_power_gain = 0.1
+			}
+		}
+		
+		oligharhat = {
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic has_government = conservocratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_oligarchy
+				
+			modifier = {
+				trade_laws_cost_factor = 0.50
+				economy_cost_factor = 0.50
+				political_advisor_cost_factor = 0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		ukr_no_concessions = {
+			allowed = {
+				not = { has_country_flag = UKR_maidan_crisis_stop }
+			}
+
+			allowed_civil_war = {
+				has_government = democratic has_government = conservocratic
+			}
+
+			removal_cost = -1
+
+			picture = ast_classify_aliens
+				
+			modifier = {
+			stability_weekly = -0.02
+			political_power_gain = 0.5
+			}
+		}
+		
+		ukr_concessions = {
+			allowed = {
+				not = { has_country_flag = UKR_maidan_crisis_stop }
+			}
+
+			allowed_civil_war = {
+				has_government = democratic has_government = conservocratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+				
+			modifier = {
+			stability_weekly = 0.01
+			political_power_gain = -0.6
+			}
+		}
+		
+		ban_vk = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+				has_government = communism
+				has_government = fascism has_government = reactionism
+				has_government = democratic has_government = conservocratic
+				has_government = neutrality
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				resistance_target = -0.05
+				foreign_subversive_activites = -0.10
+			}
+		}
+		
+		political_crisis = {
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+				has_government = communism
+				has_government = fascism has_government = reactionism
+				has_government = democratic has_government = conservocratic
+				has_government = neutrality
+				}
+			}
+
+			removal_cost = -1
+
+			picture = A_divided_nation
+					
+			modifier = {
+			stability_weekly = -0.02
+			}
+
+		}
+		
+		ukraine_crush_dissent = {
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+				has_government = communism
+				has_government = fascism has_government = reactionism
+				has_government = democratic has_government = conservocratic
+				has_government = neutrality
+				}
+			}
+
+			removal_cost = -1
+
+			picture = ukraine_crush_dissent
+					
+			modifier = {
+			resistance_damage_to_garrison = -0.1
+			stability_weekly = 0.001
+			}
+
+		}
+		
+		Stop_russophobia = {
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+			or = {
+			has_government = neutrality
+			has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+					
+			modifier = {
+			#communism_drift = 0.01
+			stability_weekly= 0.01
+			}
+
+		}
+		
+		Stop_Maidan_goal = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				or = {
+				has_government = democratic has_government = conservocratic
+				has_government = fascism has_government = reactionism }
+			}
+			
+			removal_cost = -1
+
+			picture = Maidan
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				stability_factor = 0.1
+				stability_weekly = 0.01
+			}
+		}
+		
+		Maidan_goal = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				or = {
+				has_government = democratic has_government = conservocratic
+				has_government = fascism has_government = reactionism }
+			}
+			
+			removal_cost = -1
+
+			picture = Maidan
+			
+			modifier = {
+				army_morale_factor = 0.05
+				drift_defence_factor = 0.05
+				stability_weekly = 0.01
+			}
+		}
+		
+		Stop_Maidan = {
+			available = {
+				has_government = democratic has_government = conservocratic
+			}
+
+			allowed_civil_war = {
+				has_government = democratic has_government = conservocratic
+			}
+			
+			removal_cost = -1
+
+			picture = Maidan
+			
+			modifier = {
+				army_morale_factor = -0.05
+				drift_defence_factor = -0.1
+				stability_weekly = -0.01
+			}
+		}
+		
+		Maidan = {
+			available = {
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			picture = Maidan
+			
+			modifier = {
+				army_morale_factor = -0.15
+				conservocratic_drift = 0.2
+				fascism_drift = 0.03
+				reactionism_drift = 0.03
+				drift_defence_factor = -0.5
+				stability_weekly = -0.01
+			}
+		}
+		
+		Russophobia = {
+			available = {
+			or = {
+				has_government = fascism has_government = reactionism
+				has_government = democratic has_government = conservocratic
+				has_country_leader = {
+				name = "Alexander Turchinov"
+				ruling_only = yes
+				}
+				}
+			}
+
+			allowed_civil_war = {
+			or = {
+				has_government = fascism has_government = reactionism
+				has_government = democratic has_government = conservocratic
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = Russophobia
+			
+			modifier = {
+				fascism_drift = 0.01
+				conscription_factor = -0.15
+				political_advisor_cost_factor = 0.15
+				war_support_factor = 0.05
+			}
+		}
+		
+		A_divided_nation = {
+			available = {
+			}
+
+			allowed_civil_war = {
+			or = {
+				has_government = communism
+				has_government = neutrality
+				has_government = democratic has_government = conservocratic
+				has_government = fascism has_government = reactionism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = A_divided_nation
+			
+			modifier = {
+				conscription_factor = -0.25
+				stability_factor = -0.01
+				war_support_factor = -0.001
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+ideas = {
+
+    country = {
+
+        prestol = {
+			allowed_civil_war = {
+				if = {
+					has_government = neutrality
+				}
+			}
+
+
+			available = {
+				not = {
+					or = {
+						has_government = communism
+						has_government = anarchy
+					}
+				}
+			}
+
+			picture = belarus_tv
+
+			modifier = {
+				stability_weekly = 0.05
+                democratic_acceptance = 30
+			}
+        }
+
+    }
+
+}

@@ -11,14 +11,14 @@
  GER_democratic_ADJ:0 "Германск."
  GER_neutrality_ADJ:0 "Германск."
  GER_communism_ADJ:0 "Германск."
- 
  GER:0 "Германия"
  GER_DEF:0 "Германия"
  GER_ADJ:0 "Германск."
+ 
  ENG_fascism:0 "Британский Рейх"
  ENG_fascism_DEF:0 "Британский Рейх"
- ENG_democratic:0 "Британская Республика"
- ENG_democratic_DEF:0 "Британская Республика"
+ ENG_democratic:0 "Великобритания"
+ ENG_democratic_DEF:0 "Соединённое Королевство Великобритании и Ирландии"
  ENG_neutrality:0 "Британская империя"
  ENG_neutrality_DEF:0 "Соединённое Королевство Великобритании и Ирландии"
  ENG_communism:0 "Британский союз"

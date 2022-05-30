@@ -2,18 +2,18 @@ the_struggle_for_independence = {
 
 	the_struggle_for_independence_I = {
 	
-	icon = GFX_decision_generic_political_rally
+		icon = GFX_decision_generic_political_rally
 
-	available = {
-		}
+		available = {
+			}
 
-	visible = {
-		}
+		visible = {
+			}
+			
+		cost = 100
+		days_remove = 30
 		
-	cost = 100
-	days_remove = 30
-	
-	complete_effect = {	
+		complete_effect = {	
 			add_autonomy_ratio = {
 				value = 0.1
 				localization = quit_movement
@@ -23,18 +23,18 @@ the_struggle_for_independence = {
 	
 	the_struggle_for_independence_II = {
 	
-	icon = GFX_decision_generic_assassination
+		icon = GFX_decision_generic_assassination
 
-	available = {
-		}
+		available = {
+			}
 
-	visible = {
-		}
+		visible = {
+			}
+			
+		cost = 150
+		days_remove = 60
 		
-	cost = 150
-	days_remove = 60
-	
-	complete_effect = {
+		complete_effect = {
 			add_autonomy_ratio = {
 				value = 0.2
 				localization = quit_movement
@@ -44,50 +44,65 @@ the_struggle_for_independence = {
 	
 	the_struggle_for_independence_III = {
 	
-	icon = GFX_decision_generic_scorched_earth
+		icon = GFX_decision_generic_scorched_earth
 
-	available = {
-		}
+		available = {
+			}
 
-	visible = {
-		}
+		visible = {
+			}
+			
+		cost = 200
+		fire_only_once = yes
 		
-	cost = 200
-	fire_only_once = yes
-	
-	complete_effect = {
-		add_ideas = quit_movement
-		add_autonomy_ratio = {
-			value = 0.1
-			localization = quit_movement
-		}
+		complete_effect = {
+			add_ideas = quit_movement
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = quit_movement
+			}
 		}
 	}
 	
 	the_struggle_for_independence_IV = {
 	
-	icon = GFX_decision_generic_independence
+		icon = GFX_decision_generic_independence
 
-	available = {
-		has_idea = quit_movement
-		}
-
-	visible = {
-		}
-		
-	cost = 100
-	fire_only_once = yes
-	
-	complete_effect = {
-		remove_ideas = quit_movement
-		random_neighbor_country = {
-			limit = {
-			ROOT = { is_subject_of = PREV }
+		available = {
+			#has_idea = quit_movement
 			}
-            declare_war_on = {
-                target = ROOT 
-                type = annex_everything 
-    			    }
+
+		visible = {
+			}
+			
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			remove_ideas = quit_movement
+			ROOT = {
+				OVERLORD = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					leave_faction = yes
+				}
+			}
+			every_enemy_country = {
+				limit = {
+					has_war_with = ROOT
+					}
+				white_peace = FROM
 			}
 		}
 	}

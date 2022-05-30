@@ -244,18 +244,30 @@ add_ideas = {
 }
 
 create_faction = Antanta
-add_to_faction = ENG
 add_to_faction = FRA
-add_to_faction = RUS
-add_to_faction = USA
-add_to_faction = ITA
+
+add_to_faction = ENG
 add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
-add_to_faction = SAF
-add_to_faction = JAP
 add_to_faction = RAJ
 add_to_faction = MAL
+add_to_faction = SAF
+
+add_to_faction = RUS
+
+add_to_faction = JAP
+
+add_to_faction = ITA
+
+add_to_faction = USA
+
+add_to_faction = BEL
+add_to_faction = LUX
+
+add_to_faction = SER
+add_to_faction = ROM
+
 
 set_politics = {
 	ruling_party = democratic
@@ -271,6 +283,16 @@ set_popularities = {
 }
 
 create_country_leader = {
+	name = "Alexandre Millerand"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_Millerand.dds"
+	expire = "1936.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Jaime III"
 	desc = ""
 	picture = "gfx/leaders/FRA/Portrait_Jaime.dds"
@@ -280,10 +302,20 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Charles Maurras"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_Maurras.dds"
+	expire = "1936.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
 #Пришел после Пауля
 1920.9.21 = {
 	set_politics = {
-		ruling_party = communism
+		ruling_party = democratic
 		last_election = "1920.9.21"
 		election_frequency = 48
 		elections_allowed = yes
@@ -293,15 +325,15 @@ create_country_leader = {
 		desc = ""
 		picture = "gfx/leaders/FRA/Portrait_Millerand.dds"
 		expire = "1936.1.1"
-		ideology = anti_revisionism
+		ideology = socialism
 		traits = {
 		}
 	}
-	#set_party_name = {
-	#	ideology = democratic
-	#	name = FRA_socialism_party
-	#	long_name = FRA_socialism_party_long
-	#}
+	set_party_name = {
+		ideology = democratic
+		name = FRA_socialism_party
+		long_name = FRA_socialism_party_long
+	}
 }
 
 #Ушел с поста в этом же году

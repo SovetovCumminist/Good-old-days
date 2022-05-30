@@ -44,7 +44,7 @@ political_actions = {
 
 	promises_of_peace = {
 
-		icon = GFX_decision_pacifism
+		icon = GFX_decision_hol_exchange_intelligence_data
 
 		available = {
 			has_war = no

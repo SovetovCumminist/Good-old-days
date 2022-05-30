@@ -24,7 +24,7 @@ ideas = {
 		picture = FRA_scw_intervention_republicans_focus
 		
 		allowed = {
-			is_subject = yes
+			#is_subject = yes
 		}
 		
 		allowed_civil_war = {

@@ -6,11 +6,12 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "SOV"
 		default = yes
-
-		GER = {
-			history = ""
-			ideology = neutrality
+		
+		RUS = {
+			history = "Советы хотят больше власти, царские офицеры хотят возвращения царя, а демократы неспособны найти мир с Германий..."
+			ideology = democratic
 			ideas = {
+				Soviets
 			}
 			focuses = {
 			}
@@ -26,28 +27,9 @@ bookmarks = {
 		#	}
 		#}
 
-		RUS = {
-			history = "Советы хотят больше власти, царские офицеры хотят возвращения царя, а демократы неспособны найти мир с Германий..."
+		FRA = {
+			history = ""
 			ideology = democratic
-			ideas = {
-				Soviets
-			}
-			focuses = {
-			}
-		}
-
-		TUR = {
-			history = ""
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		UKR = {
-			history = ""
-			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
@@ -56,6 +38,42 @@ bookmarks = {
 
 		ENG = {
 			history = ""
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		TUR = {
+			history = ""
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		UKR = {
+			history = ""
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		AUS = {
+			history = ""
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		GER = {
+			history = "Германии тяжело удержать восток, ещё тяжелее сдерживать запад, США оказали слишком сильное влияние на баланс сил европы, если не найти мира, то Германия будет обречена на развал..."
 			ideology = neutrality
 			ideas = {
 			}

@@ -131,9 +131,7 @@ if = {
 	}
 	if = {
 		limit = {
-			
 			has_dlc = "No Step Back"
-			
 		}
 		set_technology = {
 			basic_light_tank_chassis = 1
