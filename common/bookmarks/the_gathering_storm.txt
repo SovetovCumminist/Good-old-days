@@ -8,7 +8,7 @@ bookmarks = {
 		default = yes
 
 		GER = {
-			history = 
+			history = ""
 			ideology = neutrality
 			ideas = {
 			}
@@ -16,35 +16,28 @@ bookmarks = {
 			}
 		}
 
-		SOV = {
-			history =
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
+		#SOV = {
+		#	history = ""
+		#	ideology = communism
+		#	ideas = {
+		#		Vladimir_Lenin_Cult
+		#	}
+		#	focuses = {
+		#	}
+		#}
 
 		RUS = {
-			history =
+			history = "Советы хотят больше власти, царские офицеры хотят возвращения царя, а демократы неспособны найти мир с Германий..."
 			ideology = democratic
 			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		POL = {
-			history =
-			ideology = neutrality
-			ideas = {
+				Soviets
 			}
 			focuses = {
 			}
 		}
 
 		TUR = {
-			history =
+			history = ""
 			ideology = neutrality
 			ideas = {
 			}
@@ -52,21 +45,8 @@ bookmarks = {
 			}
 		}
 
-		ITA = {
-			history =
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"---"={
-			history = "OTHER_THE_AFTERMATH_OF_VERSAILLES_DESC"
-		}
-
-		FRA = {
-			history =
+		UKR = {
+			history = ""
 			ideology = neutrality
 			ideas = {
 			}
@@ -75,12 +55,16 @@ bookmarks = {
 		}
 
 		ENG = {
-			history =
+			history = ""
 			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
 			}
+		}
+		
+		"---"={
+			history = "" "OTHER_THE_AFTERMATH_OF_VERSAILLES_DESC"
 		}
 	}
 }

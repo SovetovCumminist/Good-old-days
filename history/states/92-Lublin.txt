@@ -6,7 +6,7 @@ state={
 		victory_points = {
 			11399 1 
 		}
-		owner = SOV
+		owner = RUS
 		controller = GER
 		buildings = {
 			infrastructure = 3

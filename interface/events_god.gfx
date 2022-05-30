@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_event_gripe_espanola"
+		texturefile = "gfx/event_pictures/gripe_espanola.dds"
+	}
+	
+}

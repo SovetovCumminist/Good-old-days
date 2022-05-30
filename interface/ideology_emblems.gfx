@@ -30,6 +30,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/anarchism.png"
 	}
 	
+	spriteType = {
+		name = "GFX_ideology_national_communism"
+		texturefile = "gfx/interface/ideologies/national_communism.png"
+	}
+	
 
 	spriteType = {
 		name = "GFX_ideology_conservatism"
@@ -146,5 +151,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_parafascism"
 		texturefile = "gfx/interface/ideologies/parafascism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_anticommunism"
+		texturefile = "gfx/interface/ideologies/anticommunism.png"
 	}
 }

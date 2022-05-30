@@ -3,8 +3,8 @@ state={
 	name="STATE_94"
 
 	history={
-		owner = SOV
-		controller = GER
+		owner = RUS
+		controller = UKR
 		buildings = {
 			infrastructure = 2
 

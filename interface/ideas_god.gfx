@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_idea_Vladimir_Lenin"
+		texturefile = "gfx/interface/ideas/Lenin.dds"
+	}
+	
+}

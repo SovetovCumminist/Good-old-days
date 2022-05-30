@@ -148,17 +148,12 @@ set_autonomy = {
 }
 
 set_autonomy = {
-	target = LIT
-	autonomous_state = autonomy_puppet
-}
-
-set_autonomy = {
-	target = BLR
-	autonomous_state = autonomy_puppet
-}
-
-set_autonomy = {
 	target = UKR
+	autonomous_state = autonomy_puppet
+}
+
+set_autonomy = {
+	target = CRI
 	autonomous_state = autonomy_puppet
 }
 
