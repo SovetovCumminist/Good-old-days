@@ -206,6 +206,8 @@ if = {
 
 set_convoys = 500
 
+set_cosmetic_tag = SOV_soviet_republic
+
 create_faction = Left_Movement
 add_to_faction = SOV
 #add_to_faction = MON
