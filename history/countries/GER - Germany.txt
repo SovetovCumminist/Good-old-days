@@ -274,19 +274,6 @@ set_autonomy = {
 	}
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.3.5"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-set_popularities = {
-	democratic = 20
-	neutrality = 60
-	communism = 20
-}
-
 create_faction = Central_powers
 add_to_faction = GER
 add_to_faction = AUS
@@ -332,6 +319,19 @@ declare_war_on = {
 add_ideas = {
 	general_staff
 	limited_exports
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	neutrality = 60
+	communism = 20
 }
 
 create_country_leader = {

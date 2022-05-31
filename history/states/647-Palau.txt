@@ -4,9 +4,9 @@ state=
 	name="STATE_647"
 	state_category = small_island
 	manpower = 12100
-	history=
-	{
-		owner = JAP
+	history={
+		owner = GER
+		controller = JAP
 		add_core_of = FSM
 		buildings = {
 			infrastructure = 2

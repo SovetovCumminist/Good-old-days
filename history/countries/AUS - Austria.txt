@@ -135,6 +135,17 @@ set_popularities = {
 	communism = 1
 }
 
+#Первый президент
+create_country_leader = {
+	name = "Karl Seitz"
+	desc = ""
+	picture = "gfx/leaders/AUS/Portrait_Seitz.dds"
+	expire = "1920.12.9"
+	ideology = socialism
+	traits = {
+	}
+}
+
 create_country_leader = {
 	name = "Karl I"
 	desc = ""
