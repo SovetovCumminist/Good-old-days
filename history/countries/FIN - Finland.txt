@@ -169,15 +169,97 @@ if = {
 set_convoys = 150
 
 set_popularities = {
-	democratic = 50
+	democratic = 20
 	communism = 20
-	fascism = 10
+	fascism = 40
 	neutrality = 20
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1917.1.1"
+	ruling_party = fascism
+	last_election = "1918.5.18"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+#Красная Финляндия
+create_country_leader = {
+	name = "Kullervo Manner"
+	desc = ""
+	picture = "gfx/leaders/FIN/Portrait_Manner.dds"
+	expire = "1936.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+#Проиграет президентские выборы
+create_country_leader = {
+	name = "Carl Gustaf Emil Mannerheim"
+	desc = ""
+	picture = "gfx/leaders/FIN/Portrait_Mannerheim.dds"
+	expire = "1936.5.1"
+	ideology = anticommunism
+	traits = {
+	}
+}
+
+#Уйдет после ухода монарха, потом будет Маннергейм
+create_country_leader = {
+	name = "Pehr Evind Svinhufvud"
+	desc = ""
+	picture = "gfx/leaders/FIN/Portrait_Svinhufvud.dds"
+	expire = "1918.12.12"
+	ideology = anticommunism
+	traits = {
+	}
+}
+
+1918.12.12 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1918.12.12"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	#Проиграет президентские выборы
+	create_country_leader = {
+		name = "Carl Gustaf Emil Mannerheim"
+		desc = ""
+		picture = "gfx/leaders/FIN/Portrait_Mannerheim.dds"
+		expire = "1919.7.17"
+		ideology = anticommunism
+		traits = {
+		}
+	}
+}
+
+1919.7.17 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1919.7.17"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+create_country_leader = {
+	name = "Kaarlo Juho Ståhlberg"
+	desc = ""
+	picture = "gfx/leaders/FIN/Portrait_Stahlberg.dds"
+	expire = "1925.3.2"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+#так и не был коронован, отрёкся под давлением Запада на Финляндию
+create_country_leader = {
+	name = "Fredrik Kaarle"
+	desc = ""
+	picture = "gfx/leaders/FIN/Portrait_Kaarle.dds"
+	expire = "1936.1.1"
+	ideology = democratic_monarchism
+	traits = {
+	}
 }

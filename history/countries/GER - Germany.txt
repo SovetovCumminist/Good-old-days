@@ -149,7 +149,7 @@ set_autonomy = {
 
 set_autonomy = {
 	target = UKR
-	autonomous_state = autonomy_puppet
+	autonomous_state = autonomy_dominion
 }
 
 set_autonomy = {

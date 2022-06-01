@@ -202,7 +202,6 @@ create_country_leader = {
 		election_frequency = 36
 		elections_allowed = no
 	}
-
 	set_popularities = {
 		democratic = 20
 		fascism = 50

@@ -163,58 +163,93 @@ declare_war_on = {
 set_convoys = 150
 
 set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 50
+	democratic = 30
+	neutrality = 30
+	communism = 40
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1917.1.1"
+	ruling_party = democratic
+	last_election = "1917.3.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Kost Levytsky"
+	name = Grigory Petrovsky"
 	desc = ""
-	picture = GFX_portrait_Kost_Levytsky
+	picture = "gfx/leaders/UKR/Portrait_Petrovsky.dds"
 	expire = "1936.1.1"
-	ideology = conservatism
+	ideology = national_communism
 	traits = {
-		
+	}
+}
+
+#Свергнут Скоропадским
+create_country_leader = {
+	name = "Mikhail Grushevsky"
+	desc = ""
+	picture = "gfx/leaders/UKR/Portrait_Grushevsky.dds"
+	expire = "1918.4.29"
+	ideology = socialism
+	traits = {
+	}
+}
+
+1918.4.29 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1918.4.29"
+		election_frequency = 36
+		elections_allowed = no
+	}
+}
+
+#Свергнут Директорией
+create_country_leader = {
+	name = "Pavel Skoropadsky"
+	desc = ""
+	picture = "gfx/leaders/UKR/Portrait_Skoropadsky.dds"
+	expire = "2018.12.14"
+	ideology = despotism
+	traits = {
+	}
+}
+
+#Первый глава Директории, про-советский
+2018.12.14 = {
+	create_country_leader = {
+		name = "Vladimir Vinnichenko"
+		desc = ""
+		picture = "gfx/leaders/UKR/Portrait_Vinnichenko.dds"
+		expire = "1919.4.29"
+		ideology = socialism
+		traits = {
+		}
+	}
+	set_politics = {
+		ruling_party = democratic
+		last_election = "2018.12.14"
+		election_frequency = 36
+		elections_allowed = no
+	}
+}
+
+1919.4.29 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1919.4.29"
+		election_frequency = 36
+		elections_allowed = no
 	}
 }
 
 create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchyov"
+	name = "Simon Petlyura"
 	desc = ""
-	picture = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
+	picture = "gfx/leaders/UKR/Portrait_Petlyura.dds"
 	expire = "1936.1.1"
-	ideology = marxism
+	ideology = anticommunism
 	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = GFX_portrait_Stepan_Bandera
-	expire = "1936.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = GFX_portrait_Stepan_Bandera
-	expire = "1936.1.1"
-	ideology = oligarchism
-	traits = {
-		
 	}
 }
