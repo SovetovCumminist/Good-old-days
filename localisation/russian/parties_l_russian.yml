@@ -62,6 +62,15 @@
  anticommunism:0 "Антикоммунизм"
  anticommunism_desc:0 "Антикоммунизм - контрреволюционная и авторитарная идеология характеризующаяся враждебностью в отношении к коммунистическим идеям, ставящая своей целью во что бы то ни стало загасить пламя революции."
  
+ ENG_communism_party:0 "СДПФ (Ультралевые)"
+ ENG_communism_party_long:0 "Социал-Демократическая Партия Финляндии (Ультралевое крыло)"
+ ENG_democratic_party:0 "НПП"
+ ENG_democratic_party_long:0 "Национальная Прогрессивная Партия"
+ ENG_neutrality_party:0 "Виндзоры"
+ ENG_neutrality_party_long:0 "Династия Виндзоры"
+ ENG_fascism_party:0 "Белофинны"
+ ENG_fascism_party_long:0 "Регенство при поддержке белофиннов"
+ 
  FIN_communism_party:0 "СДПФ (Ультралевые)"
  FIN_communism_party_long:0 "Социал-Демократическая Партия Финляндии (Ультралевое крыло)"
  FIN_democratic_party:0 "НПП"

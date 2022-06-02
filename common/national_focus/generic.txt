@@ -1,21 +1,12 @@
 ﻿search_filter_prios = {
 	FOCUS_FILTER_POLITICAL = 1010
-
-	
- 
-	
-	
 	FOCUS_FILTER_RESEARCH = 522
-
-	
 	FOCUS_FILTER_INDUSTRY = 509
-
 	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
 	FOCUS_FILTER_PROPAGANDA = 110
 	FOCUS_FILTER_ARMY_XP = 103
 	FOCUS_FILTER_NAVY_XP = 102
 	FOCUS_FILTER_AIR_XP = 101
-
 }
 
 focus_tree = {
@@ -31,12 +22,92 @@ focus_tree = {
 	initial_show_position = {
 		focus = industrial_effort
 	}
+	
+	focus = {
+		id = history_of_army
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = -1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = history_of_aviation
+		icon = GFX_goal_generic_build_airforce
+		x = 7
+		y = -1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = history_of_factories
+		icon = GFX_goal_generic_build_airforce
+		x = 11
+		y = -1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = history_of_political
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = -1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
 
 	focus = {
 		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
-		y = 0
+		prerequisite = { focus = history_of_army }
+		x = -2
+		y = 1
+		relative_position_id = history_of_army
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -276,8 +347,11 @@ focus_tree = {
 	focus = {
 		id = aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		x = 5
-		y = 0
+		prerequisite = { focus = history_of_army }
+		prerequisite = { focus = history_of_aviation }
+		x = 2
+		y = 1
+		relative_position_id = history_of_army
 		cost = 10
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
@@ -590,6 +664,8 @@ focus_tree = {
 	focus = {
 		id = naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = history_of_aviation }
+		prerequisite = { focus = history_of_factories }
 		x = 9
 		y = 0
 		cost = 10
@@ -953,6 +1029,7 @@ focus_tree = {
 	focus = {
 		id = industrial_effort
 		icon = GFX_goal_generic_production
+		prerequisite = { focus = history_of_factories }
 		x = 13
 		y = 0
 		cost = 10
@@ -1733,10 +1810,249 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = stabilization
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = history_of_political }
+		x = 29
+		y = 0
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			has_stability > 0.5
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 300
+		}
+	}
+	
+	focus = {
+		id = strong_the_monarchy
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = stabilization }
+		x = 0
+		y = 1
+		relative_position_id = stabilization
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = AUS
+			}
+			modifier = {
+				factor = 0
+				tag = SAU
+				is_in_faction_with = SOV
+				SOV = { has_government = communism }
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
+			}
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = victory_of_revolution
+		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = stabilization }
+		available = {
+			has_government = communism
+		}
+		x = -3
+		y = 1
+		relative_position_id = stabilization
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = communism }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 720
+			}
+		}
+	}
+	
+	focus = {
+		id = proclaim_soviet_republic
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = victory_of_revolution }
+		x = 1
+		y = 1
+		relative_position_id = victory_of_revolution
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}		
+			add_political_power = 200
+			add_ideas = idea_political_correctness
+		}
+	}
+	
+	focus = {
+		id = crush_the_state
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		prerequisite = { focus = victory_of_revolution }
+		available = {
+			has_government = communism
+		}
+		x = -1
+		y = 1
+		relative_position_id = victory_of_revolution
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = communism }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 720
+			}
+		}
+	}
+	
+	focus = {
+		id = white_idea
+		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = stabilization }
+		available = {
+				has_government = fascism
+			has_government = neutrality
+		}
+		x = 3
+		y = 1
+		relative_position_id = stabilization
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+			modifier = {
+				factor = 10
+				has_idea = SOV_russian_political_influence
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = nationalism
+				days = 720
+			}
+		}
+	}
+	
+	focus = {
+		id = anticommunism
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = white_idea }
+		x = 0
+		y = 1
+		relative_position_id = white_idea
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}			
+			add_ideas = militarism_focus
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
 
 	focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = history_of_political }
 		x = 19
 		y = 0
 		cost = 10
@@ -1757,7 +2073,6 @@ focus_tree = {
 		mutually_exclusive = { focus = liberty_ethos}
 		available = {
 			OR = {
-				has_government = fascism
 				has_government = communism
 				has_government = neutrality
 			}
@@ -1897,7 +2212,7 @@ focus_tree = {
 				days = 720
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = liberty_ethos

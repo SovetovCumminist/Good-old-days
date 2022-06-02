@@ -1,0 +1,364 @@
+﻿capital = 126
+
+set_oob = "ENG_1936"
+
+starting_train_buffer = 4
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ENG_1936_Naval"
+	else = {
+		set_naval_oob = "ENG_1936_Naval_Legacy"
+	}
+}
+
+load_oob = "ENG_Motorized"
+
+set_research_slots = 5
+
+set_stability = 0.6
+set_war_support = 0.5
+add_command_power = 20
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	basic_train = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+set_variable = { var = eng_gateway_to_europe_influence value = 0 }
+
+add_ideas = {
+	partial_economic_mobilisation
+	limited_conscription
+	stiff_upper_lip
+	george_v
+}
+	
+
+set_convoys = 800
+
+# DIPLOMACY
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = MAL
+		puppet = RAJ
+	}
+}
+
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+1921.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#adding ministers
+	add_ideas = {		
+		ENG_the_war_to_end_all_wars
+	}
+
+	#recruit_character = ENG_neville_chamberlain
+	promote_character = ENG_neville_chamberlain
+	retire_character = ENG_stanley_baldwin
+	
+	set_oob = "ENG_1939"
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "ENG_1939_Naval"
+		else = {
+			set_naval_oob = "ENG_1939_Naval_Legacy"
+		}
+	}
+
+	set_technology = {
+		fighter1 = 1
+		fighter2 = 1
+		heavy_fighter1 = 1
+		heavy_fighter2 = 1
+		CAS2 = 1
+		naval_bomber2 = 1
+		tactical_bomber1 = 1
+		tactical_bomber2 = 1
+		strategic_bomber1 = 1
+		cv_CAS1 = 1
+		cv_fighter1 = 1
+		
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		
+
+		#doctrines
+		#Air
+		air_superiority = 1
+		home_defence = 1
+		naval_strike_tactics = 1
+
+		grand_battle_plan = 1
+
+		prepared_defense = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+		convoy_escorts = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+			improved_light_tank = 1
+			basic_medium_tank = 1
+			basic_heavy_tank = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			improved_light_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			basic_heavy_tank_chassis = 1
+			armor_tech_1 = 1
+			engine_tech_1 = 1
+		}
+	}
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns"}
+		}
+		set_technology = {
+			basic_submarine = 1
+			improved_submarine = 1
+			improved_destroyer = 1
+			basic_light_cruiser = 1
+			improved_light_cruiser = 1
+			basic_battleship = 1
+			basic_carrier = 1
+			improved_carrier = 1
+		}
+		set_naval_oob = "ENG_1939_Naval_Legacy"
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			basic_ship_hull_submarine = 1
+			improved_ship_hull_submarine = 1
+			improved_ship_hull_light = 1
+			improved_ship_hull_cruiser = 1
+			basic_ship_hull_heavy = 1
+			
+			improved_ship_hull_carrier = 1
+			dp_secondary_battery = 1
+			improved_sonar = 1
+		}
+		set_naval_oob = "ENG_1939_Naval"
+	}
+
+	set_convoys = 800
+}
+
+give_military_access = RAJ
+
+#give_guarantee = CZE
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.5.6"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	neutrality = 45
+	democratic = 40
+	fascism = 14
+	communism = 1
+}
+
+create_country_leader = {
+	name = "George V"
+	desc = ""
+	picture = "gfx/leaders/ENG/Portrait_George.dds"
+	expire = "1936.1.1"
+	ideology = democratic_monarchism
+	traits = {
+	}
+}
