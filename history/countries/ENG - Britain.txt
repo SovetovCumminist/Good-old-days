@@ -349,8 +349,8 @@ set_politics = {
 set_popularities = {
 	neutrality = 45
 	democratic = 40
-	fascism = 14
-	communism = 1
+	communism = 14
+	fascism = 1
 }
 
 create_country_leader = {
@@ -359,6 +359,36 @@ create_country_leader = {
 	picture = "gfx/leaders/ENG/Portrait_George.dds"
 	expire = "1936.1.1"
 	ideology = democratic_monarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Albert Inkpin"
+	desc = ""
+	picture = "gfx/leaders/ENG/Portrait_Inkpin.dds"
+	expire = "1936.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "David Lloyd George"
+	desc = ""
+	picture = "gfx/leaders/ENG/Portrait_Lloyd.dds"
+	expire = "1936.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Andrew Bonar Law"
+	desc = ""
+	picture = "gfx/leaders/ENG/Portrait_Law.dds"
+	expire = "1936.1.1"
+	ideology = conservatism
 	traits = {
 	}
 }
