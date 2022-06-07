@@ -43,10 +43,7 @@ autonomy_state = {
 			limit = {
 				original_tag = AST
 			}
-			OR = {
-				has_government = communism
-				has_government = anarchy
-			}
+			has_government = communism
 		}
 		if = {
 			limit = {
