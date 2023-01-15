@@ -1,25 +1,11 @@
 ﻿capital = 2
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ITA_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ITA_1936_nsb"
-}
-
 starting_train_buffer = 1.5
 
 set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
+
 add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
@@ -30,14 +16,14 @@ add_ideas = {
 
 550 = {
 	start_resistance = yes
-	set_compliance = 10
+	set_compliance = 50
 	set_resistance = 0
 	set_garrison_strength = 1.0
 }
 
 559 = {
 	start_resistance = yes
-	set_compliance = 10
+	set_compliance = 50
 	set_resistance = 0
 	set_garrison_strength = 1.0
 }
@@ -138,15 +124,18 @@ if = {
 
 # DIPLOMACY / WAR 36
 if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
 	declare_war_on = {
-		target = ETH
+		target = GER
 		type = annex_everything
 	}
-	give_guarantee = ALB
+	declare_war_on = {
+		target = AUS
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = TUR
+		type = annex_everything
+	}
 }
 
 1921.1.1 = {
