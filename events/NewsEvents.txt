@@ -1345,19 +1345,6 @@ news_event = {
 	option = {
 		name = news.37.b
 		trigger = { TAG = SOV }
-
-		if = {
-			limit = {
-				has_idea = trotskyite_plot_nsb
-			}
-			effect_tooltip = {
-				retire_character = SOV_lev_trotsky
-				swap_ideas = {
-					remove_idea = trotskyite_plot_nsb
-					add_idea = trotskyite_plot_purged
-				}
-			}
-		}
 	}
 
 	option = {
@@ -1902,8 +1889,7 @@ news_event = {
 			NOT = { is_in_faction_with = GER }
 		}
 		GER = {
-			has_completed_focus = GER_demand_memel
-			NOT = { has_completed_focus = GER_poland_friend }
+			has_government = fascism
 		}
 	}
 	
@@ -5084,10 +5070,7 @@ news_event = {
 	trigger = {
 		NOT = { has_global_flag = rhineland_militarized_war }
 		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-				NOT = { has_completed_focus = GER_rhineland }
-			}
+			has_government = fascism
 			has_offensive_war = yes
 		}
 		42 = {
@@ -5261,7 +5244,7 @@ news_event = {
 		GER = {
 			OR = {
 				has_country_flag = GER_rhineland_backed_down
-				NOT = { has_completed_focus = GER_rhineland }
+				NOT = { has_government = fascism }
 			}
 			has_defensive_war = yes
 			NOT = { has_civil_war = yes }

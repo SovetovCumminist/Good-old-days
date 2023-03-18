@@ -4,7 +4,7 @@ state={
 	name="STATE_677"
 
 	history={
-		owner = TUR
+		owner = OTT
 		controller = FRA
 		victory_points = {
 			12473 3 
@@ -13,7 +13,7 @@ state={
 			1056 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 		add_core_of = SYR

@@ -1236,7 +1236,7 @@ news_event = {
 				tag = ENG
 				AND = {
 					tag = GER
-					has_completed_focus = GER_oppose_hitler
+					has_government = neutrality
 				}
 			}
 		}
@@ -1259,7 +1259,7 @@ news_event = {
 					tag = GRE
 					AND = {
 						tag = GER
-						has_completed_focus = GER_oppose_hitler
+						has_government = neutrality
 					}
 					tag = ITA
 					tag = BUL

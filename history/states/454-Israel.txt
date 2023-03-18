@@ -7,10 +7,10 @@ state={
 	state_category = rural
 
 	history={
-		owner = TUR
+		owner = OTT
 		controller = ENG
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			industrial_complex = 1
 			air_base = 2
 			4206 = {

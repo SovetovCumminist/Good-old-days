@@ -45,7 +45,7 @@ bookmarks = {
 			}
 		}
 		
-		TUR = {
+		OTT = {
 			history = ""
 			ideology = neutrality
 			ideas = {

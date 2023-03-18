@@ -16,12 +16,11 @@ state={
 		}
 		owner = UKR
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			air_base = 3
 		}
 		add_core_of = SOV add_core_of = RUS
 		add_core_of = UKR
-		add_core_of = CRI
 	}
 
 	provinces={

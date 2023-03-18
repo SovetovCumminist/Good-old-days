@@ -15,7 +15,6 @@ ideas = {
 		
 		modifier = {
 			monthly_population = -0.20
-			stability_factor = -0.01
 		}
 	}
 	

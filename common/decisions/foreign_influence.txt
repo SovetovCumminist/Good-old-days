@@ -15,10 +15,7 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				or = {
-					democratic < 0.9
-					conservocratic < 0.9
-				}
+				democratic < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -30,10 +27,7 @@ foreign_influence = {
 			has_government = democratic
 			FROM = {
 				is_puppet_of = ROOT
-				or = {
-					democratic < 0.9
-					conservocratic < 0.9
-				}
+				democratic < 0.9
 			}
 		}
 
@@ -182,7 +176,7 @@ foreign_influence = {
 
 			FROM = {
 				is_puppet_of = ROOT
-				reactionism < 0.9
+				fascism < 0.9
 			}
 		}
 
@@ -197,58 +191,6 @@ foreign_influence = {
 		complete_effect = {
 			FROM = {
 				add_timed_idea = { idea = paramilitary_training days = 120 }
-				army_experience = 10
-			}
-		}
-
-		modifier = {
-			political_power_cost = 0.5
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	react_paramilitary_training = {
-
-		icon = eng_propaganda_campaigns
-
-		days_remove = 120
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				reactionism < 0.9
-			}
-			OR = {
-				political_power_daily > 0.5
-				has_political_power > 60
-			}
-		}
-
-		visible = {
-			has_government = reactionism
-
-			FROM = {
-				is_puppet_of = ROOT
-				reactionism < 0.9
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = {
-				add_timed_idea = { idea = react_paramilitary_training days = 120 }
 				army_experience = 10
 			}
 		}
@@ -366,61 +308,6 @@ foreign_influence = {
 		}
 	}
 	
-	con_police_action = {
-
-		icon = generic_prepare_civil_war
-		
-		cost = 50
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				conservocratic > 0.6
-			}
-			FROM = {
-				NOT = { has_government = conservocratic }
-			}
-		}
-
-		visible = {
-			has_government = conservocratic
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = conservocratic }
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = { country_event = { id = mtg_generic.1 } }
-			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
-				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = conservocratic
-					elections_allowed = yes
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
 	fraternal_republic = {
 
 		icon = generic_prepare_civil_war
@@ -473,113 +360,6 @@ foreign_influence = {
 		
 		ai_will_do = {
 			factor = 0
-		}
-	}
-	
-	anarchy_fraternal_republic = {
-
-		icon = generic_prepare_civil_war
-		
-		cost = 50
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				anarchy > 0.6
-			}
-			FROM = {
-				NOT = { has_government = anarchy }
-			}
-		}
-
-		visible = {
-			has_government = anarchy
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = anarchy }
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = { country_event = { id = mtg_generic.1 } }
-			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
-				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = anarchy
-					elections_allowed = no
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	anarchy_revolution = {
-
-		icon = generic_prepare_civil_war
-		
-		cost = 50
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				NOT = { has_government = anarchy }
-			}
-		}
-
-		visible = {
-			has_government = anarchy
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = anarchy }
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = {
-				add_timed_idea = {
-					idea = shattered_government
-					days = 365
-				}
-			}
-			FROM = {
-				start_civil_war = {
-					ruling_party = anarchy
-					ideology = ROOT
-					size = 0.1
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 10
 		}
 	}
 	
@@ -693,61 +473,6 @@ foreign_influence = {
 		}
 	}
 	
-	military_dictatorship = {
-
-		icon = generic_prepare_civil_war
-		
-		cost = 50
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				reactionism > 0.6
-			}
-			FROM = {
-				NOT = { has_government = reactionism }
-			}
-		}
-
-		visible = {
-			has_government = reactionism
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = reactionism }
-			}
-		}
-
-		target_array = subjects
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		complete_effect = {
-			FROM = { country_event = { id = mtg_generic.1 } }
-			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
-				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = reactionism
-					elections_allowed = no
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
 	instantiate_collaboration = {
 		icon = generic_prepare_civil_war
 		
@@ -786,7 +511,7 @@ foreign_influence = {
 			}
 			
 			modifier = {
-				has_government = reactionism
+				has_government = fascism
 				factor = 0
 			}
 			

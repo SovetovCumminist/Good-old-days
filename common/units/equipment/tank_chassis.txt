@@ -7,7 +7,7 @@ equipments = {
 
 		can_be_produced = {
 			NOT = {
-				has_idea = BUL_army_restrictions
+				has_idea = Central_Powers_occupation
 			}
 		}
 
@@ -234,7 +234,7 @@ equipments = {
 		is_buildable = no
 		can_be_produced = {
 			NOT = {
-				has_idea = BUL_army_restrictions
+				has_idea = Central_Powers_occupation
 			}
 		}
 		picture = archetype_medium_tank_equipment
@@ -457,7 +457,7 @@ equipments = {
 		is_buildable = no
 		can_be_produced = {
 			NOT = {
-				has_idea = BUL_army_restrictions
+				has_idea = Central_Powers_occupation
 			}
 		}
 		picture = archetype_heavy_tank_equipment
@@ -679,7 +679,7 @@ equipments = {
 		is_buildable = no
 		can_be_produced = {
 			NOT = {
-				has_idea = BUL_army_restrictions
+				has_idea = Central_Powers_occupation
 			}
 		}
 		picture = archetype_modern_tank_equipment
@@ -846,7 +846,7 @@ equipments = {
 		is_buildable = no
 		can_be_produced = {
 			NOT = {
-				has_idea = BUL_army_restrictions
+				has_idea = Central_Powers_occupation
 			}
 		}
 		picture = archetype_super_heavy_tank_equipment
@@ -1014,7 +1014,7 @@ equipments = {
 		is_buildable = no
 		can_be_produced = {
 			NOT = {
-				has_idea = BUL_army_restrictions
+				has_idea = Central_Powers_occupation
 			}
 		}
 		picture = archetype_amphibious_tank_equipment

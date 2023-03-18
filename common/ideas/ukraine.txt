@@ -1,0 +1,102 @@
+ideas = {
+
+	country = {
+		
+		#Украинское государство
+		Ukraine_State = {
+			
+			allowed = {
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+			}
+
+			picture = chi_war_of_resistance
+			
+			modifier = {
+				political_power_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+			}
+		}
+		
+		#III Универсал
+		III_Universal = {
+			
+			allowed = {
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				stability_weekly = 0.01
+				autonomy_gain = 0.01
+			}
+		}
+		
+		#Оккупация Центральными Державами
+		Central_Powers_occupation = {
+			
+			allowed = {
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+			}
+
+			picture = german_advisors
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				stability_weekly = -0.01
+				custom_modifier_tooltip = Country_in_occupation_tt
+			}
+			
+			on_remove = {
+				country_lock_all_division_template = no
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}
+		}
+		
+		#Красное движение
+		Red_Movement = {
+			
+			allowed = {
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+			}
+
+			picture = idea_home_of_revolution
+			
+			modifier = {
+				stability_weekly = -0.01
+				political_power_factor = -0.10
+				communism_drift = 0.02
+				
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
+				production_speed_naval_base_factor = -0.15
+				production_speed_coastal_bunker_factor = -0.15
+				production_speed_bunker_factor = -0.15
+				production_speed_air_base_factor = -0.15
+				production_speed_anti_air_building_factor = -0.15
+				production_speed_synthetic_refinery_factor = -0.15
+				production_speed_infrastructure_factor = -0.15
+			}
+		}
+	}
+}

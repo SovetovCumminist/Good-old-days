@@ -64,12 +64,12 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_SOV_absolutism"
-		texturefile = "gfx/interface/ideologies/SOV_absolutism.png"
+		texturefile = "gfx/interface/ideologies/RUS_absolutism.png"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_SOV_democratic_monarchism"
-		texturefile = "gfx/interface/ideologies/SOV_democratic_monarchism.png"
+		texturefile = "gfx/interface/ideologies/RUS_democratic_monarchism.png"
 	}
 	
 	spriteType = {
@@ -102,6 +102,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/AUH_democratic_monarchism.png"
 	}
 	
+	#Монархизм
+	
 	spriteType = {
 		name = "GFX_ideology_despotism"
 		texturefile = "gfx/interface/ideologies/despotism.png"
@@ -122,6 +124,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/democratic_monarchism.png"
 	}
 	
+	spriteType = {
+		name = "GFX_ideology_theocracy"
+		texturefile = "gfx/interface/ideologies/theocracy.png"
+	}
+	
+	#Реваншизм
 	
 	spriteType = {
 		name = "GFX_ideology_nazism"

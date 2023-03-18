@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = CRI
+		owner = GER
 		victory_points = {
 			3686 20
 		}
@@ -18,7 +18,7 @@ state={
 			6704 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			dockyard = 1
 			air_base = 3
 			3686 ={

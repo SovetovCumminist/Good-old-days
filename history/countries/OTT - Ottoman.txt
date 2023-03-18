@@ -1,0 +1,84 @@
+﻿capital = 49
+
+set_oob = "OTT_1918"
+
+set_research_slots = 2
+
+set_convoys = 400
+
+set_stability = 0.1
+
+set_war_support = 0.1
+
+set_medium_tech = yes
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1900.2.8"
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 60
+	neutrality = 20
+	communism = 20
+}
+
+#Первая мировая
+1914.11.2 = {
+	declare_war_on = {
+		target = RUS
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ENG
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+}
+
+#Монархизм (Единение и Прогресс правили до 1918.11.3, но пока партии представлены не будут, пусть лидеры и будут представлены конституционной монархией)
+create_country_leader = {
+	name = "Mehmed V"
+	desc = ""
+	picture = "gfx/leaders/OTT/Portrait_Mehmed_V.dds"
+	expire = "1918.7.3"
+	ideology = democratic_monarchism
+	traits = {
+	}
+}
+
+#Коммунизм (КПТ - Основана	10 сентября 1920)
+create_country_leader = {
+	name = "Mustafa Sufi"
+	desc = ""
+	picture = "gfx/leaders/OTT/Portrait_Mustafa.dds"
+	expire = "1921.1.29"
+	ideology = marxism
+	traits = {
+	}
+}
+
+#Второй сценарий
+1921.1.1 = {
+	oob = "TUR_1921"
+	
+	add_political_power = 1198
+	add_command_power = 100
+	
+	set_second_medium_tech = yes
+}
+
+#Монархизм
+create_country_leader = {
+	name = "Mehmed VI"
+	desc = ""
+	picture = "gfx/leaders/OTT/Portrait_Mehmed_VI.dds"
+	expire = "1922.11.1"
+	ideology = democratic_monarchism
+	traits = {
+	}
+}
