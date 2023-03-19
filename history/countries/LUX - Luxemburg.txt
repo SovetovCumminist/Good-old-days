@@ -39,7 +39,7 @@ set_stability = 0.8
 
 1921.1.1 = {
 
-	add_political_power = 1198
+	add_political_power = 666
 	add_command_power = 100
 	
 	#generic focuses

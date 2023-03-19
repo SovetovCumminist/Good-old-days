@@ -46,7 +46,7 @@ save_global_event_target_as = WTT_communist_china
 
 1921.1.1 = {
 
-	add_political_power = 1198
+	add_political_power = 666
 	add_command_power = 100
 	oob = "PRC_1939"
 

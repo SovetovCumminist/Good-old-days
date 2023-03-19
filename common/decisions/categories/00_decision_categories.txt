@@ -38,6 +38,10 @@ foreign_influence = {
 	icon = generic_political_actions
 }
 
+neutrality_on_the_rise = {
+	icon = generic_fascism
+}
+
 fascism_on_the_rise = {
 	icon = generic_fascism
 }

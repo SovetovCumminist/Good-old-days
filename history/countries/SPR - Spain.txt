@@ -52,7 +52,7 @@ set_popularities = {
 	oob = "SPR_1921"
 	set_naval_oob = "SPR_1921_naval"
 	
-	add_political_power = 1198
+	add_political_power = 666
 	add_command_power = 100
 	
 	complete_national_focus = army_effort

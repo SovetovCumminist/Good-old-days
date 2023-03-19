@@ -12,27 +12,7 @@
 # contain
 # area_priority
 
-
-# Build infra if possible
-ETH_build_infrastructure_if_possible = {
-
-	allowed = { has_dlc = "By Blood Alone" }
-	enable = {
-		original_tag = ETH 
-		has_idea = ETH_rebuilding_the_country_idea
-	}
-
-	abort_when_not_enabled = yes 
-
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 271
-		value = 200
-	}
-}
-
-# Don't lend lease to ETh
+# Don't lend lease to ETH
 ETH_lon_dont_support_ethiopia_with_weapons = {
 
 	allowed = { has_dlc = "By Blood Alone" }

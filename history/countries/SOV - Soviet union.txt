@@ -2,230 +2,29 @@
 
 starting_train_buffer = 3.0
 
-set_oob = "SOV_1936"
+set_oob = "SOV_1918"
+
+set_stability = 0.15
+set_war_support = 0.15
 
 set_research_slots = 3
-
-set_stability = 0.5
-set_war_support = 0.3
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_military_police = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	paratroopers = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	mass_assault = 1
-	fleet_in_being = 1
-	fuel_silos = 1
-	fuel_refining = 1
-	synth_oil_experiments = 1
-	basic_train = 1
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		engine_tech_1 = 1
-		engine_tech_2 = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		mtg_transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-		armored_car1 = 1
-	}
-}
-
-1921.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	set_stability = 0.55
-	set_war_support = 0.70
-
-	#LAWS
-	add_ideas = {
-		war_economy
-		extensive_conscription
-	}
-	
-	set_oob = "SOV_1939"
-	
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SOV_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SOV_1939_naval_legacy"
-		}
-	}
-
-	set_technology = {
-		CAS1 = 1
-		tactical_bomber1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-
-		#doctrines
-		pocket_defence = 1
-		defence_in_depth = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#Air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-			improved_light_tank = 1 
-			basic_heavy_tank = 1    # Should be available in 1936 (T-35)
-			basic_medium_tank = 1 # Should be available in 1936 (T-28)
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			improved_light_tank_chassis = 1
-			basic_heavy_tank_chassis = 1
-			basic_medium_tank_chassis = 1 
-		}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			basic_destroyer = 1
-			basic_heavy_cruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			improved_ship_hull_light = 1
-			improved_ship_hull_submarine = 1
-			basic_ship_hull_cruiser = 1
-		}
-	}
-}
-
+set_medium_tech = yes
 
 set_convoys = 500
 
-set_cosmetic_tag = SOV_soviet_republic
-
-create_faction = Left_Movement
-add_to_faction = SOV
-#add_to_faction = MON
-#add_to_faction = TAN
-
 add_ideas = {
-	Vladimir_Lenin
+	Vladimir_Lenin_Cult
 }
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1933.7.1"
+	last_election = "1917.10.25"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	democratic = 8
-	neutrality = 2
+	democratic = 10
 	communism = 90
 }
 
@@ -236,6 +35,17 @@ create_country_leader = {
 	picture = "gfx/leaders/SOV/Portrait_Martov.dds"
 	expire = "1936.1.1"
 	ideology = socialism
+	traits = {
+	}
+}
+
+#Первый глава ВЦИК, умер во время эпидемии испанского гриппа 
+create_country_leader = {
+	name = "Yakov Sverdlov"
+	desc = ""
+	picture = "gfx/leaders/SOV/Portrait_Sverdlov.dds"
+	expire = "1919.3.16"
+	ideology = leninism
 	traits = {
 	}
 }
@@ -251,32 +61,49 @@ create_country_leader = {
 	}
 }
 
-#Глава РСФСР, а позже и СССР с 30 марта 1919 по 15 июля 1938
-create_country_leader = {
-	name = "Mikhail Kalinin"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Kalinin.dds"
-	expire = "1936.1.1"
-	ideology = leninism
-	traits = {
-	}
+#Образование РСФСР
+1917.10.25 = {
+	set_cosmetic_tag = SOV_soviet_republic
+
+	create_faction = Left_Movement
+	add_to_faction = SOV
 }
+
+#После смерти Свердлова, главой страны стал Калинин
 1919.3.16 = {
+	#Второй глава ВЦИК, Глава РСФСР, а позже и СССР с 30 марта 1919 по 15 июля 1938
+	create_country_leader = {
+		name = "Mikhail Kalinin"
+		desc = ""
+		picture = "gfx/leaders/SOV/Portrait_Kalinin.dds"
+		expire = "1936.1.1"
+		ideology = leninism
+		traits = {
+		}
+	}
+	
 	set_politics = {
 		ruling_party = communism
-		last_election = "1936.1.1"
+		last_election = "1919.3.16"
 		election_frequency = 48
 		elections_allowed = no
 	}
 }
 
-#Умер во время эпидемии испанского гриппа 
-create_country_leader = {
-	name = "Yakov Sverdlov"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Sverdlov.dds"
-	expire = "1919.3.16"
-	ideology = leninism
-	traits = {
+1921.1.1 = {
+	set_oob = "SOV_1921"
+
+	add_political_power = 666
+	add_command_power = 100
+	
+	set_stability = 0.55
+	set_war_support = 0.70
+
+	#LAWS
+	add_ideas = {
+		new_economic_policy
+		extensive_conscription
 	}
+	
+	set_second_medium_tech = yes
 }

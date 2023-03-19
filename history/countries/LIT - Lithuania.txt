@@ -76,7 +76,7 @@ set_convoys = 10
 	remove_ideas = LIT_iron_wolf_idea_bad_1
 	remove_ideas = LIT_agrarian_society
 
-	add_political_power = 1198
+	add_political_power = 666
 	add_command_power = 100
 	
 	complete_national_focus = LIT_secure_a_loyal_cabinet

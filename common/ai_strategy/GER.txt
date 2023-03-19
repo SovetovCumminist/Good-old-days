@@ -485,7 +485,6 @@ dont_die_in_mountains = {
 		original_tag = GER
 	}
 	enable = {
-		date < 1942.5.1
 		country_exists = SWI
 		is_historical_focus_on = yes
 	}
@@ -493,10 +492,9 @@ dont_die_in_mountains = {
 		OR = {
 			AND = {
 				NOT = { country_exists = FRA }
-				date > 1942.5.1
 			}
 			SWI = {	
-				NOt = {has_idea = SWI_swiss_neutrality}
+				NOt = { has_idea = neutrality_idea }
 			}
 		}
 	}
@@ -3012,7 +3010,7 @@ GER_avoid_war_with_SWI = {
 		OR = {
 			has_wargoal_against = SWI
 			SWI = {
-				NOT = { has_idea = SWI_swiss_neutrality }
+				NOT = { has_idea = neutrality_idea }
 			}
 		}
 	}

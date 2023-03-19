@@ -80,7 +80,7 @@ give_guarantee = URG
 1921.1.1 = {
 	oob = "USA_1921"
 	
-	add_political_power = 1198
+	add_political_power = 666
 	add_command_power = 100
 	
 	set_second_hight_tech = yes

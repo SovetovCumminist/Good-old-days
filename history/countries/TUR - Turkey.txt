@@ -29,7 +29,7 @@ set_popularities = {
 1921.1.1 = {
 	oob = "TUR_1921"
 	
-	add_political_power = 1198
+	add_political_power = 666
 	add_command_power = 100
 	
 	set_second_medium_tech = yes

@@ -5,13 +5,12 @@ set_oob = "GER_1918"
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
-set_research_slots = 4
-
 set_convoys = 400
 
 set_stability = 0.15
 set_war_support = 0.15
 
+set_research_slots = 4
 set_hight_tech = yes
 
 add_ideas = {
@@ -176,7 +175,7 @@ add_to_faction = BUL
 	}
 }
 #Литва
-#1918.2.16 = { 
+1918.2.16 = { 
 	set_autonomy = {
 		target = LIT
 		autonomous_state = autonomy_puppet
@@ -189,65 +188,65 @@ add_to_faction = BUL
 	}
 }
 #Герцогство Курляндское и Земгальское
-#1918.3.8 = {
+1918.3.8 = {
 	set_autonomy = {
 		target = LAT
 		autonomous_state = autonomy_puppet
 	}
 }
-#1918.11.18 = {
+1918.11.18 = {
 	set_autonomy = {
 		target = LAT
 		autonomous_state = autonomy_puppet
 	}
 }
 #Объединенное Балтийское Герцогство
-#1918.9.22 = {
+1918.9.22 = {
 	set_autonomy = {
 		target = EST
 		autonomous_state = autonomy_puppet
 	}
 }
-#1918.11.28 = {
+1918.11.28 = {
 	set_autonomy = {
 		target = EST
 		autonomous_state = autonomy_puppet
 	}
 }
 #Белорусская Народная Республика
-#1918.3.8 = {
+1918.3.8 = {
 	set_autonomy = {
 		target = BLR
 		autonomous_state = autonomy_puppet
 	}
 }
-#1919.3.1 = {
+1919.3.1 = {
 	set_autonomy = {
 		target = BLR
 		autonomous_state = autonomy_puppet
 	}
 }
 #Украинское Государство
-#1918.4.29 = {
+1918.4.29 = {
 	set_autonomy = {
 		target = UKR
 		autonomous_state = autonomy_puppet
 	}
 }
-#1919.12.14 = {
+1919.12.14 = {
 	set_autonomy = {
 		target = UKR
 		autonomous_state = autonomy_puppet
 	}
 }
 #Крымское Краевое Правительство
-#1918.6.25 = {
+1918.6.25 = {
 	set_autonomy = {
 		target = CRI
 		autonomous_state = autonomy_puppet
 	}
 }
-#1919.4.2 = {
+1919.4.2 = {
 	set_autonomy = {
 		target = CRI
 		autonomous_state = autonomy_puppet

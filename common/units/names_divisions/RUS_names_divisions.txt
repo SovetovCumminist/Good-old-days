@@ -36,7 +36,7 @@ RUS_INF_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "infantry" }
 
@@ -64,7 +64,7 @@ RUS_INF_01 =
 		51 = { "%dya 'Perekopskaya' Strelk. Div." }
 		2 = { "%dya 'Belorusskaya' Strelk. Div." }
 		15 = { "%dya 'Sivashskaya' Strelk. Div." }
-		31 = { "%dya 'Stalingradskaya' Strelk. Div." }
+		31 = { "%dya 'Kerenskiygradskaya' Strelk. Div." }
 		37 = { "%dya Strelkovaya Diviziya" }
 		56 = { "%dya 'Moskva' Strelk. Div." }
 		57 = { "%dya 'Ural'skaya' Strelk. Div." }
@@ -471,7 +471,7 @@ RUS_CAV_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "cavalry" }
 
@@ -608,7 +608,7 @@ RUS_MOT_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "motorized" }
 
@@ -653,17 +653,17 @@ RUS_MOT_01 =
 		221 = { "%dya Motostrelkovaya Diviziya" }
 		236 = { "%dya Motostrelkovaya Diviziya" }
 		239 = { "%dya Motostrelkovaya Diviziya" }
-		801 = { "%OMSDON 'Dzerzhinskiy' Diviziya" }
-		821 = { "21ya NKVD Motostrelkovaya Diviziya" }
-		822 = { "22ya NKVD Motostrelkovaya Diviziya" }
-		823 = { "23ya NKVD Motostrelkovaya Diviziya" }
-		802 = { "2ya NKVD Motostrelkovaya Diviziya" }
-		806 = { "6ya NKVD Motostrelkovaya Diviziya" }
-		803 = { "3ya NKVD Motostrelkovaya Diviziya" }
-		804 = { "4ya NKVD Motostrelkovaya Diviziya" }
-		808 = { "8ya NKVD Motostrelkovaya Diviziya" }
-		807 = { "7ya NKVD Motostrelkovaya Diviziya" }
-		809 = { "9ya NKVD Motostrelkovaya Diviziya" }
+		801 = { "%OMSDON 'Romanov' Diviziya" }
+		821 = { "21ya Tsarskaya Ohranka" }
+		822 = { "22ya Tsarskaya Ohranka" }
+		823 = { "23ya Tsarskaya Ohranka" }
+		802 = { "2ya Tsarskaya Ohranka" }
+		806 = { "6ya Tsarskaya Ohranka" }
+		803 = { "3ya Tsarskaya Ohranka" }
+		804 = { "4ya Tsarskaya Ohranka" }
+		808 = { "8ya Tsarskaya Ohranka" }
+		807 = { "7ya Tsarskaya Ohranka" }
+		809 = { "9ya Tsarskaya Ohranka" }
 	}
 }
 
@@ -673,7 +673,7 @@ RUS_MEC_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "mechanized" "motorized" }
 
@@ -726,7 +726,7 @@ RUS_ARM_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -819,7 +819,7 @@ RUS_ARM_02 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -1005,7 +1005,7 @@ RUS_ARM_04 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -1098,7 +1098,7 @@ RUS_PAR_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "paratrooper" }
 
@@ -1156,7 +1156,7 @@ RUS_MAR_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "marine" }
 
@@ -1188,7 +1188,7 @@ RUS_MNT_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "mountaineers" }
 
@@ -1232,98 +1232,98 @@ RUS_GAR_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { RUS_INF_01 }
 
-	fallback_name = "%dya NKVD Pogranichnaya Diviziya"
+	fallback_name = "%dya Tsarskaya Ohranka"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dya NKVD Pogranichnaya Diviziya" }
-		2 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		3 = { "%dya NKVD Pogranichnaya Diviziya" }
-		4 = { "%dya NKVD Pogranichnaya Diviziya" }
-		5 = { "%dya NKVD Pogranichnaya Diviziya" }
-		6 = { "%dya NKVD Pogranichnaya Diviziya" }
-		7 = { "%dya NKVD Pogranichnaya Diviziya" }
-		8 = { "%dya NKVD Pogranichnaya Diviziya" }
-		9 = { "%dya NKVD Pogranichnaya Diviziya" }
-		10 = { "%dya NKVD Pogranichnaya Diviziya" }
-		11 = { "%dya NKVD Pogranichnaya Diviziya" }
-		12 = { "%dya NKVD Pogranichnaya Diviziya" }
-		13 = { "%dya NKVD Pogranichnaya Diviziya" }
-		14 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		15 = { "%dya NKVD SU Otdel Diviziya" }
-		16 = { "%dya NKVD SU Otdel Diviziya" }
-		17 = { "%dya NKVD Pogranichnaya Diviziya" }
-		18 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		19 = { "%dya NKVD SU Otdel Diviziya" }
-		24 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		25 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		26 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		27 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		28 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		29 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		30 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		31 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		32 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		33 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		34 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		35 = { "%dya NKVD BZ Otdel Diviziya" }
-		36 = { "%dya NKVD BZ Otdel Diviziya" }
-		37 = { "%dya NKVD BZ Otdel Diviziya" }
-		38 = { "%dya NKVD BZ Otdel Diviziya" }
-		41 = { "%dya NKVD Zashchite Zheleznykh Div." }
-		101 = { "1ya 'Kirov' Narodnoe Opolcheniye Div." }
+		1 = { "%dya Tsarskaya Ohranka" }
+		2 = { "%dya Tsarskaya Ohranka Div." }
+		3 = { "%dya Tsarskaya Ohranka" }
+		4 = { "%dya Tsarskaya Ohranka" }
+		5 = { "%dya Tsarskaya Ohranka" }
+		6 = { "%dya Tsarskaya Ohranka" }
+		7 = { "%dya Tsarskaya Ohranka" }
+		8 = { "%dya Tsarskaya Ohranka" }
+		9 = { "%dya Tsarskaya Ohranka" }
+		10 = { "%dya Tsarskaya Ohranka" }
+		11 = { "%dya Tsarskaya Ohranka" }
+		12 = { "%dya Tsarskaya Ohranka" }
+		13 = { "%dya Tsarskaya Ohranka" }
+		14 = { "%dya Tsarskaya Ohranka Div." }
+		15 = { "%dya Tsarskaya Ohranka" }
+		16 = { "%dya Tsarskaya Ohranka" }
+		17 = { "%dya Tsarskaya Ohranka" }
+		18 = { "%dya Tsarskaya Ohranka Div." }
+		19 = { "%dya Tsarskaya Ohranka" }
+		24 = { "%dya Tsarskaya Ohranka Div." }
+		25 = { "%dya Tsarskaya Ohranka Div." }
+		26 = { "%dya Tsarskaya Ohranka Div." }
+		27 = { "%dya Tsarskaya Ohranka Div." }
+		28 = { "%dya Tsarskaya Ohranka Div." }
+		29 = { "%dya Tsarskaya Ohranka Div." }
+		30 = { "%dya Tsarskaya Ohranka Div." }
+		31 = { "%dya Tsarskaya Ohranka Div." }
+		32 = { "%dya Tsarskaya Ohranka Div." }
+		33 = { "%dya Tsarskaya Ohranka Div." }
+		34 = { "%dya Tsarskaya Ohranka Div." }
+		35 = { "%dya Tsarskaya Ohranka" }
+		36 = { "%dya Tsarskaya Ohranka" }
+		37 = { "%dya Tsarskaya Ohranka" }
+		38 = { "%dya Tsarskaya Ohranka" }
+		41 = { "%dya Tsarskaya Ohranka Div." }
+		101 = { "1ya 'Mariya' Narodnoe Opolcheniye Div." }
 		102 = { "2ya 'Moskva' Narodnoe Opolcheniye Div." }
-		103 = { "3ya 'Frunze' Narodnoe Opolcheniye Div." }
-		104 = { "4ya 'Dzerzhinsky' Narodnoe Opol. Div." }
-		105 = { "5ya 'Kuybishevskaya' Narodnoe Opol. Div." }
+		103 = { "3ya 'Anastasiya' Narodnoe Opolcheniye Div." }
+		104 = { "4ya 'Czehoslovaksk' Narodnoe Opol. Div." }
+		105 = { "5ya 'Krimskskaya' Narodnoe Opol. Div." }
 		106 = { "6ya Narodnoe Opol. Div." }
 		107 = { "7ya Narodnoe Opol. Div." }
-		108 = { "1ya 'Lenin' Narodnoe Opol. Div." }
-		109 = { "2ya 'Stalin' Narodnoe Opol. Div." }
-		110 = { "4ya 'Kuybishev' Narodnoe Opol. Div." }
-		111 = { "5ya 'Frunze' Narodnoe Opol. Div." }
-		112 = { "6ya 'Dzerzhinsky' Narodnoe Opol. Div." }
-		113 = { "7ya 'Bauman' Narodnoe Opol. Div." }
+		108 = { "1ya 'Romanov' Narodnoe Opol. Div." }
+		109 = { "2ya 'Kerenskiy' Narodnoe Opol. Div." }
+		110 = { "4ya 'Krimsk' Narodnoe Opol. Div." }
+		111 = { "5ya 'Anastasiya' Narodnoe Opol. Div." }
+		112 = { "6ya 'Czehoslovaksk' Narodnoe Opol. Div." }
+		113 = { "7ya 'Slavyansk' Narodnoe Opol. Div." }
 		114 = { "8ya 'Krasnpreensky' Narodnoe Opol. Div." }
-		115 = { "9ya 'Kirov' Narodnoe Opol. Div." }
+		115 = { "9ya 'Mariya' Narodnoe Opol. Div." }
 		116 = { "13ya 'Rostock' Narodnoe Opol. Div." }
 		117 = { "17ya 'Moskovorets' Narodnoe Opol. Div." }
-		118 = { "18ya 'Leningrad' Narodnoe Opol. Div." }
+		118 = { "18ya 'Romanovgrad' Narodnoe Opol. Div." }
 		119 = { "21ya 'Kiev' Narodnoe Opol. Div." }
-		120 = { "1ya Kommuna Narodnoe Opol. Div." }
-		121 = { "2ya Kommuna Narodnoe Opol. Div." }
-		122 = { "3ya 'Moskva' Kommuna Narodnoe Opol. Div." }
-		123 = { "4ya Kommuna Narodnoe Opol. Div." }
-		39 = { "%dya NKVD BZ Otdel Diviziya" }
-		45 = { "%dya NKVD BZ Otdel Diviziya" }
-		46 = { "%dya NKVD BZ Otdel Diviziya" }
-		47 = { "%dya NKVD BZ Otdel Diviziya" }
-		48 = { "%dya NKVD BZ Otdel Diviziya" }
-		49 = { "%dya NKVD BZ Otdel Diviziya" }
-		50 = { "%dya NKVD BZ Otdel Diviziya" }
-		51 = { "%dya NKVD BZ Otdel Diviziya" }
-		52 = { "%dya NKVD BZ Otdel Diviziya" }
-		53 = { "%dya NKVD BZ Otdel Diviziya" }
-		56 = { "%dya NKVD BZ Otdel Diviziya" }
-		57 = { "%dya NKVD Strelkovaya Diviziya" }
-		58 = { "%dya NKVD Strelkovaya Diviziya" }
-		59 = { "%dya NKVD Strelkovaya Diviziya" }
-		60 = { "%dya NKVD Strelkovaya Diviziya" }
-		61 = { "%dya NKVD Strelkovaya Diviziya" }
-		62 = { "%dya NKVD Strelkovaya Diviziya" }
-		63 = { "%dya NKVD Strelkovaya Diviziya" }
-		64 = { "%dya NKVD Strelkovaya Diviziya" }
-		65 = { "%dya NKVD Strelkovaya Diviziya" }
-		66 = { "%dya NKVD Strelkovaya Diviziya" }
+		120 = { "1ya Imperia Narodnoe Opol. Div." }
+		121 = { "2ya Imperia Narodnoe Opol. Div." }
+		122 = { "3ya 'Moskva' Imperia Narodnoe Opol. Div." }
+		123 = { "4ya Imperia Narodnoe Opol. Div." }
+		39 = { "%dya Tsarskaya Ohranka" }
+		45 = { "%dya Tsarskaya Ohranka" }
+		46 = { "%dya Tsarskaya Ohranka" }
+		47 = { "%dya Tsarskaya Ohranka" }
+		48 = { "%dya Tsarskaya Ohranka" }
+		49 = { "%dya Tsarskaya Ohranka" }
+		50 = { "%dya Tsarskaya Ohranka" }
+		51 = { "%dya Tsarskaya Ohranka" }
+		52 = { "%dya Tsarskaya Ohranka" }
+		53 = { "%dya Tsarskaya Ohranka" }
+		56 = { "%dya Tsarskaya Ohranka" }
+		57 = { "%dya Tsarskaya Ohranka" }
+		58 = { "%dya Tsarskaya Ohranka" }
+		59 = { "%dya Tsarskaya Ohranka" }
+		60 = { "%dya Tsarskaya Ohranka" }
+		61 = { "%dya Tsarskaya Ohranka" }
+		62 = { "%dya Tsarskaya Ohranka" }
+		63 = { "%dya Tsarskaya Ohranka" }
+		64 = { "%dya Tsarskaya Ohranka" }
+		65 = { "%dya Tsarskaya Ohranka" }
+		66 = { "%dya Tsarskaya Ohranka" }
 	}
 }
 
@@ -1333,7 +1333,7 @@ RUS_GRD_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "infantry" }
 
@@ -1484,7 +1484,7 @@ RUS_GMC_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "mechanized" "motorized" }
 
@@ -1515,7 +1515,7 @@ RUS_GTC_01 =
 
 	for_countries = { RUS }
 
-	can_use = { always = yes }
+	can_use = { tag = RUS }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -1836,7 +1836,7 @@ RUS_INF_02 =
 	for_countries = { RUS }
 
 	can_use = { 
-		always = yes
+		tag = RUS
 	}
 
 	division_types = { "infantry" }

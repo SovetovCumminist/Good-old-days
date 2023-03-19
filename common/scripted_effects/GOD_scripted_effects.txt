@@ -52,10 +52,8 @@ set_medium_tech = {
 		infantry_weapons = 1
 		camelry = 1
 		gw_artillery = 1
-		early_fighter = 1
-		early_bomber = 1
-		CAS1 = 1
 		basic_train = 1
+		tech_support = 1
 	}
 	if = {
 		limit = {
@@ -104,6 +102,14 @@ set_medium_tech = {
 			mtg_transport = 1
 		}
 	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
 }
 
 #Средний уровень технологий (Османы, Россия) через пару лет
@@ -112,6 +118,11 @@ set_second_medium_tech = {
 		fighter1 = 1
 		early_bomber = 1
 		interwar_artillery = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		transport = 1
+		armored_car1 = 1
 		support_weapons = 1
 	}
 }
@@ -128,6 +139,14 @@ set_hight_tech = {
 		early_bomber = 1
 		CAS1 = 1
 		basic_train = 1
+		support_weapons = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		motorised_infantry = 1
+		transport = 1
+		armored_car1 = 1
+		tech_support = 1
 	}
 	if = {
 		limit = {
@@ -136,7 +155,6 @@ set_hight_tech = {
 		set_technology = {
 			gwtank = 1
 			basic_light_tank = 1
-
 		}
 	}
 	if = {
@@ -156,7 +174,6 @@ set_hight_tech = {
 			early_light_cruiser = 1
 			early_battleship = 1
 			early_battlecruiser = 1
-			transport = 1
 		}
 	}
 	if = {
@@ -176,6 +193,14 @@ set_hight_tech = {
 			mtg_transport = 1
 		}
 	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
 }
 
 #Высокий уровень технологий (Франция, Германия) через пару лет
@@ -186,6 +211,16 @@ set_second_hight_tech = {
 		tactical_bomber1 = 1
 		interwar_artillery = 1
 		infantry_weapons2 = 1
-		support_weapons = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		tech_maintenance_company = 1
+	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			fighter1 = 1
+			tactical_bomber1 = 1
+		}
 	}
 }
