@@ -1,0 +1,139 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+SWE_avoid_axis_or_comintern = {
+
+	allowed = { 
+		tag = SWI 
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+	}
+	
+	abort = {
+		date > 1945.1.1
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -400
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -400
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -400
+	}
+}
+
+SWI_template_design = {
+	allowed = {
+		original_tag = SWI
+	}
+	enable = {
+		date > 1918.1.1
+	}
+
+	abort = {
+		has_country_flag = SWI_militias_turned_into_regulars
+	}
+
+	ai_strategy = {
+		type = role_ratio 
+		id = militias
+		value = 100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = militias 
+		value = 100000
+	}
+}
+
+SWI_strat_avoid_silo_plateau = {
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 3
+	}
+}
+
+SWI_strat_avoid_silo_jura = {
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 845
+	}
+}
+
+SWI_strat_avoid_silo_west_swiss_alps = {
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 847
+	}
+}
+
+SWI_strat_avoid_silo_eastern_swiss_alps = {
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 151
+	}
+}
+
+SWI_strat_avoid_silo_ticino = {
+
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 846
+	}
+}

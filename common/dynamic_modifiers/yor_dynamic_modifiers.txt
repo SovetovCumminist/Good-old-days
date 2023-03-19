@@ -1,0 +1,5 @@
+problems_with_infastructure_modifier = {
+	army_attack_factor = -0.4
+	army_defence_factor = 0.4
+	breakthrough_factor = -0.2
+}

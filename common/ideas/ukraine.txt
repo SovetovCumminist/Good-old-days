@@ -79,7 +79,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = idea_home_of_revolution
+			picture = home_of_revolution
 			
 			modifier = {
 				stability_weekly = -0.01

@@ -11,20 +11,63 @@
 # influence
 # send_volunteers_desire
 
-GRE_befriend_balkan_countries = {
+GRE_befriend_balkan_countries_SER = {
 	allowed = {
 		original_tag = GRE
 		has_dlc = "Battle for the Bosporus"
 	}
 	enable = {
-		has_government = democratic
-		YUG = {
+		focus_progress = {
+			focus = GRE_fiscal_responsibility
+			progress > 0.01
+		}
+		SER = {
 			has_opinion	= {
 				target = ROOT
 				value < 50
 			}
 			has_capitulated = no
 			is_subject = no
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = SER }
+			has_war_with = SER
+			SER = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			has_government = democratic
+		}
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SER
+		target = improve_relation
+		value = 200
+	}	
+}
+
+
+
+GRE_befriend_balkan_countries_ROM = {
+	allowed = {
+		original_tag = GRE
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		focus_progress = {
+			focus = GRE_bedrock_of_balkan_financial_stability
+			progress > 0.01
 		}
 		ROM = {
 			has_opinion	= {
@@ -34,29 +77,24 @@ GRE_befriend_balkan_countries = {
 			has_capitulated = no
 			is_subject = no
 		}
-		TUR = {
-			has_opinion	= {
-				target = ROOT
-				value < 50
-			}
-			has_capitulated = no
-			is_subject = no
-		}
-	}
-	abort = {
 		OR = {
-			NOT = { country_exists = YUG }
-			has_war_with = YUG
-			YUG = {
+			NOT = { country_exists = SER }
+			has_war_with = SER
+			SER = {
 				OR = {
 					has_opinion	= {
 						target = ROOT
-						value > 80
+						value > 60
 					}
 					has_capitulated = yes
 					is_subject = yes
 				}
 			}
+		}
+		
+	}
+	abort = {
+		OR = {
 			NOT = { country_exists = ROM }
 			has_war_with = ROM
 			ROM = {
@@ -69,6 +107,114 @@ GRE_befriend_balkan_countries = {
 					is_subject = yes
 				}
 			}
+			has_government = democratic
+		}
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ROM
+		target = improve_relation
+		value = 200
+	}	
+}
+
+GRE_befriend_balkan_countries_BUL = {
+	allowed = {
+		original_tag = GRE
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		focus_progress = {
+			focus = GRE_fiscal_responsibility
+			progress > 0.01
+		}
+		BUL = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		OR = {
+			NOT = { country_exists = SER }
+			has_war_with = SER
+			SER = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = BUL }
+			has_war_with = BUL
+			BUL = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			has_government = democratic
+		}
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = BUL
+		target = improve_relation
+		value = 200
+	}	
+}
+
+GRE_befriend_balkan_countries_TUR = {
+	allowed = {
+		original_tag = GRE
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		focus_progress = {
+			focus = GRE_bedrock_of_balkan_financial_stability
+			progress > 0.01
+		}
+		TUR = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		OR = {
+			NOT = { country_exists = BUL }
+			has_war_with = BUL
+			BUL = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+		}
+		
+	}
+	abort = {
+		OR = {
 			NOT = { country_exists = TUR }
 			has_war_with = TUR
 			TUR = {
@@ -84,25 +230,240 @@ GRE_befriend_balkan_countries = {
 			has_government = democratic
 		}
 	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = YUG
-		target = improve_relation
-		value = 200
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = ROM
-		target = improve_relation
-		value = 200
-	}
+	
 	ai_strategy = {
 		type = diplo_action_desire
 		id = TUR
 		target = improve_relation
 		value = 200
+	}	
+}
+
+GRE_befriend_balkan_countries_ALB = {
+	allowed = {
+		original_tag = GRE
+		has_dlc = "Battle for the Bosporus"
 	}
+	enable = {
+		focus_progress = {
+			focus = GRE_fiscal_responsibility
+			progress > 0.01
+		}
+		ALB = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = ALB }
+			has_war_with = ALB
+			ALB = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			has_government = democratic
+		}
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ALB
+		target = improve_relation
+		value = 200
+	}	
+}
+
+
+
+GRE_befriend_balkan_countries_HUN = {
+	allowed = {
+		original_tag = GRE
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		focus_progress = {
+			focus = GRE_bedrock_of_balkan_financial_stability
+			progress > 0.01
+		}
+		HUN = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		OR = {
+			NOT = { country_exists = BUL }
+			has_war_with = BUL
+			BUL = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = HUN }
+			has_war_with = HUN
+			HUN = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			has_government = democratic
+		}
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = HUN
+		target = improve_relation
+		value = 200
+	}	
+}
+
+GRE_befriend_balkan_countries_CZE = {
+	allowed = {
+		original_tag = GRE
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		focus_progress = {
+			focus = GRE_bedrock_of_balkan_financial_stability
+			progress > 0.01
+		}
+		CZE = {
+			has_opinion	= {
+				target = ROOT
+				value < 85
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		OR = {
+			NOT = { country_exists = HUN }
+			has_war_with = HUN
+			HUN = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 60
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = CZE }
+			has_war_with = CZE
+			CZE = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 90
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			has_government = democratic
+		}
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = CZE
+		target = improve_relation
+		value = 200
+	}	
+}
+GRE_befriend_balkan_countries_AUS = {
+	allowed = {
+		original_tag = GRE
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		focus_progress = {
+			focus = GRE_bedrock_of_balkan_financial_stability
+			progress > 0.01
+		}
+		AUS = {
+			has_opinion	= {
+				target = ROOT
+				value < 75
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		OR = {
+			NOT = { country_exists = CZE }
+			has_war_with = CZE
+			CZE = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 90
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = AUS }
+			has_war_with = AUS
+			AUS = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 80
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			has_government = democratic
+		}
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = AUS
+		target = improve_relation
+		value = 200
+	}	
 }
 
 GRE_befriend_major_investors = {
@@ -111,7 +472,10 @@ GRE_befriend_major_investors = {
 		has_dlc = "Battle for the Bosporus"
 	}
 	enable = {
-		has_government = democratic
+		focus_progress = {
+			focus = GRE_open_foreign_subsidized_factories
+			progress > 0.01
+		}
 		ENG = {
 			has_opinion	= {
 				target = ROOT

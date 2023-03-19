@@ -1,3 +1,0 @@
-RUS	= "countries/Russia.txt"
-ALS	= "countries/Alsace.txt"
-OTT	= "countries/Ottoman.txt"

@@ -103,6 +103,19 @@ opinion_modifiers = {
 		value = 25
 		months = 24
 	}
+	
+	MR_pact = {
+		value = 20
+	}
+	
+	MR_pact_fascists = {
+		value = -25
+	}
+
+	refused_MR_pact = {
+		value = -50
+		months = 36
+	}
 
 	improve_relation = {
 		value = 0
@@ -449,4 +462,7 @@ opinion_modifiers = {
 		value = 25
 	}
 
+	claimed_western_yugoslavia = {
+		value = -40
+	}
 }

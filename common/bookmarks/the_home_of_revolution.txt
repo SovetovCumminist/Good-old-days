@@ -1,0 +1,97 @@
+bookmarks = {
+	bookmark = {
+		name = "THE_HOME_OF_REVOLUTION_NAME"
+		desc = "THE_HOME_OF_REVOLUTION_DESC"
+		date = 1918.1.1.1
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		RUS = {
+			history = "RUS_THE_HOME_OF_REVOLUTION_DESC"
+			ideology = democratic
+			ideas = {
+				Soviets
+			}
+			focuses = {
+			}
+		}
+
+		#SOV = {
+		#	history = "SOV_THE_HOME_OF_REVOLUTION_DESC"
+		#	ideology = communism
+		#	ideas = {
+		#		Vladimir_Lenin_Cult
+		#	}
+		#	focuses = {
+		#	}
+		#}
+
+		FRA = {
+			history = "Democratic_THE_HOME_OF_REVOLUTION_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		ENG = {
+			history = "Neutrality_THE_HOME_OF_REVOLUTION_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		OTT = {
+			history = "Neutrality_THE_HOME_OF_REVOLUTION_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		UKR = {
+			history = "UKR_THE_HOME_OF_REVOLUTION_DESC"
+			ideology = neutrality
+			ideas = {
+				Central_Powers_occupation
+				Red_Movement
+				Ukraine_State
+				III_Universal
+			}
+			focuses = {
+			}
+		}
+		
+		AUS = {
+			history = ""
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		GER = {
+			history = "GER_THE_HOME_OF_REVOLUTION_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"---"={
+			history = "THE_HOME_OF_REVOLUTION_DESC"
+		}
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,23 @@
+﻿###########################
+# Mod Political Events
+###########################
+
+add_namespace = god_political
+
+country_event = {
+	id = god_political.1
+	title = god_political.1.t
+	desc = god_political.1.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = god_political.1.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}

@@ -1384,7 +1384,7 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { tag = ROM } NOT = { tag = YUG }
+					NOT = { tag = ROM } NOT = { tag = SER }
 				}
 				NOT = {
 					AND = {
@@ -1441,7 +1441,7 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { tag = YUG }
+					NOT = { tag = SER }
 				}
 				NOT = {
 					AND = {
@@ -1498,7 +1498,7 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { tag = YUG }
+					NOT = { tag = SER }
 				}
 				NOT = {
 					AND = {
@@ -1547,7 +1547,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = SER } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
 				}

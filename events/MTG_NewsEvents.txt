@@ -3178,22 +3178,17 @@ news_event = {
 	
 	option = {
 		name = MTG_naval_treaty.9.a
-		trigger = {
-			has_naval_treaty_trigger = yes
-		}
 	}
 	option = {
 		name = MTG_naval_treaty.9.b
 		trigger = {
 			is_major = yes
-			not = { has_naval_treaty_trigger = yes }
 		}
 	}
 	option = {
 		name = MTG_naval_treaty.9.c
 		trigger = { 
 			is_major = no
-			not = { has_naval_treaty_trigger = yes }
 		}
 	}
 }

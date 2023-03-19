@@ -2,28 +2,6 @@ ideas = {
 
 	country = {
 	
-		Commonwealth_nations = {
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			allowed_civil_war = {
-				NOT ={
-					has_government = anarchy
-					has_government = communism
-				}
-			}
-
-			picture = Commonwealth_nations
-			
-			modifier = {
-				consumer_goods_factor = -0.01
-			}
-		}
-	
 		george_v = {
 			
 			allowed = {

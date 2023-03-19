@@ -31,10 +31,10 @@ less_trucks_4_u_JAP = {
 		original_tag = JAP
 	}
 	enable = {
-		date < 2018.1.1
+		date < 1921.1.1
 	}
 	abort = {
-		date > 2018.1.1
+		date > 1921.1.1
 	}
 
 	ai_strategy = {
@@ -102,7 +102,7 @@ JAP_build_some_factories_jeez = {
 		original_tag = JAP
 	}
 	enable = {
-		date > 2018.1.2
+		date > 1921.1.2
 	}
 	abort = {
 		OR = {
@@ -272,7 +272,7 @@ JAP_glorious_nippon_steel_has_triumphed = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 5 #10 to 5
+		value = 4 #10 to 5
 	}
 
 	ai_strategy = {
@@ -328,7 +328,7 @@ northern_expansion = {
 		original_tag = JAP
 	}
 	enable = {
-		has_government = fascism
+		has_government = neutrality
 		country_exists = SOV
 	}
 	abort = {
@@ -349,7 +349,7 @@ chinese_war = {
 		original_tag = JAP
 	}
 	enable = {
-		has_government = fascism
+		or = { has_government = neutrality has_government = fascism }
 		country_exists = CHI
 	}
 	abort = {
@@ -425,10 +425,10 @@ JAP_philippines_and_garrison = {
 	enable = {
 		has_war_with = USA
 		is_historical_focus_on = yes
-		date > 2020.1.1
+		date > 1941.1.1
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = { #Take & Hold and supply DEI invasions
 		type = put_unit_buffers
 
@@ -456,7 +456,7 @@ JAP_philippines_and_garrison = {
 		subtract_invasions_from_need = yes
 		subtract_fronts_from_need = yes
 	}
-	
+
 }
 
 JAP_philippines_and_garrison_prio = {
@@ -465,19 +465,39 @@ JAP_philippines_and_garrison_prio = {
 	}
 	enable = {
 		has_war_with = USA
-		date > 2020.1.1
-		date < 2023.1.1
+		date > 1941.1.1
+		date < 1944.1.1
 		is_historical_focus_on = yes
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = area_priority
 		id = just_philippines
 		value = 100
-	}	
+	}
 }
-	
+
+JAP_leave_raj_a_bit = {
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = SIA
+		}
+	}
+	enable = {
+		is_historical_focus_on = yes
+		has_war_with = CHI
+		CHI = { has_capitulated = no }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = "RAJ"
+		value = -200
+	}
+}
 
 JAP_dei = {
 	allowed = {
@@ -486,8 +506,11 @@ JAP_dei = {
 	enable = {
 		is_historical_focus_on = yes
 		has_war_with = INS
-		PHI = { has_capitulated = yes }
-		date > 2020.1.1
+		OR = {
+			PHI = { has_capitulated = yes }
+			date > 1942.3.1
+		}
+		date > 1941.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -496,11 +519,11 @@ JAP_dei = {
 		id = east_indies
 		value = 220
 	}
-	
+
 	ai_strategy = {
 		type = invade
 		id = "INS"
-		value = 80
+		value = 120
 	}
 }
 
@@ -509,13 +532,13 @@ jap_conserve_fuel_for_usa_fight = {
 		original_tag = JAP
 	}
 	enable = {
-		date < 2020.1.1
+		date < 1941.1.1
 		NOT = { has_war_with = USA }
 	}
 
 	abort = {
 		OR = {
-			date > 2020.1.1
+			date > 1941.1.1
 			has_war_with = USA
 		}
 	}
@@ -532,7 +555,7 @@ germany_ally = {
 		original_tag = JAP
 	}
 	enable = {
-		has_government = fascism
+		has_government = democratic
 		country_exists = GER
 	}
 	abort = {
@@ -557,7 +580,7 @@ JAP_template_design = {
 		original_tag = JAP
 	}
 	enable = {
-		date > 2019.1.1
+		date > 1924.1.1
 	}
 
 	ai_strategy = {
@@ -893,13 +916,13 @@ jap_china_is_weak = {
 	}
 
 	enable = {
-		date < 2018.10.1
+		date < 1921.10.1
 		NOT = { has_war_with = CHI } # only underestimate the japanese before the war
 	}
 
 	abort = {
 		OR = {
-			date > 2018.10.1
+			date > 1921.10.1
 			has_war_with = CHI # only underestimate the japanese before the war
 		}
 	}
@@ -936,7 +959,7 @@ JAP_dont_mess_with_volunteers = { # Reverse strategy
 
 	enable = {
 		NOT = { tag = JAP }
-		date < 2020.6.1
+		date < 1941.6.1
 		JAP = {
 			OR = {
 				has_government = fascism
@@ -950,7 +973,7 @@ JAP_dont_mess_with_volunteers = { # Reverse strategy
 	}
 
 	abort = {
-		date > 2020.6.1 #lets go global later yo
+		date > 1941.6.1 #lets go global later yo
 		JAP = {
 			OR = {
 				NOT = {	has_government = fascism }
@@ -981,19 +1004,19 @@ JAP_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb
-		value = -120
+		value = 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_shbb
-		value = 3
+		value = 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier_light
-		value = 5
+		value = 10
 	}
 
 	ai_strategy = {
@@ -1047,13 +1070,13 @@ JAP_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 2
+		value = 5
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 4
+		value = 10
 	}
 
 	ai_strategy = {
@@ -1186,12 +1209,12 @@ jap_invasions_of_gxc_are_super_tough_and_waste_manpower = {
 		original_tag = JAP
 	}
 	enable = {
-		date < 2021.6.6 # if we still stuck we might need a trick
+		date < 1942.6.6 # if we still stuck we might need a trick
 	}
 
 	abort = {
 		OR = {
-			date > 2021.6.6
+			date > 1942.6.6
 			NOT = { has_war_with = CHI }
 		}
 	}
@@ -1208,7 +1231,7 @@ jap_early_invasions_are_risky_and_best_wait_for_later = {
 		original_tag = JAP
 	}
 	enable = {
-		date < 2018.2.1
+		date < 1921.2.1
 		CHI = { is_ai = yes }
 	}
 
@@ -1228,13 +1251,13 @@ jap_doesnt_care_about_relation = {
 	enable = {
 		OR = {
 			has_war = yes
-			date < 2019.1.1
+			date < 1924.1.1
 		}
 	}
 
 	abort = {
 		has_war = no
-		date > 2019.1.1
+		date > 1924.1.1
 	}
 
 	ai_strategy = {
@@ -1390,7 +1413,7 @@ JAP_unit_buffer_for_home_islands_invasion_force = {
 		original_tag = JAP
 	}
 	enable = {
-		date < 2021.6.1
+		date < 1942.6.1
 	}
 
 	abort_when_not_enabled = yes
@@ -1434,20 +1457,20 @@ JAP_hold_up_in_china = { #We got this far but there are bigger targets to worry 
 	}
 
 	enable = {
-		date > 2020.1.1
-		date < 2024.1.1
+		date > 1941.1.1
+		date < 1945.1.1
 		is_historical_focus_on = yes
 		CHI = { has_capitulated = no }
-		
+
 		613 = { # Nanjing
 			is_controlled_by = JAP
 		}
-		
+
 		OR = {
 			INS = { has_capitulated = no }
 			PHI = { has_capitulated = no }
 		}
-		
+
 	}
 
 	ai_strategy = {
@@ -1461,4 +1484,29 @@ JAP_hold_up_in_china = { #We got this far but there are bigger targets to worry 
 		ordertype = front
 		execution_type = careful
 	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = GXC
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = careful
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = YUN
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = careful
+	}
+
 }

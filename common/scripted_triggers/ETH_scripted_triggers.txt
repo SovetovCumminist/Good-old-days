@@ -1,0 +1,15 @@
+controls_all_ethiopian_core_states = {
+	custom_trigger_tooltip = {
+		tooltip = controls_ethiopian_cores_tt 
+		controls_state = 271 
+		controls_state = 835 
+		controls_state = 836 
+		controls_state = 837
+		controls_state = 838
+		controls_state = 839 
+		controls_state = 840
+		controls_state = 841 
+		controls_state = 842 
+		controls_state = 843 
+	}
+}

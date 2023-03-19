@@ -1,329 +1,30 @@
 ﻿capital = 64
 
-set_oob = "GER_1936"
+set_oob = "GER_1918"
 
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	strategic_bomber1 = 1
-	CAS1 = 1
-	naval_bomber1 = 1
-	basic_train = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
-	synth_oil_experiments = 1
-	fuel_silos = 1
-	fuel_refining = 1
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-		basic_heavy_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
-		engine_tech_1 = 1
-	}
-}
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-	set_naval_oob = "GER_1936_naval"
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		panzerschiffe = 1
-		pre_dreadnoughts = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		mtg_transport = 1
-		basic_torpedo = 1
-		improved_ship_torpedo_launcher = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
-		basic_depth_charges = 1
-		sonar = 1
-		basic_cruiser_armor_scheme = 1
-	}
-	set_naval_oob = "GER_1936_naval_mtg"
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-		armored_car1 = 1
-	}
-}
 
 set_research_slots = 4
 
 set_convoys = 400
 
-set_stability = 0.6
-set_war_support = 0.25
+set_stability = 0.15
+set_war_support = 0.15
 
-#Trade
-create_import = {
-	resource = tungsten
-	factories = 1
-	exporter = SWE
-}
-
-add_ideas = {
-	#laws
-	war_economy
-	extensive_conscription
-}
-
-#Марионеточные королевства
-
-set_autonomy = {
-	target = POL
-	autonomous_state = autonomy_puppet
-}
-
-set_autonomy = {
-	target = EST
-	autonomous_state = autonomy_puppet
-}
-
-set_autonomy = {
-	target = UKR
-	autonomous_state = autonomy_dominion
-}
-
-set_autonomy = {
-	target = CRI
-	autonomous_state = autonomy_puppet
-}
-
-1921.1.1 = {
-	set_war_support = 0.7
-
-	add_political_power = 1197
-	add_command_power = 100
-	
-	#adding ministers
-	add_ideas = {
-		#laws
-		partial_economic_mobilisation
-		limited_conscription
-	}
-
-	set_technology = {
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-	}
-	
-	set_oob = "GER_1939"
-	
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-			basic_medium_tank = 1 
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			basic_medium_tank_chassis = 1 
-		}
-	}
-	if = {
-		limit = {
-			not = {
-				has_dlc = "Man the Guns"
-			}
-		}
-		set_technology = {
-			basic_heavy_cruiser = 1
-			improved_heavy_cruiser = 1
-			improved_battleship = 1
-			early_carrier = 1
-			basic_carrier = 1
-			improved_carrier = 1
-		}
-		set_naval_oob = "GER_1939_naval_legacy"
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_ship_hull_cruiser = 1
-			basic_ship_hull_heavy = 1
-			early_ship_hull_carrier = 1
-			basic_ship_hull_carrier = 1
-			improved_heavy_battery = 1
-			basic_heavy_armor_scheme = 1
-		}
-		set_naval_oob = "GER_1939_naval_mtg"
-	}
-}
-
-create_faction = Central_powers
-add_to_faction = GER
-add_to_faction = AUS
-add_to_faction = TUR
-add_to_faction = BUL
-
-declare_war_on = {
-	target = FRA
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = SOV
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = RUS
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = ENG
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = BEL
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = LUX
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = ROM
-	type = annex_everything
-}
-
+set_hight_tech = yes
 
 add_ideas = {
 	general_staff
+	
+	war_economy
+	extensive_conscription
 	limited_exports
 }
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1933.3.5"
+	last_election = "1888.6.15"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -334,6 +35,7 @@ set_popularities = {
 	communism = 20
 }
 
+#Монархизм
 create_country_leader = {
 	name = "Wilhelm II"
 	desc = ""
@@ -344,7 +46,7 @@ create_country_leader = {
 	}
 }
 
-#1919.2.11 Первый президент
+#Демократизм (Первый президент
 create_country_leader = {
 	name = "Friedrich Ebert"
 	desc = ""
@@ -352,9 +54,9 @@ create_country_leader = {
 	expire = "1925.2.1"
 	ideology = socialism
 	traits = {
-	}
 }
 
+#Радикализм
 create_country_leader = {
 	name = "Ernst Thälmann"
 	desc = ""
@@ -365,6 +67,7 @@ create_country_leader = {
 	}
 }
 
+#Радикализм
 create_country_leader = {
 	name = "Róża Luksemburg"
 	desc = ""
@@ -375,6 +78,7 @@ create_country_leader = {
 	}
 }
 
+#Радикализм
 create_country_leader = {
 	name = "Karl Liebknecht"
 	desc = ""
@@ -385,6 +89,7 @@ create_country_leader = {
 	}
 }
 
+#Радикализм
 create_country_leader = {
 	name = "Hugo Haase"
 	desc = ""
@@ -395,6 +100,7 @@ create_country_leader = {
 	}
 }
 
+#Реваншизм
 create_country_leader = {
 	name = "Adolf Hitler"
 	desc = ""
@@ -405,6 +111,7 @@ create_country_leader = {
 	}
 }
 
+#Реваншизм
 create_country_leader = {
 	name = "Oskar Hergt"
 	desc = ""
@@ -413,4 +120,170 @@ create_country_leader = {
 	ideology = ultranationalism
 	traits = {
 	}
+}
+
+#Центральные державы
+create_faction = Central_powers
+add_to_faction = GER
+add_to_faction = AUS
+add_to_faction = OTT
+add_to_faction = BUL
+
+#Первая мировая
+1914.8.1 = {
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = SOV
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = RUS
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ENG
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = BEL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = LUX
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ROM
+		type = annex_everything
+	}
+}
+
+#Марионеточные королевства
+#Польша
+1916.11.5 = {
+	set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_puppet
+	}
+}
+1918.11.11 = {
+	set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_free
+	}
+}
+#Литва
+#1918.2.16 = { 
+	set_autonomy = {
+		target = LIT
+		autonomous_state = autonomy_puppet
+	}
+}
+1918.11.18 = { 
+	set_autonomy = {
+		target = LIT
+		autonomous_state = autonomy_free
+	}
+}
+#Герцогство Курляндское и Земгальское
+#1918.3.8 = {
+	set_autonomy = {
+		target = LAT
+		autonomous_state = autonomy_puppet
+	}
+}
+#1918.11.18 = {
+	set_autonomy = {
+		target = LAT
+		autonomous_state = autonomy_puppet
+	}
+}
+#Объединенное Балтийское Герцогство
+#1918.9.22 = {
+	set_autonomy = {
+		target = EST
+		autonomous_state = autonomy_puppet
+	}
+}
+#1918.11.28 = {
+	set_autonomy = {
+		target = EST
+		autonomous_state = autonomy_puppet
+	}
+}
+#Белорусская Народная Республика
+#1918.3.8 = {
+	set_autonomy = {
+		target = BLR
+		autonomous_state = autonomy_puppet
+	}
+}
+#1919.3.1 = {
+	set_autonomy = {
+		target = BLR
+		autonomous_state = autonomy_puppet
+	}
+}
+#Украинское Государство
+#1918.4.29 = {
+	set_autonomy = {
+		target = UKR
+		autonomous_state = autonomy_puppet
+	}
+}
+#1919.12.14 = {
+	set_autonomy = {
+		target = UKR
+		autonomous_state = autonomy_puppet
+	}
+}
+#Крымское Краевое Правительство
+#1918.6.25 = {
+	set_autonomy = {
+		target = CRI
+		autonomous_state = autonomy_puppet
+	}
+}
+#1919.4.2 = {
+	set_autonomy = {
+		target = CRI
+		autonomous_state = autonomy_puppet
+	}
+}
+
+#Первый президент
+1919.2.11 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1919.2.11"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		fascism = 10
+		democratic = 50
+		neutrality = 15
+		communism = 25
+	}
+}
+
+1921.1.1 = {
+	set_oob = "GER_1921"
+
+	add_political_power = 1197
+	add_command_power = 100
+	
+	set_stability = 0.01
+	set_war_support = 0.01
+	
+	add_ideas = {
+		partial_economic_mobilisation
+		limited_conscription
+	}
+
+	set_second_hight_tech = yes
 }

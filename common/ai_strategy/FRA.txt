@@ -469,7 +469,7 @@ FRA_benelux_will_surely_not_fall = {
 	allowed = { original_tag = FRA }
 	enable = {
 		has_war_with = GER
-		date < 1940.8.1
+		date < 1918.5.15
 		OR = {
 			HOL = { has_capitulated = no }
 			BEL = { has_capitulated = no }
@@ -478,7 +478,7 @@ FRA_benelux_will_surely_not_fall = {
 
 	abort = {
 		OR = {
-			date > 1940.8.1
+			date > 1918.5.15
 			AND = {
 				HOL = { surrender_progress > 0.30 }
 				BEL = { surrender_progress > 0.30 }
@@ -513,6 +513,47 @@ FRA_benelux_will_surely_not_fall = {
 		area = europe
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
+	}
+}
+
+VIC_avoid_joining_japan = {
+
+	allowed = { original_tag = FRA }
+	
+	enable = {
+		is_historical_focus_on = yes
+		GER = { has_capitulated = no }
+		tag = VIC
+	}
+	
+	abort = {
+		date > 1945.1.1
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -400
+	}
+}
+
+JAP_avoid_joining_vichy = { #This is required due to declare_war command executing a reverse check
+
+	allowed = { original_tag = JAP }
+	
+	enable = {
+		is_historical_focus_on = yes
+		GER = { has_capitulated = no }
+	}
+	
+	abort = {
+		date > 1945.1.1
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "VIC"
+		value = -400
 	}
 }
 

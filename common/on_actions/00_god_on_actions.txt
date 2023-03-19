@@ -1,0 +1,16 @@
+on_actions = {
+	
+	#Испания первой признала пандемию испанки в мае—июне 1918 года
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					date < 1918.01.02
+				}
+				every_country = {
+					add_timed_idea = { days = 730 idea = gripe_espanola }
+				}
+			}
+		}
+	}
+}

@@ -164,7 +164,7 @@ capture_tito = { ### 1/50
 
 	visible = { 
 		FROM = {
-			tag = YUG
+			tag = SER
 		}
 		any_controlled_state = {
 			is_core_of = YUG

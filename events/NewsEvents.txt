@@ -1308,17 +1308,6 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					tag = SOV
-				}
-				SOV_kill_trotsky_effect = yes
-			}
-		}
-	}
 	
 	option = {
 		name = news.37.a
@@ -1335,10 +1324,6 @@ news_event = {
 		trigger = {
 			tag = MEX
 			NOT = { is_in_faction_with = SOV }
-		}
-
-		effect_tooltip = {
-			retire_character = MEX_leon_trotsky
 		}
 	}
 
@@ -2801,14 +2786,7 @@ news_event = {
 news_event = {
 	id = news.105
 	title = news.105.t
-	desc = {
-		text = news.105.d
-		trigger = { NOT = { SOV_is_opposition = yes } }
-	}
-	desc = {
-		text = news.105.d_alt
-		trigger = { SOV_is_opposition = yes }
-	}
+	desc = news.105.d
 
 	picture = GFX_news_event_soviet_soldiers_ruins
 	
@@ -5367,7 +5345,7 @@ news_event = {
 			NOT = {
 				TAG = GER
 				TAG = ENG
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -5381,7 +5359,7 @@ news_event = {
 	}
 	option = {
 		name = news.163.e
-		trigger = { TAG = YUG }
+		trigger = { tag = SER }
 	}
 }
 
@@ -5410,7 +5388,7 @@ news_event = {
 				TAG = GER
 				TAG = ENG
 				TAG = FRA
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -5432,7 +5410,7 @@ news_event = {
 	}
 	option = {
 		name = news.164.e
-		trigger = { TAG = YUG }
+		trigger = { tag = SER }
 	}
 	option = {
 		name = news.164.f
@@ -5461,7 +5439,7 @@ news_event = {
 				TAG = GER
 				TAG = ENG
 				TAG = FRA
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -5475,7 +5453,7 @@ news_event = {
 	}
 	option = {
 		name = news.165.e
-		trigger = { TAG = YUG }
+		trigger = { tag = SER }
 	}
 	option = {
 		name = news.165.f
@@ -5499,7 +5477,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -5509,7 +5487,7 @@ news_event = {
 	}
 	option = {
 		name = news.166.c
-		trigger = { TAG = YUG }
+		trigger = { tag = SER }
 	}
 }
 
@@ -5530,7 +5508,7 @@ news_event = {
 			NOT = {
 				TAG = GER
 				TAG = ITA
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -5544,7 +5522,7 @@ news_event = {
 	}
 	option = {
 		name = news.167.c
-		trigger = { TAG = YUG }
+		trigger = { tag = SER }
 	}
 }
 
@@ -5570,18 +5548,18 @@ news_event = {
 			NOT = { tag = HUN }
 			NOT = { tag = BUL }
 			NOT = { tag = ITA }
-			NOT = { tag = YUG }
+			NOT = { tag = SER }
 		}
 	}
 	option = {
 		name = news.168.b
-		trigger = { TAG = YUG }
+		trigger = { tag = SER }
 	}
 	option = {
 		name = news.168.c
 		trigger = { 
 			NOT = { TAG = GER } 
-			NOT = { TAG = YUG }
+			NOT = { tag = SER }
 			NOT = { tag = HUN }
 			NOT = { tag = BUL }
 			NOT = { tag = ITA }			
@@ -6689,7 +6667,7 @@ news_event = {
 			}
 			NOT = {
 				OR = {
-					tag = YUG
+					tag = SER
 					tag = BUL
 					tag = ALB
 				}
@@ -6704,7 +6682,7 @@ news_event = {
 				is_in_faction_with = ITA
 			}
 			OR = {
-				tag = YUG
+				tag = SER
 				tag = BUL
 				tag = ALB
 			}
@@ -6974,7 +6952,7 @@ news_event = {
 	option = {
 		name = news.192.a
 		trigger = {
-			tag = YUG
+			tag = SER
 		}
 	}
 
@@ -6984,7 +6962,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = YUG
+					tag = SER
 					tag = ITA
 				}
 			}
@@ -7000,7 +6978,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = YUG
+					tag = SER
 					tag = ITA
 				}
 			}
@@ -7026,7 +7004,7 @@ news_event = {
 		trigger = {
 			OR = {
 				tag = ITA
-				tag = YUG
+				tag = SER
 			}
 		}
 	}
@@ -7038,7 +7016,7 @@ news_event = {
 			NOT = {
 				OR = {
 					tag = ITA
-					tag = YUG
+					tag = SER
 				}
 			}
 			ITA = {
@@ -7054,7 +7032,7 @@ news_event = {
 			NOT = {
 				OR = {
 					tag = ITA
-					tag = YUG
+					tag = SER
 				}
 			}
 			ITA = {
@@ -9124,7 +9102,7 @@ news_event = {
 		name = news.228.a
 		trigger = {
 			OR = {
-				tag = YUG
+				tag = SER
 				tag = GRE
 				tag = ROM
 			}
@@ -9176,7 +9154,7 @@ news_event = {
 			}
 			NOT = {
 				OR = {
-					tag = YUG
+					tag = SER
 					tag = GRE
 					tag = ROM
 				}
@@ -9189,7 +9167,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = YUG
+					tag = SER
 					tag = HUN
 					tag = GRE
 					tag = ROM
@@ -11418,7 +11396,7 @@ news_event = {
 				TAG = GER
 				TAG = CZE
 				TAG = ROM
-				TAG = YUG
+				tag = SER
 				TAG = POL
 				TAG = ITA
 			}
@@ -11430,7 +11408,7 @@ news_event = {
 			OR = {
 				TAG = CZE
 				TAG = ROM
-				TAG = YUG
+				tag = SER
 				TAG = POL
 				TAG = ITA
 			}
@@ -11792,7 +11770,7 @@ news_event = {
 	option = {
 		name = news.306.b
 		trigger = { 
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -11800,7 +11778,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -11826,7 +11804,7 @@ news_event = {
 	option = {
 		name = news.301.b
 		trigger = { 
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -11834,7 +11812,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -11860,7 +11838,7 @@ news_event = {
 	option = {
 		name = news.302.b
 		trigger = { 
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -11868,7 +11846,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -12461,7 +12439,7 @@ news_event = {
 	option = {
 		name = news.320.b
 		trigger = { 
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -12489,7 +12467,7 @@ news_event = {
 			OR = {
 				NOT = {
 					TAG = ROM
-					TAG = YUG
+					tag = SER
 				}
 				AND = {
 					TAG = GER
@@ -12550,7 +12528,7 @@ news_event = {
 			OR = {
 				NOT = {
 					TAG = ROM
-					TAG = YUG
+					tag = SER
 					TAG = POL
 					TAG = GER
 					TAG = ITA
@@ -12650,7 +12628,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = ROM
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -12670,7 +12648,7 @@ news_event = {
 	option = {
 		name = news.325.a
 		trigger = {
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -12683,7 +12661,7 @@ news_event = {
 		name = news.325.c
 		trigger = { 
 			NOT = {
-				TAG = YUG
+				tag = SER
 				TAG = BUL
 			}
 		}
@@ -12704,7 +12682,7 @@ news_event = {
 	option = {
 		name = news.326.a
 		trigger = {
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -12717,7 +12695,7 @@ news_event = {
 		name = news.326.c
 		trigger = { 
 			NOT = {
-				TAG = YUG
+				tag = SER
 				TAG = CRO
 			}
 		}
@@ -12738,7 +12716,7 @@ news_event = {
 	option = {
 		name = news.327.a
 		trigger = {
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -12751,7 +12729,7 @@ news_event = {
 		name = news.327.c
 		trigger = { 
 			NOT = {
-				TAG = YUG
+				tag = SER
 				TAG = GRE
 			}
 		}
@@ -12772,7 +12750,7 @@ news_event = {
 	option = {
 		name = news.328.a
 		trigger = {
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -12785,7 +12763,7 @@ news_event = {
 		name = news.328.c
 		trigger = { 
 			NOT = {
-				TAG = YUG
+				tag = SER
 				TAG = ITA
 			}
 		}
@@ -12806,7 +12784,7 @@ news_event = {
 	option = {
 		name = news.329.a
 		trigger = {
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -12819,7 +12797,7 @@ news_event = {
 		name = news.329.c
 		trigger = { 
 			NOT = {
-				TAG = YUG
+				tag = SER
 				TAG = SOV
 			}
 		}
@@ -12840,7 +12818,7 @@ news_event = {
 	option = {
 		name = news.330.a
 		trigger = {
-			TAG = YUG
+			tag = SER
 		}
 	}
 	option = {
@@ -12862,7 +12840,7 @@ news_event = {
 		name = news.330.e
 		trigger = { 
 			NOT = {
-				TAG = YUG
+				tag = SER
 				TAG = SOV
 				TAG = BUL
 				TAG = ALB
@@ -13014,9 +12992,6 @@ news_event = { #Panay Incident - initial incident
 	option = {
 		name = news.334.c
 		trigger = { TAG = ENG }
-		ENG = {
-			add_opinion_modifier = { target = JAP modifier = panay_inc2_opinion_modifier }
-		}
 	}
 }
 

@@ -86,6 +86,20 @@ script_enum_equipment_bonus_type = {
 
 	ship_hull_cruiser_coastal_defense_ship
 	floating_harbor_equipment
+	
+	#mod
+	artillery_manufacturer
+	
+	medium_air
+	light_air
+	
+	light_tank_equipment
+	medium_tank_equipment
+	heavy_tank_equipment
+	
+	light_tank_artillery_equipment
+	medium_tank_artillery_equipment
+	heavy_tank_artillery_equipment
 }
 
 script_enum_operative_mission_type = {

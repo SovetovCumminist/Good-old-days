@@ -1115,7 +1115,7 @@ unit_medals = {
 	yug_extreme_bravery = {
 		
 		available = { 
-			tag = YUG
+			tag = SER
 		}
 		frame = 1
 		icon = "GFX_medal_icon_default"

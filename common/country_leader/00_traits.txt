@@ -3770,6 +3770,7 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+
 		}
 	}
 
@@ -3792,6 +3793,7 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+
 		}
 	}
 	staunch_monarchist = {
@@ -3802,6 +3804,7 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+
 		}
 	}
 

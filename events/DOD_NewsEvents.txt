@@ -22,7 +22,7 @@ news_event = {
 		trigger = {
 			OR = {
 				TAG = ROM
-				TAG = YUG
+				tag = SER
 			}
 		}
 	}
@@ -51,7 +51,7 @@ news_event = {
 				TAG = ITA
 				TAG = CZE
 				TAG = ROM
-				TAG = YUG
+				tag = SER
 				TAG = HUN
 			}
 		}

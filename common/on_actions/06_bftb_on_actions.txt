@@ -26,14 +26,14 @@ on_actions = {
 					ROOT = {
 						original_tag = BUL
 					}
-					YUG = { has_government = communism }
+					SER = { has_government = communism }
 				}
 				random_country = {
 					limit = {
 						original_tag = BUL
 						has_government = communism
 					}
-					set_cosmetic_tag = YUG_puppet_1
+					set_cosmetic_tag = SER_puppet_1
 				}
 			}
 			if = {
@@ -44,14 +44,14 @@ on_actions = {
 					ROOT = {
 						original_tag = ALB
 					}
-					YUG = { has_government = communism }
+					SER = { has_government = communism }
 				}
 				random_country = {
 					limit = {
 						original_tag = ALB
 						has_government = communism
 					}
-					set_cosmetic_tag = YUG_puppet_2
+					set_cosmetic_tag = SER_puppet_2
 				}
 			}
 			if = {
@@ -62,14 +62,14 @@ on_actions = {
 					ROOT = {
 						original_tag = GRE
 					}
-					YUG = { has_government = communism }
+					SER = { has_government = communism }
 				}
 				random_country = {
 					limit = {
 						original_tag = GRE
 						has_government = communism
 					}
-					set_cosmetic_tag = YUG_puppet_3
+					set_cosmetic_tag = SER_puppet_3
 				}
 			}
 			if = {
@@ -80,14 +80,14 @@ on_actions = {
 					ROOT = {
 						original_tag = ROM
 					}
-					YUG = { has_government = communism }
+					SER = { has_government = communism }
 				}
 				random_country = {
 					limit = {
 						original_tag = ROM
 						has_government = communism
 					}
-					set_cosmetic_tag = YUG_puppet_4
+					set_cosmetic_tag = SER_puppet_4
 				}
 			}
 			if = {
@@ -98,14 +98,14 @@ on_actions = {
 					ROOT = {
 						original_tag = HUN
 					}
-					YUG = { has_government = communism }
+					SER = { has_government = communism }
 				}
 				random_country = {
 					limit = {
 						original_tag = HUN
 						has_government = communism
 					}
-					set_cosmetic_tag = YUG_puppet_5
+					set_cosmetic_tag = SER_puppet_5
 				}
 			}
 			if = {
@@ -116,14 +116,14 @@ on_actions = {
 					ROOT = {
 						original_tag = TUR
 					}
-					YUG = { has_government = communism }
+					SER = { has_government = communism }
 				}
 				random_country = {
 					limit = {
 						original_tag = TUR
 						has_government = communism
 					}
-					set_cosmetic_tag = YUG_puppet_6
+					set_cosmetic_tag = SER_puppet_6
 				}
 			}
 		}

@@ -1548,12 +1548,14 @@ RUS_CAV_02 = #COSSACK CAVALRY
 {
 	name = "Cossack Cavalry Division"
 
-	for_countries = { RUS UKR }
+	for_countries = { RUS UKR DON KUB }
 
 	can_use = {
 		OR = {
 			tag = RUS
 			tag = UKR
+			tag = DON
+			tag = KUB
 		}
 	}
 
