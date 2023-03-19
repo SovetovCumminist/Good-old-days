@@ -3,7 +3,7 @@ state = {
 	name = "STATE_404" # Kyzyl Orda
 
 	history = {
-		owner = RUS
+		owner = SOV
 		victory_points = {
 			7597 1
 		}
@@ -13,7 +13,7 @@ state = {
 
 		}
 		add_core_of = SOV
-
+		add_core_of = RUS
 	}
 
 	provinces = {

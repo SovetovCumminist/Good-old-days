@@ -6,7 +6,7 @@ state = {
 
 	history = {
 	
-		owner = RUS
+		owner = BUK
 		
 		victory_points = {
 			1573 2 

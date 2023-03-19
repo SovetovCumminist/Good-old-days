@@ -61,7 +61,7 @@ add_ideas = {
 	Central_Powers_occupation
 	Red_Movement
 }
-set_cosmetic_tag = UKR_German_occupation
+#set_cosmetic_tag = UKR_German_occupation
 
 #III Универсал провозгласил независимость УНР, но этим же актом, установлено что Украина будет находиться в федеративной связи с Российской Республикой.
 1917.11.7 = {
@@ -121,6 +121,7 @@ create_country_leader = {
 }
 
 1921.1.1 = {
+	oob = "UKR_1921"
 
 	add_political_power = 666
 	add_command_power = 100

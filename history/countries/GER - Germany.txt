@@ -45,7 +45,7 @@ create_country_leader = {
 	}
 }
 
-#Демократизм (Первый президент
+#Демократизм (Первый президент)
 create_country_leader = {
 	name = "Friedrich Ebert"
 	desc = ""
@@ -53,6 +53,7 @@ create_country_leader = {
 	expire = "1925.2.1"
 	ideology = socialism
 	traits = {
+	}
 }
 
 #Радикализм
@@ -165,7 +166,7 @@ add_to_faction = BUL
 1916.11.5 = {
 	set_autonomy = {
 		target = POL
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
 	}
 }
 1918.11.11 = {
@@ -178,7 +179,7 @@ add_to_faction = BUL
 1918.2.16 = { 
 	set_autonomy = {
 		target = LIT
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_occupy_territory
 	}
 }
 1918.11.18 = { 
@@ -191,65 +192,47 @@ add_to_faction = BUL
 1918.3.8 = {
 	set_autonomy = {
 		target = LAT
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_occupy_territory
 	}
 }
 1918.11.18 = {
 	set_autonomy = {
 		target = LAT
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_free
 	}
 }
 #Объединенное Балтийское Герцогство
 1918.9.22 = {
 	set_autonomy = {
 		target = EST
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_occupy_territory
 	}
 }
 1918.11.28 = {
 	set_autonomy = {
 		target = EST
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_free
 	}
 }
 #Белорусская Народная Республика
 1918.3.8 = {
 	set_autonomy = {
 		target = BLR
-		autonomous_state = autonomy_puppet
-	}
-}
-1919.3.1 = {
-	set_autonomy = {
-		target = BLR
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_occupy_territory
 	}
 }
 #Украинское Государство
 1918.4.29 = {
 	set_autonomy = {
 		target = UKR
-		autonomous_state = autonomy_puppet
-	}
-}
-1919.12.14 = {
-	set_autonomy = {
-		target = UKR
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_occupy_territory
 	}
 }
 #Крымское Краевое Правительство
 1918.6.25 = {
 	set_autonomy = {
 		target = CRI
-		autonomous_state = autonomy_puppet
-	}
-}
-1919.4.2 = {
-	set_autonomy = {
-		target = CRI
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_occupy_territory
 	}
 }
 
@@ -270,6 +253,29 @@ add_to_faction = BUL
 	}
 }
 
+#Белорусская Народная Республика свободна
+1919.3.1 = {
+	set_autonomy = {
+		target = BLR
+		autonomous_state = autonomy_free
+	}
+}
+#Крымское Краевое Правительство свободно
+1919.4.2 = {
+	set_autonomy = {
+		target = CRI
+		autonomous_state = autonomy_free
+	}
+}
+#Украинское Государство свободно
+1919.12.14 = {
+	set_autonomy = {
+		target = UKR
+		autonomous_state = autonomy_free
+	}
+}
+
+#Второй сценарий
 1921.1.1 = {
 	set_oob = "GER_1921"
 

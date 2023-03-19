@@ -4,7 +4,7 @@ state={
 
 	history={
 		owner = RUS
-		controller = UKR
+		controller = GER
 		buildings = {
 			infrastructure = 1
 

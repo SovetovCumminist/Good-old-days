@@ -55,6 +55,14 @@ create_country_leader = {
 		target = GER
 		type = annex_everything
 	}
+	declare_war_on = {
+		target = AUS
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = OTT
+		type = annex_everything
+	}
 }
 
 #Второй сценарий
