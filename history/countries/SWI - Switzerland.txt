@@ -12,7 +12,7 @@ set_convoys = 0
 
 #Радикализм
 create_country_leader = {
-	name = "Mustafa Sufi"
+	name = "Schweizerischer Bundesrat"
 	desc = ""
 	picture = "gfx/leaders/SWI/portrait_Schweizerischer_Bundesrat_Council.dds"
 	expire = "1936.1.1"
@@ -23,7 +23,7 @@ create_country_leader = {
 
 #Республиканизм
 create_country_leader = {
-	name = "Mustafa Sufi"
+	name = "Schweizerischer Bundesrat"
 	desc = ""
 	picture = "gfx/leaders/SWI/Portrait_Schweizerischer_Bundesrat.dds"
 	expire = "1936.1.1"
@@ -34,7 +34,7 @@ create_country_leader = {
 
 #Монархизм
 create_country_leader = {
-	name = "Mustafa Sufi"
+	name = "Schweizerischer Bundesrat"
 	desc = ""
 	picture = "gfx/leaders/SWI/portrait_Schweizerischer_Bundesrat_Council.dds"
 	expire = "1936.1.1"
@@ -45,7 +45,7 @@ create_country_leader = {
 
 #Реваншизм
 create_country_leader = {
-	name = "Mustafa Sufi"
+	name = "Schweizerischer Bundesrat"
 	desc = ""
 	picture = "gfx/leaders/SWI/Portrait_Schweizerischer_Bundesrat.dds"
 	expire = "1936.1.1"

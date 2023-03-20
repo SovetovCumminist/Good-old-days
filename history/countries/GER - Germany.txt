@@ -221,18 +221,40 @@ add_to_faction = BUL
 		autonomous_state = autonomy_occupy_territory
 	}
 }
-#Украинское Государство
-1918.4.29 = {
+#Украинская Народная Республика (до установления марионеточного Гетьманата, была просто оккупированной территорией)
+1918.1.1 = {
 	set_autonomy = {
 		target = UKR
 		autonomous_state = autonomy_occupy_territory
 	}
 }
-#Крымское Краевое Правительство
-1918.6.25 = {
+#Украинское Государство (установление Гетьманата)
+1918.4.29 = {
+	set_autonomy = {
+		target = UKR
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+#Крымская Народная Республика (до установления марионеточного Краевого Правительства, была просто оккупированной территорией)
+1918.1.1 = {
 	set_autonomy = {
 		target = CRI
 		autonomous_state = autonomy_occupy_territory
+	}
+}
+#Крымское Краевое Правительство
+1918.6.25 = {
+	CRI = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1918.6.25"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+	set_autonomy = {
+		target = CRI
+		autonomous_state = autonomy_integrated_puppet
 	}
 }
 

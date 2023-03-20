@@ -10,6 +10,8 @@ set_research_slots = 3
 
 set_medium_tech = yes
 
+set_cosmetic_tag = AUH
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1916.11.21"
@@ -35,7 +37,32 @@ create_country_leader = {
 	}
 }
 
-#Республиканизм (Первый президент)
+#Первая мировая
+1914.7.28 = {
+	declare_war_on = {
+		target = SER
+		type = annex_everything
+	}
+}
+
+#Республика Германская Австрия
+1919.3.9 = {
+	set_cosmetic_tag = AUS_german_democratic
+	
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1920.12.9"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+#Сен-Жерменский мирный договор (Германская Австрия стала просто Австрией)
+1919.3.9 = {
+	drop_cosmetic_tag = yes
+}
+
+#Республиканизм (Первый президент )
 create_country_leader = {
 	name = "Karl Seitz"
 	desc = ""
@@ -46,14 +73,7 @@ create_country_leader = {
 	}
 }
 
-#Первая мировая
-1914.7.28 = {
-	declare_war_on = {
-		target = SER
-		type = annex_everything
-	}
-}
-
+#Республиканизм (Второй президент )
 1920.12.9 = {
 	set_politics = {
 		ruling_party = democratic
@@ -61,12 +81,14 @@ create_country_leader = {
 		election_frequency = 48
 		elections_allowed = yes
 	}
-
-	set_popularities = {
-		neutrality = 5
-		fascism = 5
-		democratic = 70
-		communism = 20
+	create_country_leader = {
+		name = "Michael Hainisch"
+		desc = ""
+		picture = "gfx/leaders/AUS/Portrait_Hainisch.dds"
+		expire = "1924.12.10"
+		ideology = socialism
+		traits = {
+		}
 	}
 }
 
@@ -78,4 +100,23 @@ create_country_leader = {
 	add_command_power = 100
 	
 	set_second_medium_tech = yes
+}
+
+#Второй срок Хайниша
+1924.12.10 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1924.12.10"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	create_country_leader = {
+		name = "Michael Hainisch"
+		desc = ""
+		picture = "gfx/leaders/AUS/Portrait_Hainisch.dds"
+		expire = "1928.12.10"
+		ideology = socialism
+		traits = {
+		}
+	}
 }

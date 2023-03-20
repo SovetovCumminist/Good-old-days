@@ -1,5 +1,5 @@
 ﻿l_russian:
- occupy_territory:0 "Оккупационная территория"
+ autonomy_occupy_territory:0 "Оккупационная территория"
  
  
  autonomy_dominion:0 "Доминион"
