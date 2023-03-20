@@ -45,7 +45,7 @@ create_country_leader = {
 	}
 }
 
-#Демократизм (Первый президент)
+#Республиканизм (Первый президент)
 create_country_leader = {
 	name = "Friedrich Ebert"
 	desc = ""

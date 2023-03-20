@@ -21,7 +21,7 @@ create_country_leader = {
 	}
 }
 
-#Демократизм
+#Республиканизм
 create_country_leader = {
 	name = "Mustafa Sufi"
 	desc = ""

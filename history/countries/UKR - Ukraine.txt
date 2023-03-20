@@ -44,8 +44,7 @@ create_country_leader = {
 	}
 }
 
-
-#Демократизм (Свергнут Скоропадским 1918.4.29)
+#Республиканизм (Свергнут Скоропадским 1918.4.29)
 create_country_leader = {
 	name = "Mikhail Grushevsky"
 	desc = ""
@@ -92,7 +91,7 @@ create_country_leader = {
 	}
 }
 
-#Демократизм (Первый глава Директории, про-советский)
+#Республиканизм (Первый глава Директории, про-советский)
 1918.12.14 = {
 	create_country_leader = {
 		name = "Vladimir Vinnichenko"

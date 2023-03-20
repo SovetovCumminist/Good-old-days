@@ -2,217 +2,17 @@
 
 starting_train_buffer = 3.0
 
-set_oob = "SOV_1936"
-
-set_research_slots = 3
+set_oob = "RUS_1918"
 
 set_stability = 0.5
 set_war_support = 0.3
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_military_police = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	paratroopers = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	mass_assault = 1
-	fleet_in_being = 1
-	fuel_silos = 1
-	fuel_refining = 1
-	synth_oil_experiments = 1
-	basic_train = 1
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		engine_tech_1 = 1
-		engine_tech_2 = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		mtg_transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-		armored_car1 = 1
-	}
-}
-
-1921.1.1 = {
-
-	add_political_power = 666
-	add_command_power = 100
-	
-	set_stability = 0.55
-	set_war_support = 0.70
-
-	#LAWS
-	add_ideas = {
-		war_economy
-		extensive_conscription
-	}
-	
-	set_oob = "SOV_1939"
-	
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SOV_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SOV_1939_naval_legacy"
-		}
-	}
-
-	set_technology = {
-		CAS1 = 1
-		tactical_bomber1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-
-		#doctrines
-		pocket_defence = 1
-		defence_in_depth = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#Air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-			improved_light_tank = 1 
-			basic_heavy_tank = 1
-			basic_medium_tank = 1
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			improved_light_tank_chassis = 1
-			basic_heavy_tank_chassis = 1
-			basic_medium_tank_chassis = 1 
-		}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			basic_destroyer = 1
-			basic_heavy_cruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			improved_ship_hull_light = 1
-			improved_ship_hull_submarine = 1
-			basic_ship_hull_cruiser = 1
-		}
-	}
-}
-
+set_research_slots = 3
+set_medium_tech = yes
 
 set_convoys = 500
 
-1918.1.19 = {
-	create_faction = White_Movement
-	add_to_faction = RUS
-	#add_to_faction = DON
-	#add_to_faction = TAN
-}
-
+#Двоевластие
 add_ideas = {
 	Soviets
 }
@@ -223,13 +23,14 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	communism = 25
-	democratic = 25
-	neutrality = 25
-	fascism = 25
+	communism = 5
+	democratic = 60
+	fascism = 35
 }
 
+#Радикализм
 create_country_leader = {
 	name = "Yuliy Martov"
 	desc = ""
@@ -240,17 +41,7 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Kirill I"
-	desc = ""
-	picture = "gfx/leaders/RUS/Portrait_Kirill.dds"
-	expire = "1936.1.1"
-	ideology = democratic_monarchism
-	traits = {
-	}
-}
-
-#Расстрелян в 1918
+#Монархизм (Расстрелян 1918.7.17)
 create_country_leader = {
 	name = "Nicolay II"
 	desc = ""
@@ -261,6 +52,7 @@ create_country_leader = {
 	}
 }
 
+#Реваншизм
 create_country_leader = {
 	name = "Alexander Kolchak"
 	desc = ""
@@ -271,6 +63,7 @@ create_country_leader = {
 	}
 }
 
+#Республиканизм
 create_country_leader = {
 	name = "Alexander Kerensky"
 	desc = ""
@@ -279,4 +72,43 @@ create_country_leader = {
 	ideology = socialism
 	traits = {
 	}
+}
+
+#Белое движение
+1917.1.1 = {
+	create_faction = White_Movement
+	add_to_faction = RUS
+	add_to_faction = DON
+}
+
+1918.7.17 = {
+	#Монархизм
+	create_country_leader = {
+		name = "Kirill I"
+		desc = ""
+		picture = "gfx/leaders/RUS/Portrait_Kirill.dds"
+		expire = "1936.1.1"
+		ideology = democratic_monarchism
+		traits = {
+		}
+	}
+}
+
+#Второй сценарий
+1921.1.1 = {
+	set_oob = "RUS_1921"
+
+	add_political_power = 666
+	add_command_power = 100
+	
+	set_stability = 0.55
+	set_war_support = 0.70
+
+	#LAWS
+	add_ideas = {
+		new_economic_policy
+		extensive_conscription
+	}
+	
+	set_second_medium_tech = yes
 }

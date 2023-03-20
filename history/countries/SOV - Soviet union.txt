@@ -39,17 +39,6 @@ create_country_leader = {
 	}
 }
 
-#Первый глава ВЦИК, умер во время эпидемии испанского гриппа 
-create_country_leader = {
-	name = "Yakov Sverdlov"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Sverdlov.dds"
-	expire = "1919.3.16"
-	ideology = leninism
-	traits = {
-	}
-}
-
 #Ленин, ебать (Он не был главой государства, был главой СНК, который подчинялся ВЦИК)
 create_country_leader = {
 	name = "Vladimir Lenin"
@@ -61,12 +50,29 @@ create_country_leader = {
 	}
 }
 
+#Первый глава ВЦИК, умер во время эпидемии испанского гриппа 
+create_country_leader = {
+	name = "Yakov Sverdlov"
+	desc = ""
+	picture = "gfx/leaders/SOV/Portrait_Sverdlov.dds"
+	expire = "1919.3.16"
+	ideology = leninism
+	traits = {
+	}
+}
+
 #Образование РСФСР
 1917.10.25 = {
 	set_cosmetic_tag = SOV_soviet_republic
 
 	create_faction = Left_Movement
 	add_to_faction = SOV
+}
+
+#Гражданская война в России
+declare_war_on = {
+	target = RUS
+	type = annex_everything
 }
 
 #После смерти Свердлова, главой страны стал Калинин
@@ -90,6 +96,7 @@ create_country_leader = {
 	}
 }
 
+#Второй сценарий
 1921.1.1 = {
 	set_oob = "SOV_1921"
 

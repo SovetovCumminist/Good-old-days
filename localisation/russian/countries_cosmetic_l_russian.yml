@@ -42,6 +42,14 @@
  SOV_soviet_republic_red_flag_classic:0 "Российская Социалистическая Федеративная Советская Республика"
  SOV_soviet_republic_red_flag_classic_DEF:0 "Российская Социалистическая Федеративная Советская Республика"
  
+ KHI_SOV_communism_subject:0 "Хорезмская Социалистическая Советская Республика"
+ KHI_SOV_communism_subject_DEF:0 "Хорезмская Социалистическая Советская Республика"
+ KHI_SOV_communism_subject_ADJ:0 "Хорезмск."
+ 
+ BUK_SOV_communism_subject:0 "Бухарская Социалистическая Советская Республика"
+ BUK_SOV_communism_subject_DEF:0 "Баварская Социалистическая Советская Республика"
+ BUK_SOV_communism_subject_ADJ:0 "Бухарск."
+ 
  #Германские вассалы
  
  UKR_GER_neutrality:0 "Украинское Государство"
