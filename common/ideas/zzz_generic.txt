@@ -2,6 +2,27 @@ ideas = {
 
 	hidden_ideas = {
 		
+		comintern_influence = {
+			
+			picture = generic_communism_drift_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.4
+			}
+		}
+		
 		league_of_nations_member_idea = { 
 			allowed = {
 				always = no

@@ -2,7 +2,7 @@ the_struggle_for_independence = {
 	icon = GFX_decision_category_saf_anti_colonialist_crusade
 
 	visible = {
-		#is_subject = yes
+		is_subject = yes
 		is_ai = no
 	}
 }

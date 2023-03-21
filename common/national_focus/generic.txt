@@ -1935,6 +1935,83 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = political_correctness
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = proclaim_soviet_republic }
+		x = 0
+		y = 1
+		relative_position_id = proclaim_soviet_republic
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}		
+			add_political_power = 200
+			add_ideas = idea_political_correctness
+		}
+	}
+
+	focus = {
+		id = indoctrination_focus
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = political_correctness }
+		x = 0
+		y = 1
+		relative_position_id = political_correctness
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = indoctrination_focus
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = political_commissars
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = indoctrination_focus }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = indoctrination_focus
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = political_commissars_focus
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+			}
+			add_political_power = 200
+		}
+	}
+	
+	focus = {
 		id = crush_the_state
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		prerequisite = { focus = victory_of_revolution }
@@ -2109,19 +2186,17 @@ focus_tree = {
 			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
 		}
 	}
-
+	
+	#Национально-освободительная война
 	focus = {
 		id = nationalism_focus
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = collectivist_ethos }
 		mutually_exclusive = { focus = internationalism_focus }
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
+			has_government = communism
 		}
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
@@ -2144,12 +2219,8 @@ focus_tree = {
 				factor = 0
 				AND = {
 					is_historical_focus_on = yes
-					NOT = { has_government = fascism }
+					NOT = { has_government = communism }
 				}
-			}
-			modifier = {
-				factor = 10
-				has_idea = SOV_russian_political_influence
 			}
 		}
 
@@ -2161,24 +2232,16 @@ focus_tree = {
 		}
 	}
 	
+	#Мировая революция
 	focus = {
 		id = internationalism_focus
 		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = collectivist_ethos }
 		mutually_exclusive = { focus = nationalism_focus }
 		available = {
-			if = {
-				limit = { original_tag = CHI }
-				has_government = communism
-				else = {
-					OR = {
-						has_government = communism
-						has_government = neutrality
-					}
-				}
-			}
+			has_government = communism
 		}
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
@@ -2186,8 +2249,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
-
-
+		
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -2211,6 +2273,83 @@ focus_tree = {
 				idea = internationalism
 				days = 720
 			}
+		}
+	}
+	
+	focus = {
+		id = woman_rights_focus
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = internationalism_focus }
+		x = 0
+		y = 1
+		relative_position_id = internationalism_focus
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}		
+			add_political_power = 200
+			add_ideas = idea_political_correctness
+		}
+	}
+	
+	focus = {
+		id = distribute_land_focus
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = woman_rights_focus }
+		x = 0
+		y = 1
+		relative_position_id = woman_rights_focus
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = indoctrination_focus
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = planned_economy_focus
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = distribute_land_focus }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = distribute_land_focus
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = political_commissars_focus
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+			}
+			add_political_power = 200
 		}
 	}
 
@@ -2281,29 +2420,6 @@ focus_tree = {
 			add_ideas = militarism_focus
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
-		}
-	}
-
-	focus = {
-		id = political_correctness
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = internationalism_focus }
-		x = 0
-		y = 1
-		relative_position_id = internationalism_focus
-		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL  }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}		
-			add_political_power = 200
-			add_ideas = idea_political_correctness
 		}
 	}
 
@@ -2464,25 +2580,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = indoctrination_focus
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = political_correctness }
-		x = 0
-		y = 1
-		relative_position_id = political_correctness
-		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL  }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = indoctrination_focus
-			add_political_power = 150
-		}
-	}
-
-	focus = {
 		id = foreign_expeditions
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = volunteer_corps }
@@ -2535,44 +2632,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = political_commissars
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = indoctrination_focus }
-		available = {
-		}
-		x = 0
-		y = 1
-		relative_position_id = indoctrination_focus
-		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL  }
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = political_commissars_focus
-			if = {
-				limit = { has_government = fascism }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-			}
-			if = {
-				limit = { has_government = communism }
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
-				}
-			}
-			add_political_power = 200
-		}
-	}
-
-	focus = {
 		id = ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = paramilitarism focus = political_commissars }
+		prerequisite = { focus = paramilitarism focus = planned_economy_focus }
 		x = 1
 		y = 1
 		relative_position_id = paramilitarism

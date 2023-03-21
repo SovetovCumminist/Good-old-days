@@ -1,0 +1,1127 @@
+ideas = {
+	
+	government_minister = {
+	
+		# Министерства
+		
+		law = yes
+		use_list_view = yes
+
+		workhorse_bonus = {
+			
+			picture = generic_political_support
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				political_power_factor = 0.15 
+			}
+		}
+		
+		financial_bonus = {
+			
+			picture = generic_economic_increase
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				consumer_goods_factor = -0.05 
+			}
+		}
+		
+		terror_bonus = {
+
+			picture = ast_classify_aliens
+
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				resistance_damage_to_garrison = -0.25 
+				foreign_subversive_activites = -0.3
+				non_core_manpower = 0.02 
+			}
+		}
+		
+		compassionate_bonus = {
+
+			picture = ROM_king_carol_ii_hedonist
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				opinion_gain_monthly_factor = 0.15
+				political_power_factor = 0.1
+			}
+		}
+		
+		charmer_bonus = {
+
+			picture = received_attache
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				trade_opinion_factor = 0.10
+				opinion_gain_monthly_factor = 0.05
+			}
+		}
+		
+		fortification_bonus = {
+
+			picture = FRA_fortification_focus
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				production_speed_bunker_factor = 0.1
+				civilian_intel_factor = -0.1
+			}
+		}
+		
+		propaganda_bonus = {
+
+			picture = usa_magic
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				war_support_factor = 0.15 
+			}
+		}
+		
+		economist_bonus = {
+
+			picture = FRA_market_dynamism
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				production_factory_max_efficiency_factor = 0.05 
+			}
+		}
+		
+		industrialist_bonus = {
+
+			picture = SPA_la_division_azul
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1		
+				production_speed_fuel_silo_factor = 0.1
+			}
+		}
+		
+		industry_bonus = {
+
+			picture = captain_of_industry_mod_2d
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+		
+		editor_bonus = {
+			
+			picture = generic_flexible_foreign_policy
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				political_power_factor = 0.05
+				stability_factor = 0.05 
+			}
+		}
+		
+		technocrat_bonus = {
+
+			picture = technocrat_mod_2d
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				production_speed_industrial_complex_factor = 0.05
+				research_speed_factor = 0.05 
+			}
+		}
+		
+		armaments_bonus = {
+
+			picture = man_five_year_plan_tank
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				conversion_cost_civ_to_mil_factor = -0.2
+				production_speed_supply_node_factor = 0.1
+				# civ_to_mil_industry_conversion_rate = -1
+			}
+		}
+		
+		quartermaster_bonus = {
+
+			picture = man_five_year_plan_industry
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				production_speed_air_base_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+				production_speed_rocket_site_factor = 0.1
+				production_speed_radar_station_factor = 0.1
+			}
+		}
+		
+		rocket_bonus = {
+
+			picture = eng_special_air_service
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				production_speed_rocket_site_factor = 0.1
+			}
+			
+			equipment_bonus = {
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+					modifier = {
+						factor = 1
+						is_major = yes
+				}
+			}
+		}
+		
+		atomic_bonus = {
+
+			picture = SOV_atomic_bomb_project
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.15
+			}
+			
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			ai_will_do = {
+				factor = 0
+					modifier = {
+						factor = 2
+						is_major = yes
+				}
+			}
+		}
+	}
+
+	political_advisor = {
+	
+		# Организации
+		
+		revanchist_bonus = {
+
+			picture = syncretic_revanchist_mod_2d
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				generate_wargoal_tension = -0.5
+				justify_war_goal_time = -0.25 
+			}		
+		}
+		
+		figurehead_bonus = {
+
+			picture = HUN_hungarian_monarchy
+				
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				stability_factor = 0.15  
+			}
+		}
+		
+		backstabber_bonus = {
+
+			picture = tur_etatism_bonus
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				political_power_factor = 0.05
+				drift_defence_factor = 0.2 
+			}
+		}
+		
+		ideological_bonus = {
+
+			picture = FRA_matignon_agreements
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				opinion_gain_monthly_same_ideology_factor = 1.0
+				opinion_gain_monthly_factor = 0.05
+			}
+		}
+		
+		interventionist_bonus = {
+
+			picture = reluctant_interventionist_mod_2d
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				lend_lease_tension = -0.5
+				request_lease_tension = -0.5 
+			}
+		}
+		
+		pacific_bonus = {
+
+			picture = generic_pacifism
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				conscription = -0.05
+			}
+		}
+		
+		#Коммунистическое движения
+		communism_bonus = {
+			
+			picture = communist_revolutionary_mod_2d
+			
+			#allowed = {
+			#	has_com = generic_focus
+			#}
+			
+			modifier = { 
+				communism_drift = 0.1
+				consumer_goods_factor = -0.05
+			}
+
+			#on_add = { #Когда будем брать идеи, будет ивент об этом
+				#if = {
+					#limit = { NOT = { has_government = communism } }
+					#country_event = political.1
+				#}
+			#}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					has_government = communism
+				}
+			}
+		}
+		
+		fascism_bonus = {
+			
+			picture = fascist_demagogue_mod_2d
+			
+			#allowed = {
+				#has_focus_tree = generic_focus
+			#}
+			
+			modifier = {
+				fascism_drift = 0.05
+				war_support_factor = 0.1
+			}
+
+			#on_add = {
+				#if = {
+					#limit = { NOT = { has_government = fascism } }
+					#country_event = political.7
+				#}
+			#}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					
+				}
+			}
+		}
+
+		neutrality_bonus = {
+			
+			picture = neutrality_loyalist_mod_2d
+			
+			#allowed = {
+				#has_focus_tree = generic_focus
+			#}
+			
+			modifier = { 
+				neutrality_drift = 0.05
+				political_power_factor = 0.1
+			}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					has_government = neutrality
+				}
+			}
+		}
+
+		democracy_bonus = {
+			
+			picture = EST_democratic_opposition
+			
+			#allowed = {
+				#has_focus_tree = generic_focus
+			#}
+			
+			modifier = {
+				democratic_drift = 0.025
+				stability_factor = 0.1
+			}
+
+			#on_add = {
+				#if = {
+					#limit = { NOT = has_government = democratic }
+					#country_event = political.13
+				#}
+			#}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					or = { has_government = democratic }
+				}
+			}
+		}
+		
+		#Профсоюзы
+		unions_bonus = {
+			
+			picture = SOV_system_decentralization
+			
+			visible = {
+				has_government = communism
+			}
+			
+			modifier = { 
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05		
+				production_speed_fuel_silo_factor = 0.05
+			}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					has_government = communism
+				}
+			}
+		}
+		
+		clerics_bonus = {
+			
+			picture = SOV_church_and_mosque
+			
+			visible = {
+				has_government = fascism
+			}
+			
+			modifier = { 
+				stability_factor = 0.1
+			}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					has_government = fascism
+				}
+			}
+		}
+
+		oligarchy_bonus = {
+			
+			picture = generic_oligarchy
+			
+			visible = {
+				has_government = neutrality
+			}
+			
+			modifier = { 
+				war_support_factor = 0.1
+			}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					has_government = neutrality
+				}
+			}
+		}
+
+		bourgeoisie_bonus = {
+			
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			visible = {
+				or = { has_government = democratic }
+			}
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					or = { has_government = democratic }
+				}
+			}
+		}
+		
+		putinyugend_bonus = {
+			
+			picture = putinyugend_bonus
+			
+			modifier = { 
+				conscription = 0.01
+			}
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 1
+					has_government = communism
+				}
+				modifier = {
+					factor = 1
+					has_government = fascism
+				}
+			}
+		}
+	}
+	
+	idea_theorist = {
+
+		#Военные теоретики
+
+		idea_military_theorist = {
+			ledger = army
+			
+			picture = jap_interservice_rivalry_army_dominant
+
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.10
+				experience_gain_army = 0.01
+			}
+		}
+		
+		air_warfare_theorist = {
+			ledger = air
+			
+			picture = jap_interservice_rivalry_balanced
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			modifier = {
+				air_fuel_consumption_factor = -0.05
+				experience_gain_air = 0.01
+			}
+		}
+		
+		naval_theorist = {
+			ledger = navy
+			
+			picture = jap_interservice_rivalry_navy_dominant
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				experience_gain_navy = 0.01
+			}
+		}
+	}
+	
+	idea_army_chief = {
+		
+		#Армия
+		
+		army_attack_bonus = {
+			picture = vittoria_mutilata
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				army_attack_factor = 0.1
+				war_support_factor = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		army_defensive_bonus = {
+			picture = YUG_federal_defense_council
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				army_defence_factor = 0.1
+				mobilization_speed = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					is_major = no
+				}
+			}
+		}
+		
+		army_maneuver_bonus = {
+			picture = prc_the_long_march2
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				army_speed_factor = 0.1
+				coordination_bonus = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		army_entrenchment_bonus = {
+			picture = generic_fortify_the_borders
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					is_major = no
+				}
+			}
+		}
+		
+		army_organizational_bonus = {
+
+			picture = tur_disorganised_armed_forces
+			
+			allowed = {
+				original_tag = ROOT
+			}		
+			
+			modifier = {
+				army_org_factor = 0.1
+				planning_speed = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		army_morale_bonus = {
+			picture = por_volunteers_in_the_war2
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				mobilization_speed = 0.05
+				army_morale_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		army_invasion_support_bonus = {
+			picture = eng_preparing_the_second_front
+			
+			allowed = {
+				original_tag = ROOT
+			}
+					
+			modifier = {
+				naval_invasion_capacity = 10
+				unit_marine_design_cost_factor = -1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		army_reform_bonus = {
+			picture = eng_special_air_service
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				experience_gain_infantry_combat_factor = 0.1
+				unit_infantry_design_cost_factor = -0.5
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 2
+					is_major = yes
+				}
+			}
+		}
+	}
+	
+	idea_navy_chief = {
+		
+		#Флот
+		
+		navy_anti_submarine_bonus = {
+			picture = generic_sea_focused_navy
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			research_bonus = {
+				ss_tech = 0.10
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					is_major = no
+				}
+				modifier = {
+					factor = 2
+					tag = GER
+				}
+			}
+		}
+		
+		navy_commerce_raiding_bonus = {
+			picture = eng_preparing_the_second_front
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.10
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		navy_decisive_battle_bonus = {
+			picture = generic_the_london_naval_treaty
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1 
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		navy_naval_aviation_bonus = {
+			picture = generic_navy_carrier_bonus
+			
+			allowed = {
+				original_tag = ROOT
+			}
+		
+			modifier = { 
+				navy_carrier_air_attack_factor = 0.05
+				navy_carrier_air_targetting_factor = 0.10
+				navy_carrier_air_agility_factor = 0.05 
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		navy_maneuver_bonus = {
+			picture = generic_navy_bonus
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				naval_speed_factor = 0.15 
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		navy_fleet_logistics_bonus = {
+			ledger = navy
+
+			picture = liberty_ships_focus
+
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				navy_max_range_factor = 0.15
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		navy_capital_ship_bonus = {
+			ledger = navy
+			
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		navy_reform_bonus = {
+			picture = eng_special_air_service
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				experience_gain_navy = 0.02
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 2
+					is_major = yes
+				}
+			}
+		}
+	}
+	
+	idea_air_chief = {
+		
+		#Авиация
+		
+		air_old_guard_bonus = {
+			picture = new_deal
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				political_power_factor = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		air_night_operations_bonus = {
+			picture = tur_tuz_golu_training_facility
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				air_night_penalty = -0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		air_ground_bonus = {
+			picture = strategic_bombing_focus
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		air_naval_strike_bonus = {
+			picture = the_long_lance
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				naval_strike_attack_factor = 0.1
+				naval_strike_targetting_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		air_combat_training_bonus = {
+			picture = air_war_plans_division_focus
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				air_ace_generation_chance_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		air_all_weather_bonus = {
+			picture = tur_sub_zero_survival_training
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				air_weather_penalty = -0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		air_safety_bonus = {
+			picture = generic_air_payment
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = { 
+				air_accidents_factor = -0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		air_reform_bonus = {
+			picture = eng_special_air_service
+			
+			allowed = {
+				original_tag = ROOT
+			}
+			
+			modifier = {
+				experience_gain_air = 0.01
+				air_doctrine_cost_factor = -0.10
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

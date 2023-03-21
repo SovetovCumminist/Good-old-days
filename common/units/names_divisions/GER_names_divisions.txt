@@ -501,10 +501,7 @@ GER_MOT_01 =
 	for_countries = { GER }
 
 	can_use = {
-		OR = {
-			has_government = neutrality 
-			has_government = democratic 
-		}
+		tag = GER
 	}
 
 	division_types = { "motorized"  }

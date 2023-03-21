@@ -6,13 +6,13 @@ neutrality_on_the_rise = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			neutrality > 0.1
+			#neutrality > 0.1
 			num_of_controlled_states > 1
 		}
 
 		visible = {
 			NOT = { has_country_flag = preparation_for_monarchist_civil_war }
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
 		}
@@ -39,7 +39,7 @@ neutrality_on_the_rise = {
 				has_country_flag = preparation_for_monarchist_civil_war
 				has_country_flag = open_up_political_discourse_neutrality
 			}
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
 		}
@@ -73,7 +73,7 @@ neutrality_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_monarchist_civil_war
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
 		}
@@ -129,7 +129,7 @@ neutrality_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_monarchist_civil_war
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			any_army_leader = {
 				is_field_marshal = no
@@ -161,7 +161,7 @@ neutrality_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_monarchist_civil_war
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			any_army_leader = {
 				NOT = { has_trait = hidden_sympathies }
@@ -199,7 +199,7 @@ neutrality_on_the_rise = {
 		visible = {
 			has_country_flag = preparation_for_monarchist_civil_war
 			has_country_flag = military_support_for_monarchist_civil_war
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
 		}
@@ -233,7 +233,7 @@ neutrality_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_monarchist_civil_war
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
 		}
@@ -264,7 +264,7 @@ neutrality_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_monarchist_civil_war
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
 			check_variable = { num_owned_states = 1 }
@@ -296,7 +296,7 @@ neutrality_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_monarchist_civil_war
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
 			check_variable = { num_owned_states > 1 }
@@ -411,7 +411,7 @@ neutrality_on_the_rise = {
 		}
 
 		visible = {
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 			NOT = { has_country_flag = open_up_political_discourse_neutrality }
 			NOT = { has_government = neutrality }
 			check_has_focus_tree_to_switch_to_neutrality = yes
@@ -443,7 +443,7 @@ neutrality_on_the_rise = {
 			democratic < 0.8
 			communism < 0.8
 			fascism < 0.8
-			has_idea = neutrality_bonus
+			neutrality > 0.6
 		}
 
 		visible = {
@@ -543,13 +543,13 @@ fascism_on_the_rise = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			fascism > 0.1
+			#fascism > 0.1
 			num_of_controlled_states > 1
 		}
 
 		visible = {
 			NOT = { has_country_flag = preparation_for_fascist_civil_war }
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 		}
@@ -576,7 +576,7 @@ fascism_on_the_rise = {
 				has_country_flag = preparation_for_fascist_civil_war
 				has_country_flag = open_up_political_discourse_fascism
 			}
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 		}
@@ -610,7 +610,7 @@ fascism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_fascist_civil_war
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 		}
@@ -666,7 +666,7 @@ fascism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_fascist_civil_war
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			any_army_leader = {
 				is_field_marshal = no
@@ -698,7 +698,7 @@ fascism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_fascist_civil_war
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			any_army_leader = {
 				NOT = { has_trait = hidden_sympathies }
@@ -736,7 +736,7 @@ fascism_on_the_rise = {
 		visible = {
 			has_country_flag = preparation_for_fascist_civil_war
 			has_country_flag = military_support_for_fascist_civil_war
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 		}
@@ -770,7 +770,7 @@ fascism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_fascist_civil_war
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 		}
@@ -801,7 +801,7 @@ fascism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_fascist_civil_war
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 			check_variable = { num_owned_states = 1 }
@@ -833,7 +833,7 @@ fascism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_fascist_civil_war
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 			check_variable = { num_owned_states > 1 }
@@ -948,7 +948,7 @@ fascism_on_the_rise = {
 		}
 
 		visible = {
-			has_idea = fascism_bonus
+			fascism > 0.6
 			NOT = { has_country_flag = open_up_political_discourse_fascism }
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
@@ -980,7 +980,7 @@ fascism_on_the_rise = {
 			democratic < 0.8
 			communism < 0.8
 			neutrality < 0.8
-			has_idea = fascism_bonus
+			fascism > 0.6
 		}
 
 		visible = {
@@ -1078,13 +1078,13 @@ democratic_on_the_rise = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			democratic > 0.1
+			#democratic > 0.1
 			num_of_controlled_states > 1
 		}
 
 		visible = {
 			NOT = { has_country_flag = preparation_for_democratic_civil_war }
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 		}
@@ -1111,7 +1111,7 @@ democratic_on_the_rise = {
 				has_country_flag = preparation_for_democratic_civil_war
 				has_country_flag = open_up_political_discourse_democratic
 			}
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 		}
@@ -1145,7 +1145,7 @@ democratic_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_democratic_civil_war
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 		}
@@ -1201,7 +1201,7 @@ democratic_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_democratic_civil_war
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			any_army_leader = {
 				is_field_marshal = no
@@ -1234,7 +1234,7 @@ democratic_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_democratic_civil_war
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			any_army_leader = {
 				NOT = { has_trait = hidden_sympathies }
@@ -1272,7 +1272,7 @@ democratic_on_the_rise = {
 		visible = {
 			has_country_flag = preparation_for_democratic_civil_war
 			has_country_flag = military_support_for_democratic_civil_war
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 		}
@@ -1306,7 +1306,7 @@ democratic_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_democratic_civil_war
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 		}
@@ -1337,7 +1337,7 @@ democratic_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_democratic_civil_war
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 			check_variable = { num_owned_states = 1 }
@@ -1369,7 +1369,7 @@ democratic_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_democratic_civil_war
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 			check_variable = { num_owned_states > 1 }
@@ -1483,7 +1483,7 @@ democratic_on_the_rise = {
 		}
 
 		visible = {
-			has_idea = democracy_bonus
+			democratic > 0.6
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 		}
@@ -1514,7 +1514,7 @@ democratic_on_the_rise = {
 			democratic < 0.8
 			communism < 0.8
 			neutrality < 0.8
-			has_idea = democracy_bonus
+			democratic > 0.6
 		}
 
 		visible = {
@@ -1612,13 +1612,13 @@ communism_on_the_rise = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			communism > 0.1
+			#communism > 0.1
 			num_of_controlled_states > 1
 		}
 
 		visible = {
 			NOT = { has_country_flag = preparation_for_communism_civil_war }
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 		}
@@ -1645,7 +1645,7 @@ communism_on_the_rise = {
 				has_country_flag = preparation_for_communist_civil_war
 				has_country_flag = open_up_political_discourse_communism
 			}
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 		}
@@ -1679,7 +1679,7 @@ communism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_communist_civil_war
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 		}
@@ -1735,7 +1735,7 @@ communism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_communist_civil_war
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			any_army_leader = {
 				is_field_marshal = no
@@ -1768,7 +1768,7 @@ communism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_communist_civil_war
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			any_army_leader = {
 				NOT = { has_trait = hidden_sympathies }
@@ -1806,7 +1806,7 @@ communism_on_the_rise = {
 		visible = {
 			has_country_flag = preparation_for_communist_civil_war
 			has_country_flag = military_support_for_communist_civil_war
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 		}
@@ -1840,7 +1840,7 @@ communism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_communist_civil_war
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 		}
@@ -1871,7 +1871,7 @@ communism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_communist_civil_war
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 			check_variable = { num_owned_states = 1 }
@@ -1903,7 +1903,7 @@ communism_on_the_rise = {
 
 		visible = {
 			has_country_flag = preparation_for_communist_civil_war
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 			check_variable = { num_owned_states > 1 }
@@ -2017,7 +2017,7 @@ communism_on_the_rise = {
 		}
 
 		visible = {
-			has_idea = communism_bonus
+			communism > 06
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 		}
@@ -2048,7 +2048,7 @@ communism_on_the_rise = {
 			democratic < 0.8
 			communism < 0.8
 			neutrality < 0.8
-			has_idea = communism_bonus
+			communism > 06
 		}
 
 		visible = {

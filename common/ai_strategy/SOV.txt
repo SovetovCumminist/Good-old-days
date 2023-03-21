@@ -1327,85 +1327,6 @@ SOV_dont_do_so_many_naval_invasions_please = {
 ### FOREIGN RELATIONS ###
 #########################
 
-#Soviets
-SOV_khakimov_proposal_sov = {
-	allowed = {
-		original_tag = SOV
-	}
-
-	enable = {
-		has_idea = SOV_maksim_litvinov
-		SAU = {
-			has_opinion = {
-				target = SOV
-				value < 0
-			}
-			is_subject = no
-		}
-		is_subject = no
-	}
-
-	abort = {
-		OR = {
-			NOT = { has_idea = SOV_maksim_litvinov }
-			is_in_faction_with = SAU
-			SAU = { has_capitulated = yes }
-			SAU = { is_subject = no }
-			SAU = {
-				has_opinion = {
-					target = SOV
-					value > 75
-				}
-			}
-			is_subject = yes
-		}
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = SAU
-		target = befriend
-		value = 50
-	}
-	ai_strategy = {
-		type = diplo_action_desire
-		id = SAU
-		target = improve_relation
-		value = 50
-	}
-}
-
-#Soviets
-SOV_khakimov_proposal_sau = {
-	allowed = {
-		original_tag = SAU
-	}
-
-	enable = {
-		SOV = {
-			has_idea = SOV_maksim_litvinov
-			is_subject = no
-		}
-		is_subject = no
-	}
-
-	abort = {
-		OR = {
-			SOV = { NOT = { has_idea = SOV_maksim_litvinov } }
-			is_in_faction_with = SOV
-			SOV = { has_capitulated = yes }
-			is_subject = yes
-		}
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = SOV
-		target = befriend
-		value = 25
-	}
-}
-
 SOV_unit_buffer_for_asian_threat = {
 	allowed = {
 		original_tag = SOV
@@ -1559,7 +1480,7 @@ SOV_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while
 	enable = {
 		date < 1925.1.1 #To space!
 		has_war_with = GER
-		GER = { has_idea = GER_barbarossa }
+		#GER = { has_idea = GER_barbarossa }
 	}
 
 	abort_when_not_enabled = yes
@@ -1587,7 +1508,7 @@ SOV_defend_blitzkrieg_2  = {#Only perform careful attacks, we want to defend for
 	enable = {
 		date < 1925.1.1 #To space!
 		has_war_with = GER
-		NOT = { GER = { has_idea = GER_barbarossa } }
+		#NOT = { GER = { has_idea = GER_barbarossa } }
 		is_historical_focus_on = yes
 	}
 
@@ -1612,13 +1533,13 @@ SOV_wants_civ = {
 		original_tag = SOV
 	}
 	enable = {
-		date < 1921.1.1
+		date < 1930.1.1
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 85
+		value = 185
 	}
 }
 

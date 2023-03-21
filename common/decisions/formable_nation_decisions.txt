@@ -6855,7 +6855,6 @@ form_turan_category = {
 
 		allowed = {
 			original_tag = TUR
-			#has_dlc = "Battle for the Bosporus"
 		}
 
 		available = {
@@ -6983,7 +6982,6 @@ form_turan_category = {
 
 		visible = {
 			original_tag = TUR
-			#has_completed_focus = TUR_turanist_ambition
 			NOT = { has_global_flag = form_turan_flag }
 		}
 
@@ -7110,7 +7108,7 @@ form_turan_category = {
 		icon = generic_form_nation
 
 		allowed = {
-			#has_dlc = "Battle for the Bosporus"
+			original_tag = TUR
 		}
 
 		available = {
@@ -7131,7 +7129,7 @@ form_turan_category = {
 		}
 
 		visible = {
-			#has_completed_focus = TUR_subdue_the_magyars
+			has_global_flag = form_turan_flag
 		}
 
 		fire_only_once = yes
@@ -7165,7 +7163,7 @@ form_turan_category = {
 		icon = generic_form_nation
 
 		allowed = {
-			#has_dlc = "Battle for the Bosporus"
+			original_tag = TUR
 		}
 
 		available = {
@@ -7205,7 +7203,7 @@ form_turan_category = {
 		}
 
 		visible = {
-			#has_completed_focus = TUR_cin_turkleri
+			has_global_flag = form_turan_flag
 		}
 
 		fire_only_once = yes
@@ -7257,9 +7255,9 @@ form_turan_category = {
 		icon = generic_form_nation
 
 		allowed = {
-			#has_dlc = "Battle for the Bosporus"
+			original_tag = TUR
 		}
-
+		
 		available = {
 			is_subject = no
 			has_global_flag = form_turan_flag
@@ -7283,7 +7281,7 @@ form_turan_category = {
 		}
 
 		visible = {
-			#has_completed_focus = TUR_crowning_ourselves_with_the_fin_ugor
+			has_global_flag = form_turan_flag
 		}
 
 		fire_only_once = yes
