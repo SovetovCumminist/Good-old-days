@@ -1,0 +1,125 @@
+﻿capital = 6
+
+#oob = "BDN_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 83
+	fascism = 11
+	communism = 6
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1939.4.2"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 87
+		fascism = 8
+		communism = 5
+	}
+}
+
+set_convoys = 80
+set_stability = 0.75
+
+create_country_leader = {
+	name = "Frans Van Cauwelaert"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "gfx/leaders/BEL/BSR_portrait_BEL_frans_van_cauwelaert.dds"
+	expire = "1965.1.1"
+	ideology = market_liberalism
+	traits = {
+		canny_administrator
+	}
+}
+
+create_country_leader = {
+	name = "Louis Paul Boon"
+	desc = ""
+	picture = "gfx/leaders/BEL/BSR_portrait_BEL_louis_paul_boon.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+	traits = {
+		POL_Union_Boss
+		socialist_novelist_2
+	}
+}
+
+create_country_leader = {
+	name = "Joris Van Severen"
+	desc = "POLITICS_STAF_DECLERCQ_DESC"
+	picture = "gfx/leaders/BEL/Portrait_Joris_Van_Severen.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	determined_general
+	}
+}
+
+create_country_leader = {
+	name = "Staf De Clercq"
+	desc = ""
+	picture = "gfx/leaders/BEL/Portrait_Staf_De_Clercq.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		brilliant_officer
+	}
+}
+
+

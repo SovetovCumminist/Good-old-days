@@ -1,0 +1,21 @@
+state={
+	id=926
+	name="STATE_926"
+	provinces={
+		3422 
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			3422 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ENG
+	}
+	manpower=87720
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

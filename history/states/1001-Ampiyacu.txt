@@ -1,0 +1,20 @@
+state={
+	id=1001
+	name="STATE_1001"
+	provinces={
+		12869 
+	}
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = PRU
+
+	}
+	manpower=3400
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

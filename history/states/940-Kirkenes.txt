@@ -1,0 +1,27 @@
+state={
+	id=940
+	name="STATE_940"
+	provinces={
+		64 6092 9116 11034 11063 
+	}
+	resources={
+		steel=4.000
+	}
+	history={
+		owner = NOR
+		buildings = {
+			infrastructure = 2
+			9116 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			9116 1 
+		}
+		add_core_of = NOR
+	}
+	manpower=5507
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=912
+	name="STATE_912"
+	provinces={
+		12100 
+	}
+	history={
+		owner = SPR
+		#add_core_of = SPR
+		add_core_of = MOR
+		add_core_of = RIF
+		victory_points = {
+			12100 2 
+		}
+		buildings = {
+			infrastructure = 2
+			12100 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=33607
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

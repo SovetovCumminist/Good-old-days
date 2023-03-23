@@ -12,12 +12,15 @@ state={
 	history={
 		owner = AUS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
 		}
 		victory_points = {
 			690 1 
+		}
+		victory_points = {
+			6679 1 
 		}
 		add_core_of = ROM
 		add_core_of = TRA

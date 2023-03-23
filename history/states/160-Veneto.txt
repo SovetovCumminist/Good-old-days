@@ -1,22 +1,27 @@
+
 state={
 	id=160
 	name="STATE_160"
 	resources={
-		steel=20 # was: 32.000
-		aluminium=11 # was: 18.000
+		steel=20.000
+		aluminium=11.000
 	}
-	
-	state_category = large_city
 
 	history={
 		owner = ITA
 		victory_points = {
 			11584 10 
 		}
+		victory_points = {
+			3604 3 
+		}
+		victory_points = {
+			603 1 
+		}
 		buildings = {
-			infrastructure = 2 #was: 6
+			infrastructure = 3
 			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 3
 			dockyard = 1
 			air_base = 3
 			11584 = {
@@ -26,10 +31,11 @@ state={
 
 		}
 		add_core_of = ITA
-		1939.1.1 = {
+		add_core_of = LBV
+		1921.1.1 = {
 			buildings = {
 				dockyard = 2
-				industrial_complex = 5
+				industrial_complex = 4
 
 			}
 
@@ -38,10 +44,10 @@ state={
 	}
 
 	provinces={
-		603 628 3604 3657 6656 9582 9613 11584 
+		603 3604 6656 9582 11584 13341 
 	}
-	manpower=3963151
+	manpower=2863151
 	buildings_max_level_factor=1.000
-
-	local_supplies=5.0 
+	state_category=large_city
+	local_supplies=5.000
 }

@@ -1,0 +1,26 @@
+state={
+	id=944
+	name="STATE_944"
+	resources={
+		steel=3.000
+	}
+	provinces={
+		6500 11562 
+	}
+	history={
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			11562 1 
+		}
+
+	}
+	manpower=562056
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

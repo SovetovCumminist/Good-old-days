@@ -1,6 +1,7 @@
+
 state={
 	id=683
-	name="STATE_683"
+	name="STATE_683" #Nunavut
 	resources={
 		aluminium=7.000
 	}
@@ -9,6 +10,10 @@ state={
 		owner = CAN
 		buildings = {
 			infrastructure = 1
+			3691 = {
+				naval_base = 1
+
+			}
 
 		}
 		add_core_of = CAN
@@ -16,7 +21,7 @@ state={
 	}
 
 	provinces={
-		2947 8962 10721 13188 13190 13191 
+		1712 2947 3691 7813 10527 10721 13188 13190 13191 
 	}
 	manpower=46135
 	buildings_max_level_factor=1.000

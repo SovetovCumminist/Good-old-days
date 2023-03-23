@@ -1,0 +1,18 @@
+state={
+	id=978
+	name="STATE_978"
+	provinces={
+		2208 5143 8169 8255 
+	}
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ARG
+	}
+	manpower=479473
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

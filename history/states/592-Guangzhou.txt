@@ -2,7 +2,7 @@ state={
 	id=592
 	name="STATE_592"
 	manpower = 17835200
-	state_category = city
+	state_category = megalopolis
 	resources={
 		tungsten=8 # was: 10
 		steel= 15 # was: 20
@@ -10,13 +10,13 @@ state={
 	}
 
 	history={
-		owner = CHI
+		owner = GXC
 		add_core_of = GXC
 		add_core_of = CHI
 		add_core_of = PRC
 		
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 3
@@ -28,7 +28,7 @@ state={
 
 		}
 		victory_points = {
-			1047 5
+			1047 25
 		}
 
 		1938.10.25 = {

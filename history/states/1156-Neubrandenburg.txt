@@ -1,0 +1,22 @@
+state={
+	id=1156
+	name="STATE_1156"
+	provinces={
+		3258 
+	}
+	history={
+		victory_points = {
+			3258 1
+		}
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GER
+		add_core_of = MSZ
+	}
+	manpower=60000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

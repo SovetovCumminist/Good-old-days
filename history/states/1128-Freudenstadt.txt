@@ -1,0 +1,23 @@
+state={
+	id=1128
+	name="STATE_1128"
+	provinces={
+		13324 
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GER
+		add_core_of = WUR
+		set_demilitarized_zone = yes
+		1936.3.7 = {
+			set_demilitarized_zone = no
+		}
+	}
+	manpower=19000
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

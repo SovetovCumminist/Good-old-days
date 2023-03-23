@@ -4,11 +4,12 @@ state=
 	name="STATE_525"
 	manpower = 14284105
 	
-	state_category = town
-	history={
+	state_category = megalopolis
+	history=
+	{
 		owner = JAP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 1
 			dockyard = 1
 			4056 = {
@@ -16,10 +17,10 @@ state=
 			}
 		}
 		victory_points = {
-			4056 1 
+			4056 5 
 		}
 		victory_points = {
-			7125 3 
+			7125 20 
 		}
 
 		add_core_of = KOR

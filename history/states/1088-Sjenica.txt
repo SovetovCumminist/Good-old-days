@@ -1,0 +1,19 @@
+state={
+	id=1088
+	name="STATE_1088"
+	provinces={
+		3922 
+	}
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 2
+		}
+		#add_core_of = YUG
+		add_core_of = SER
+	}
+	manpower=32000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

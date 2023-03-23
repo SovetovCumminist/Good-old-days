@@ -1,3 +1,4 @@
+
 state={
 	id=470
 	name="STATE_470"
@@ -5,7 +6,7 @@ state={
 	history={
 		owner = CAN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 
 		}
@@ -17,7 +18,7 @@ state={
 	}
 
 	provinces={
-		515 1262 1347 1763 1804 3010 3706 4765 6726 6754 7348 7718 7766 7787 10684 12166 12534 
+		515 1262 1347 1763 1804 3010 3706 4765 6726 6754 7348 7718 7766 7787 7858 10684 12166 12534 13192 
 	}
 	manpower=690800
 	buildings_max_level_factor=1.000

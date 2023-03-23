@@ -1,0 +1,85 @@
+﻿capital = 1120
+
+#oob = "BDN_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.6.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 25
+	democratic = 75
+}
+
+create_country_leader = {
+	name = "Arnold Brecht"
+	desc = ""
+	picture = "lub_arnold_brecht.dds"
+	expire = "1965.1.1"
+	ideology = centrism_liberal
+	traits = {
+		sharp_tongued_lawyer
+	}
+}
+
+create_country_leader = {
+	name = "Arnold Brecht"
+	desc = ""
+	picture = "lub_arnold_brecht.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		sharp_tongued_lawyer
+	}
+}
+
+

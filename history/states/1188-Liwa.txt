@@ -1,0 +1,15 @@
+state={
+	id=1188
+	name="STATE_1188"
+	provinces={
+		13424 13425 
+	}
+	history={
+		add_core_of = UAE
+		owner = ENG
+	}
+	manpower=19000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

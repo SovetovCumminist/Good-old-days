@@ -1,0 +1,24 @@
+state={
+	id=1079
+	name="STATE_1079"
+	provinces={
+		13080 
+	}
+	history={
+		owner = USA
+		add_core_of = SAM
+		buildings = {
+			infrastructure = 2
+			13080 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+	manpower=35000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

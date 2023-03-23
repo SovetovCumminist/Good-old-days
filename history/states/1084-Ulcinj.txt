@@ -1,0 +1,19 @@
+state={
+	id=1084
+	name="STATE_1084"
+	provinces={
+		13299 
+	}
+	history={
+		owner = MNT
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 1
+		}
+		#add_core_of = YUG
+	}
+	manpower=6000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

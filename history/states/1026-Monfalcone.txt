@@ -1,0 +1,19 @@
+state={
+	id=1026
+	name="STATE_1026"
+	provinces={
+		13265 
+	}
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ITA
+		add_core_of = LBV
+	}
+	manpower=2962
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

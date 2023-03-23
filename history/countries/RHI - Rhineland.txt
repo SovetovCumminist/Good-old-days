@@ -1,0 +1,122 @@
+﻿capital = 1131
+
+#oob = "BDN_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.5.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 59
+	fascism = 20
+	communism = 0
+	neutrality = 21
+}
+
+#create_country_leader = {
+#	name = "Albert Einstein" #some smartasses on Reddit pointed out that Einstein was not interested in politics at all and limited himself to writing books where he described how retarded unironically supporting capitalism is
+#	desc = ""
+#	picture = "New_Ways_Albert_Einstein.dds"
+#	expire = "1960.1.1"
+#	ideology = socialism
+#	traits = {
+#		brilliant_physicist
+#		champion_of_peace_4
+#	}
+#}
+
+create_country_leader = {
+	name = "Hans Adam Dorten"
+	desc = ""
+	picture = "Hans_Adam_Dorten.dds"
+	expire = "1960.1.1"
+	ideology = liberalism
+	traits = {
+		national_revivalist
+		regional_traditionalist_leader
+	}
+}
+
+create_country_leader = {
+	name = "Erich Honecker"
+	desc = ""
+	picture = "Honecker.dds"
+	expire = "1960.1.1"
+	ideology = marxism
+	traits = {
+		Orthodox_Communist
+		militant_socialist
+	}
+}
+
+create_country_leader = {
+	name = "Joseph Goebbels"
+	desc = ""
+	picture = "Paul_Joseph_Goebbels.dds"
+	expire = "1960.1.1"
+	ideology = nazism
+	traits = {
+		Fascist_Propaganda_Genius
+	}
+}
+
+create_country_leader = {
+	name = "Oskar Karl von Preußen"
+	desc = ""
+	picture = "Oskar_Karl_von_Preuben.dds"
+	expire = "1960.1.1"
+	ideology = semi_constitutional_monarchism
+	traits = {
+		hardened_officer_offence
+	}
+}
+
+

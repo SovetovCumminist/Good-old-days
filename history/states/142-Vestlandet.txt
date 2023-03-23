@@ -14,7 +14,7 @@ state={
 	history={
 		owner = NOR
 		buildings = {
-			infrastructure = 2 #was: 5
+			infrastructure = 3 #was: 5
 			industrial_complex = 2
 			air_base = 1
 			9296 = {
@@ -35,6 +35,9 @@ state={
 		}
 		victory_points = {
 			53 1
+		}
+		victory_points = {
+			9127 1
 		}
 		victory_points = {
 			122 3

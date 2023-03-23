@@ -1,0 +1,19 @@
+state={
+	id=1187
+	name="STATE_1187"
+	provinces={
+		4440 7001 13414 13416 
+	}
+	history={
+		owner = ENG
+		add_core_of = JOR
+		add_core_of = JBS
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=4500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

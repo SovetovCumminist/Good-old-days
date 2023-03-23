@@ -27,8 +27,8 @@ state={
 		
 		start_resistance = CZE
 
-		1939.3.14 = {
-			owner = CZE
+		1921.3.14 = {
+			owner = AUS
 			controller = CZE
 		}
 	}

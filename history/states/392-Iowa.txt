@@ -2,14 +2,14 @@
 state={
 	id=392
 	name="STATE_392"
-	manpower = 2470938
+	manpower = 2509938
 	
-	state_category = city
+	state_category = metropolis
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 2 #was: 6
+			infrastructure = 3 #was: 6
 			industrial_complex = 4
 		}
 		add_core_of = USA
@@ -17,7 +17,7 @@ state={
 			1770 3 
 		}
 
-		1939.1.1 = {
+		1921.1.1 = {
 			buildings = {
 				industrial_complex = 5
 			}

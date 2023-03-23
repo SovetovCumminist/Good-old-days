@@ -11,11 +11,8 @@ state={
 		victory_points = {
 			321 5
 		}
-		victory_points = {
-			11305 3
-		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			arms_factory = 3
 			321 = {
 				naval_base = 6
@@ -24,6 +21,7 @@ state={
 			air_base = 3
 		}
 		add_core_of = GER
+		add_core_of = MEK
 	}
 
 	provinces={

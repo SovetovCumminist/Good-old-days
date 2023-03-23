@@ -1,0 +1,18 @@
+state={
+	id=956
+	name="STATE_956"
+	provinces={
+		709 751 4854 5205 10599 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = USA
+	}
+	manpower=321110
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

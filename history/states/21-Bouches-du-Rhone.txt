@@ -7,15 +7,15 @@ state={
 		aluminium=60 # was: 120
 	}
 
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = FRA
 		victory_points = {
-			11834 10
+			11834 20
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 			dockyard = 1
 			arms_factory = 1
@@ -28,7 +28,7 @@ state={
 		}
 		add_core_of = OCC
 		add_core_of = FRA
-		1939.1.1 = {
+		1921.1.1 = {
 			buildings = {
 				dockyard = 2
 			}
@@ -36,7 +36,7 @@ state={
 	}
 
 	provinces={
-		958 3762 11834 11849 11875 
+		958 11834 11849 11875 
 	}
 
 	local_supplies=0.0 

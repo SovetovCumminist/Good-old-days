@@ -1,0 +1,31 @@
+state={
+	id=1064
+	name="STATE_1064"
+	provinces={
+		7014 12076 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = {
+			7014 20
+		}
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	manpower=3200000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

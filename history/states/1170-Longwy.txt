@@ -1,0 +1,18 @@
+state={
+	id=1170
+	name="STATE_1170"
+	provinces={
+		7978 
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NGA
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

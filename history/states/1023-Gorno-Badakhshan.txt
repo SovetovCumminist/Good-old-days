@@ -1,0 +1,22 @@
+state={
+	id=1023
+	name="STATE_1023"
+	provinces={
+		12805 
+	}
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = SOV add_core_of = RUS
+		add_core_of = TAJ
+		add_core_of = BUK
+
+	}
+	manpower=2746
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

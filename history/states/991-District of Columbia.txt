@@ -1,0 +1,22 @@
+state={
+	id=991
+	name="STATE_991"
+	history={
+		owner = USA
+		victory_points = {
+			13258 40 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = USA
+	}
+	provinces={
+		13258 
+	}
+	manpower=574980
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=12.000
+}

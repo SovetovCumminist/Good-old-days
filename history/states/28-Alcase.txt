@@ -14,8 +14,8 @@ state={
 		#victory_points = { 6529 1 }
 		#victory_points = { 549 1 }
 		victory_points = { 678 5 }
-		victory_points = { 9503 5 }
-		victory_points = { 9559 10 }
+		victory_points = { 9503 10 } #strasbourg was 5
+		victory_points = { 9559 5 } #metz was 10
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
@@ -52,9 +52,8 @@ state={
 
 		}
 		add_core_of = FRA
-		add_core_of = GER
 		add_core_of = ALS
-		1939.1.1 = {
+		1921.1.1 = {
 			buildings = {
 				industrial_complex = 4
 			}

@@ -1,0 +1,16 @@
+state={
+	id=1184
+	name="STATE_1184"
+	provinces={
+		4562 4603 
+	}
+	history={
+		owner = ENG
+		add_core_of = JOR
+		add_core_of = JBS
+	}
+	manpower=800
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,18 @@
+state={
+	id=1176
+	name="STATE_1176"
+	provinces={
+		13410 
+	}
+	history={
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=15100 #all of flevoland is 45100
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

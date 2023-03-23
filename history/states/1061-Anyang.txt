@@ -1,0 +1,39 @@
+state={
+	id=1061
+	name="STATE_1061"
+	provinces={
+		1139 4114 4144 4606 7074 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+		}
+		victory_points = {
+			9958 1 
+		}
+
+		1938.10.25 = {		
+			buildings = {
+				industrial_complex = 4
+				infrastructure = 4 #was: 8
+				air_base = 2
+				arms_factory = 2
+			}
+			JAP = {
+				set_province_controller = 1139
+				set_province_controller = 4114
+				set_province_controller = 4144
+				set_province_controller = 4606
+				set_province_controller = 7074
+			} 			
+		}
+	}
+	manpower=4548460 
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,29 @@
+state={
+	id=1049
+	name="STATE_1049"
+	provinces={
+		805 1500 2082 3960 4577 7628 9920 10337 10504 10778 10861 12486 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			air_base = 3
+			10337 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			10337 20 
+		}
+		victory_points = {
+			3960 20 
+		}
+	}
+	manpower=3527000 #texas total=5824712
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=6.000
+}

@@ -1,0 +1,24 @@
+state={
+	id=1075
+	name="STATE_1075"
+	provinces={
+		13294 
+	}
+	history={
+		owner = MCO
+		victory_points = {
+			13294 1
+		}
+		buildings = {
+			infrastructure = 3
+			#13294 = {
+			#	naval_base = 1
+			#}
+		}
+		add_core_of = MCO
+	}
+	manpower=24000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

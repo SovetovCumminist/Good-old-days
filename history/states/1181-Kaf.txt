@@ -1,0 +1,20 @@
+state={
+	id=1181
+	name="STATE_1181"
+	provinces={
+		13421 13422 
+	}
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = SAU
+		add_core_of = JBS
+	}
+	manpower=20
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

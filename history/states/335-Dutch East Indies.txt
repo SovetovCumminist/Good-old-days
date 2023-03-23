@@ -4,7 +4,7 @@ state={
 	name="STATE_335" # Java
 	manpower = 41718200
 	
-	state_category = city
+	state_category = megalopolis
 	
 	resources={
 		rubber=140 # was: 242
@@ -22,7 +22,7 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 2 #was: 5
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 3

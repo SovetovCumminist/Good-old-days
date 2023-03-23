@@ -13,7 +13,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -49,7 +49,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1936
+		start_year = 1910
 
 		folder = {
 			name = naval_folder
@@ -84,7 +84,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -114,7 +114,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -154,7 +154,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -199,7 +199,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1936
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -243,7 +243,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -283,7 +283,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -329,7 +329,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -364,7 +364,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1936
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -398,7 +398,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -428,7 +428,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -460,7 +460,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -490,7 +490,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -520,7 +520,7 @@ technologies = {
 		
 		
 		research_cost = 1.5
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -554,7 +554,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -587,7 +587,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -616,7 +616,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1944
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -646,7 +646,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -671,7 +671,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -690,8 +690,7 @@ technologies = {
 	
 	transport = {
 
-		transport_capacity = -0.5
-		naval_invasion_capacity = 10
+		naval_invasion_capacity = 2
 		
 		path = {
 			leads_to_tech = landing_craft 
@@ -699,7 +698,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -738,24 +737,16 @@ technologies = {
 	
 	landing_craft = {
 
-		invasion_preparation = -0.5
-		amphibious_invasion_defence = 0.15
-		naval_invasion_capacity = 40
+		transport_capacity = -0.5
+		naval_invasion_capacity = 5
 
 		path = {
 			leads_to_tech = tank_landing_craft 
 			research_cost_coeff = 1
 		}
-
-		enable_equipments = {
-			floating_harbor_equipment_1
-		}
-
-		force_use_small_tech_layout = yes
-		show_equipment_icon = yes
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -796,22 +787,8 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 5
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				has_war_with = GER
-			}
-
-			modifier = {
-				factor = 10
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
+				factor = 2
+				tag = ENG
 			}
 		}
 		
@@ -825,10 +802,10 @@ technologies = {
 
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
-		naval_invasion_capacity = 100
+		naval_invasion_capacity = 40
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1922
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 19 }
@@ -874,10 +851,12 @@ technologies = {
 			leads_to_tech = basic_carrier 
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			early_fighter = 1
+		}
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -916,7 +895,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1910
 		
 		folder = {
 			name = naval_folder
@@ -956,7 +935,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -992,7 +971,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -1024,7 +1003,9 @@ technologies = {
 		enable_equipments = { 
 			submarine_1
 		}
-		
+		dependencies = {
+			generator_battery = 1
+		}
 		path = {
 			leads_to_tech = basic_submarine 
 			research_cost_coeff = 1
@@ -1032,7 +1013,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -1066,7 +1047,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1910
 
 		folder = {
 			name = naval_folder
@@ -1101,7 +1082,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1914
 		
 		folder = {
 			name = naval_folder
@@ -1131,13 +1112,15 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 19 }
 		}
-		
+		dependencies = {
+			advanced_generator = 1
+		}
 		ai_will_do = {
 			factor = 1
 			
@@ -1163,7 +1146,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1910
 
 		# only from focus!!! #####
 		allow = {

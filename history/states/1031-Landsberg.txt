@@ -1,0 +1,20 @@
+state={
+	id=1031
+	name="STATE_1031"
+	provinces={
+		6236 13347
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GER
+		add_core_of = PRE
+
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

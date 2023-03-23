@@ -1,0 +1,20 @@
+state={
+	id=1193
+	name="STATE_1193"
+	provinces={
+		1923 8073 10786 
+	}
+	history={
+		owner = SAU
+		add_core_of = SAU
+		add_core_of = HEJ
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

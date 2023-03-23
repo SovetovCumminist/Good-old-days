@@ -1,0 +1,21 @@
+state={
+	id=1110
+	name="STATE_1110"
+	provinces={
+		1106 
+	}
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+			1106 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GRE
+	}
+	manpower=75000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

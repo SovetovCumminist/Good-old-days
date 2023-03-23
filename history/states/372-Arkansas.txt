@@ -2,9 +2,9 @@
 state={
 	id=372
 	name="STATE_372"
-	manpower = 1854481
+	manpower = 1892481
 	
-	state_category = town
+	state_category = city
 	
 	resources={
 		aluminium=14 # was: 20
@@ -14,7 +14,7 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 2
 		}
 		add_core_of = USA

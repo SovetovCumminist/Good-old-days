@@ -2,17 +2,20 @@
 state={
 	id=618
 	name="STATE_618" # Dzungaria
+	resources={
+		oil=3.000
+	}
 	manpower = 670800
 
 	state_category = pastoral
 
 	history={
-		owner = CHI
+		owner = SIK
 		add_core_of = SIK
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {

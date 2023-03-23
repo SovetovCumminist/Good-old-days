@@ -1,24 +1,29 @@
 state={
 	id=621
 	name="STATE_621"
+	resources={
+		steel=5.000
+		aluminium=5.000
+	}
 
 	history={
-		owner = CHI
+		owner = SHX
 		add_core_of = SHX
 		add_core_of = CHI
 		add_core_of = PRC
+		add_core_of = MEN
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 
 		}
-		1939.1.1 = {
+		1921.1.1 = {
 			remove_building = {
 				type = industrial_complex
 				level = 1
 
 			}
-			owner = CHI
+			owner = PRC
 			controller = MEN
 
 		}
@@ -30,7 +35,7 @@ state={
 	}
 	manpower=1583700
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 
 	local_supplies=4.0 
 }

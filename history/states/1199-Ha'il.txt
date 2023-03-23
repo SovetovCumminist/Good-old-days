@@ -1,0 +1,22 @@
+state={
+	id=1199
+	name="STATE_1199"
+	provinces={
+		4968 5027 5099 7934 12758 
+	}
+	history={
+		owner = SAU
+		add_core_of = SAU
+		add_core_of = JBS
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			5027 1 
+		}
+	}
+	manpower=220000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

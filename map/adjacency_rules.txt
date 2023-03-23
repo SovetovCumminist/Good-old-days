@@ -11,6 +11,153 @@
 #
 # The 'name' property is how you refer to the rule in adjacencies.csv
 
+#Volga-Don waterway
+adjacency_rule = {
+	name = "VOLGA_DON"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = {
+		757 3461 3487 6486 6516 6620 9440 9455 9592 9753 11429 11579 11736 498 520 6527 9474 6503 6490 3464 11403 426 585 11559 9417 11418 449 3478 3489 3505
+	}
+
+	is_disabled = {
+		has_global_flag = VOLGA_DON_NOT_BUILT
+		#OR = {
+		#	has_global_flag = VOLGA_DON_BLOCKED
+		#	has_country_flag = VOLGA_DON_BLOCKED_FOR_COUNTRY
+		#	has_country_flag = VOLGA_DON_SANCTIONS_FLAG
+		#}
+		tooltip = volga_don_blocked_tt
+	}
+	
+	icon = 3529
+	offset = { -4 0 0 }
+}
+
+#Welland Canal
+adjacency_rule = {
+	name = "WELLAND_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 749 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = WELLAND_CANAL_BLOCKED
+			has_country_flag = WELLAND_CANAL_BLOCKED_FOR_COUNTRY
+			has_country_flag = WELLAND_SANCTIONS_FLAG
+		}
+		tooltip = welland_blocked_tt
+	}
+	
+	icon = 749
+	offset = { 1 0 0 }
+}
+
+#Great Lakes-Saint Lawrence Seaway
+adjacency_rule = {
+	name = "GL_STL_SEAWAY"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12149 7433 7291 10320 9601 4417 4345 4270 6625 3605 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = GL_STL_CANAL_BLOCKED
+			has_country_flag = GLS_STL_CANAL_BLOCKED_FOR_COUNTRY
+			has_country_flag = GLS_STL_SANCTIONS_FLAG
+		}
+		tooltip = GL_STL_blocked_tt
+	}
+	
+	icon = 4345
+	offset = { -1 0 -6 }
+}
+
 #Suez Canal
 adjacency_rule =
 {
@@ -192,7 +339,10 @@ adjacency_rule =
 adjacency_rule =
 {
 	name = "BOSPHORUS_STRAIT"
-	
+
+	is_friend = {
+		TUR_is_friend_for_bosphorus = yes
+	}
 	contested =
 	{
 		army = no
@@ -237,6 +387,10 @@ adjacency_rule =
 adjacency_rule =
 {
 	name = "DARDANELLES_STRAIT"
+
+	is_friend = {
+		TUR_is_friend_for_dardanelles = yes
+	}
 
 	contested =
 	{

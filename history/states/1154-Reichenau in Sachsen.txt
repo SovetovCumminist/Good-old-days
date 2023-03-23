@@ -1,0 +1,19 @@
+state={
+	id=1154
+	name="STATE_1154"
+	provinces={
+		13367 
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GER
+		add_core_of = SAX
+	}
+	manpower=18000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

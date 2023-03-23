@@ -1,0 +1,18 @@
+state={
+	id=1104
+	name="STATE_1104"
+	provinces={
+		6039 
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CMR
+	}
+	manpower=290000 #total british cameroon pop is 400,000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=1067
+	name="STATE_1067"
+	provinces={
+		1502 1588 1645 4506 4649 4876 7526 7582 7894 10379 12485 
+	}
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+
+		}
+	}
+	manpower=2742000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

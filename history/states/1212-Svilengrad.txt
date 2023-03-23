@@ -1,0 +1,18 @@
+state={
+	id=1212
+	name="STATE_1212"
+	provinces={
+		13437 
+	}
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BUL
+	}
+	manpower=7000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

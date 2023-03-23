@@ -1,0 +1,19 @@
+state={
+	id=1189
+	name="STATE_1189"
+	provinces={
+		1955 
+	}
+	history={
+		owner = SAU
+		add_core_of = SAU
+		add_core_of = JBS
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=40000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

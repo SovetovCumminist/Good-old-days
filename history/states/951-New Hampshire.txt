@@ -1,0 +1,18 @@
+state={
+	id=951
+	name="STATE_951"
+	provinces={
+		733 3712 3715 10481 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = USA
+	}
+	manpower=481000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

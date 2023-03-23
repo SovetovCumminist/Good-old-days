@@ -8,12 +8,12 @@ state={
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 			
 		}
 		victory_points = {
-			1939 2 
+			1921 2 
 		}
 		
 		add_core_of = KEN
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		1939 2066 5079 10962 13135 
+		1921 2066 5079 10962 
 	}
 	buildings_max_level_factor=1.000
 	

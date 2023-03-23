@@ -1,0 +1,22 @@
+state={
+	id=934
+	name="STATE_934"
+	provinces={
+		3522 6487 9238 11468 11359
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		victory_points = {
+			3522 5 
+		}
+	}
+	manpower=603309
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

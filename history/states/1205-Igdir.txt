@@ -1,0 +1,18 @@
+state={
+	id=1205
+	name="STATE_1205"
+	provinces={
+		4583 13434 
+	}
+	history={
+		owner = OTT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = KUR
+	}
+	manpower=40209
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

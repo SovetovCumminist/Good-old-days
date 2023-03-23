@@ -1,0 +1,18 @@
+state={
+	id=995
+	name="STATE_995"
+	provinces={
+		868 1658 13260
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+	}
+	manpower=5777
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+state={
+	id=1139
+	name="STATE_1139"
+	provinces={
+		425 3561 6501 6524 6582 13355 13356 
+	}
+	history={
+		owner = GER
+		victory_points = {
+			6524 5 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		1921.1.1 = {
+			buildings = {
+				synthetic_refinery = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+	manpower=1220000 #thuringia region total was 3005214
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

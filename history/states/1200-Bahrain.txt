@@ -1,0 +1,24 @@
+state={
+	id=1200
+	name="STATE_1200"
+	provinces={
+		13426 
+	}
+	history={
+		owner = ENG
+		add_core_of = BHR
+		buildings = {
+			infrastructure = 1
+			13426 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			13426 1 
+		}
+	}
+	manpower=101000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -74,7 +74,8 @@ ideologies = {
 		faction_modifiers = {
 			generate_wargoal_tension = 0.10
 		}
-
+		
+		ai_communist = yes
 	}
 	
 	democratic = {

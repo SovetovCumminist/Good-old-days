@@ -1,0 +1,27 @@
+state={
+	id=1013
+	name="STATE_1013"
+	history={
+		owner = SOV
+		controller = OTT
+		victory_points = {
+			3653 3 
+		}
+		buildings = {
+			infrastructure = 2
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = SOV add_core_of = RUS
+		add_core_of = GEO
+	}
+	provinces={
+		3653 
+	}
+	manpower=79000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

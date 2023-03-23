@@ -1,0 +1,19 @@
+state={
+	id=1216
+	name="STATE_1216"
+	provinces={
+		13442 
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+	manpower=11000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

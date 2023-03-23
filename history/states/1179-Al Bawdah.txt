@@ -1,0 +1,21 @@
+state={
+	id=1179
+	name="STATE_1179"
+	provinces={
+		13415 
+	}
+	history={
+		owner = OTT
+		controller = FRA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SYR
+		add_core_of = JBS
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

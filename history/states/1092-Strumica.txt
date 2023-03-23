@@ -1,0 +1,20 @@
+state={
+	id=1092
+	name="STATE_1092"
+	provinces={
+		13302 
+	}
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 2
+		}
+		#add_core_of = YUG
+		add_core_of = MAC
+		add_claim_by = BUL
+	}
+	manpower=45000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

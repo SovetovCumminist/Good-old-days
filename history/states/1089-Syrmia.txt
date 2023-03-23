@@ -1,0 +1,20 @@
+state={
+	id=1089
+	name="STATE_1089"
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 2
+		}
+		#add_core_of = YUG
+		add_core_of = CRO
+		add_core_of = SER
+	}
+	provinces={
+		11580 
+	}
+	manpower=169943
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,109 @@
+﻿capital = 988 #Baden
+
+#oob = "BDN_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.6.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	fascism = 2
+	communism = 8
+	neutrality = 40
+	democratic = 50
+}
+
+create_country_leader = {
+	name = "Robert Heinrich Wagner"
+	desc = ""
+	picture = "gfx/leaders/BDN/Robert_Wagner.dds"
+	expire = "1960.1.1"
+	ideology = nazism
+	traits = {
+	germanophilic_nazi
+	}
+}
+
+create_country_leader = {
+	name = "Carlo Schmid"
+	desc = ""
+	picture = "gfx/leaders/BDN/Carlo_Schmid.dds"
+	expire = "1960.1.1"
+	ideology = marxism
+	traits = {
+	Human_Rights_Activist	
+	}
+}
+
+create_country_leader = {
+	name = "Berthold Markgraf zu Baden"
+	desc = ""
+	picture = "gfx/leaders/BDN/berthold.dds"
+	expire = "1960.1.1"
+	ideology = constitutional_monarchism
+	traits = {
+	unconfident	
+	}
+}
+
+create_country_leader = {
+	name = "Hermann Hummel"
+	desc = ""
+	picture = "gfx/leaders/BDN/Hermann_Hummel.dds"
+	expire = "1960.1.1"
+	ideology = liberalism
+	traits = {
+	POL_chemist	
+	}
+}
+
+

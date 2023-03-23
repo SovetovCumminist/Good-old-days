@@ -1,0 +1,26 @@
+state={
+	id=1035
+	name="STATE_1035"
+	provinces={
+		713 3696 
+	}
+	history={
+		owner = AUS
+		victory_points = {
+			3696 1 
+		}
+		victory_points = {
+			713 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ROM
+		add_core_of = TRA
+
+	}
+	manpower=82544
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

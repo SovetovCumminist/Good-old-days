@@ -1,0 +1,22 @@
+state={
+	id=1219
+	name="STATE_1219"
+	provinces={
+		1065 13445 
+	}
+	history={
+		owner = ENG
+		victory_points = {
+			1065 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+	manpower=15540
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

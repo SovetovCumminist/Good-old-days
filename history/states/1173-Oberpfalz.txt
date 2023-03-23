@@ -1,0 +1,19 @@
+state={
+	id=1173
+	name="STATE_1173"
+	provinces={
+		532 571 586 3299 3541 3571 11497 
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GER
+		add_core_of = BAY
+	}
+	manpower=710000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

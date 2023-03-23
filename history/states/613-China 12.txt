@@ -2,30 +2,21 @@
 state={
 	id=613
 	name="STATE_613" # Shanghai
-	manpower = 17305100
+	manpower = 14105100
 	
-	state_category = large_city
+	state_category = megalopolis
 	
 	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 2 #was: 5
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			air_base = 6
-			dockyard = 1
-			7014 = {
-				naval_base = 6
-				coastal_bunker = 1
-				bunker = 1
-			}
 		}
 		victory_points = {
-			11913 20 
-		}
-		victory_points = {
-			7014 5
+			11913 30 
 		}
 		victory_points = {
 			10076 3
@@ -37,7 +28,7 @@ state={
 	}
 
 	provinces={
-		996 1089 4091 7014 7120 10034 10076 11913 11928 11982 12052 12076 13142 
+		996 1089 4091 7120 10034 10076 11913 11928 11982 12052 13142 
 	}
 
 	local_supplies=0.0 

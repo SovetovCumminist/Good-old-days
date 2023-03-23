@@ -1,0 +1,19 @@
+state={
+	id=1146
+	name="STATE_1146"
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GER
+		add_core_of = BRU
+	}
+	provinces={
+		13352 
+	}
+	manpower=17000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

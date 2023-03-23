@@ -1,0 +1,27 @@
+state={
+	id=975
+	name="STATE_975"
+	provinces={
+		2172 5163 7500 13000 
+	}
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			7500 5 
+		}
+		victory_points = {
+			2172 1 
+		}
+		add_core_of = ARG
+	}
+	manpower=1782975
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=1165
+	name="STATE_1165"
+	provinces={
+		9418 11407 
+	}
+	history={
+		owner = BEL
+		victory_points = {
+			11407 1
+		}
+		victory_points = {
+			9418 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = BEL
+		add_core_of = WLL
+
+	}
+	manpower=205500
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

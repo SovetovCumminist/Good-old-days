@@ -1,0 +1,23 @@
+state={
+	id=980
+	name="STATE_980"
+	provinces={
+		5184 8208 10975 10985 11022 12942 
+	}
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = ARG
+		victory_points = {
+			12942 3 
+		}
+	}
+	manpower=1497987
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+state={
+	id=1185
+	name="STATE_1185"
+	provinces={
+		13417 
+	}
+	history={
+		owner = ENG
+		add_core_of = JOR
+	}
+	manpower=10
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

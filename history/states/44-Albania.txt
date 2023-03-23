@@ -40,7 +40,7 @@ state = {
 		}
 		add_core_of = ALB
 		add_claim_by = ITA
-		1939.4.12 = {
+		1921.4.12 = {
 			owner = ITA
 			controller = ITA
 			remove_claim_by = ITA

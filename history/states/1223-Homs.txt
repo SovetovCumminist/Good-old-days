@@ -1,0 +1,22 @@
+state={
+	id=1223
+	name="STATE_1223"
+	provinces={
+		4550 7513 10383 12316 12442 
+	}
+	history={
+		owner = OTT
+		controller = FRA
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4550 1 
+		}
+		add_core_of = SYR
+	}
+	manpower=265000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

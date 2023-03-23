@@ -1,0 +1,29 @@
+state={
+	id=994
+	name="STATE_994"
+	provinces={
+		1734 6767 7896 
+	}
+	resources={
+		steel=25
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 3
+			1734 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			1734 1 
+		}
+
+	}
+	manpower=155838
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}
